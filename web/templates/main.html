@@ -31,52 +31,118 @@
       <div class="row" style="width: 30%; margin-left:55px; margin-top: 89px;">
         <div class="col s12" id="maintab">
           <ul class="tabs">
-            <li class="tab col s3"><a href="#test1">Group</a></li>
-            <li class="tab col s3"><a class="active" href="#test2">Member</a></li>
+            <li class="tab col s3"><a href="#tabGroup">Group</a></li>
+            <li class="tab col s3"><a class="active" href="#tabMember">Member</a></li>
           </ul>
         </div>
 
         <div class="input_section">
           <div class="input_inner_section" style="background-color:#ffffffcc">
-            <div id="test1" class="col s12" style="visibility: visible;">
-              <div id="innerDiv" style="position: absolute; width:100%;height:300px;">
-                <div style="text-align: center">
-                  <h2 class="title" style="font-family: Bangers">KPOP Wiki</h2>
+
+            <div id="tabGroup">
+              <div id="advancedTest1" class="col s12" style="visibility: hidden;height: 0px;">
+                <div style="height: 8%;">
+                  <a class="btn" id="backGroup" style="margin:10px;  background-color:#e57373;">Back</a>
                 </div>
-                <nav id="nav_input">
-                  <div class="nav-wrapper">
-                    <form method="get">
-                      <div class="input-field">
-                        <input id="search" type="search" required>
-                        <i class="material-icons" id="submit_btn" style="color:black">search group</i>
-                      </div>
-                    </form>
-                    <button class="btn" id="advancedGroup" type="submit" name="action"
-                      style="background-color:rgb(201, 99, 116) ;">Advanced Search</button>
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <label>Group Select</label>
+                    <select class="browser-default">
+                      <option value="" disabled selected>Genre</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
                   </div>
-                </nav>
+                </div>
+
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <label>Group Select</label>
+                    <select class="browser-default">
+                      <option value="" disabled selected>Genre</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div id="test1" class="col s12" style="visibility:visible;">
+                <div id="innerDiv" style="position: absolute; width:100%;height:300px;">
+                  <div style="text-align: center">
+                    <h2 class="title" style="font-family: Bangers">KPOP Wiki</h2>
+                  </div>
+                  <nav id="nav_input">
+                    <div class="nav-wrapper">
+                      <form method="get">
+                        <div class="input-field">
+                          <input id="search" type="search" required>
+                          <i class="material-icons" id="submit_btn" style="color:black">search group</i>
+                        </div>
+                      </form>
+                      <button class="btn" id="advancedGroup" type="submit" name="action"
+                        style="background-color:rgb(201, 99, 116) ;">Advanced Search</button>
+                    </div>
+                  </nav>
+                </div>
               </div>
             </div>
 
-            <div id="test2" class="col s12" style="visibility: visible;">
-              <div id="innerDiv" style="position: absolute; width:100%;height:300px;">
-                <div style="text-align: center">
-                  <h2 class="title" style="font-family: Bangers">KPOP Wiki</h2>
+
+            <div id="tabMember">
+              <div id="advancedTest2" class="col s12" style="visibility: hidden;height: 0px;">
+                <div style="height: 8%;">
+                  <a class="btn" id="backMember" style="margin:10px;  background-color:#e57373;">Back</a>
                 </div>
-                <nav id="nav_input">
-                  <div class="nav-wrapper">
-                    <form method="get">
-                      <div class="input-field">
-                        <input id="search" type="search" required>
-                        <i class="material-icons" id="submit_btn" style="color:black">search person</i>
-                      </div>
-                    </form>
-                    <button class="btn waves-effect waves-light" id="advancedMember" type="submit" name="action"
-                      style="background-color:rgb(201, 99, 116) ;">Advanced Search</button>
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <label>Group Select</label>
+                    <select class="browser-default">
+                      <option value="" disabled selected>Sexiaulity</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
                   </div>
-                </nav>
+                </div>
+
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <label>Group Select</label>
+                    <select class="browser-default">
+                      <option value="" disabled selected>Position</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div id="test2" class="col s12" style="visibility: visible;">
+                <div id="innerDiv" style="position: absolute; width:100%;height:300px;">
+                  <div style="text-align: center">
+                    <h2 class="title" style="font-family: Bangers">KPOP Wiki</h2>
+                  </div>
+                  <nav id="nav_input">
+                    <div class="nav-wrapper">
+                      <form method="get">
+                        <div class="input-field">
+                          <input id="search" type="search" required>
+                          <i class="material-icons" id="submit_btn" style="color:black">search person</i>
+                        </div>
+                      </form>
+                      <button class="btn waves-effect waves-light" id="advancedMember" type="submit" name="action"
+                        style="background-color:rgb(201, 99, 116) ;">Advanced Search</button>
+                    </div>
+                  </nav>
+                </div>
               </div>
             </div>
+
+
           </div>
 
           <!-- <div style="position: absolute; width:100%;height:300px;">
@@ -117,22 +183,65 @@
 
           $(function() {
             $('#advancedGroup').bind('click', function() {
-                var p = document.querySelector('#test1'); 
-                if (p.style.visibility === 'visible') { 
-                  p.style.visibility = 'hidden'; 
+              var p = document.querySelector('#advancedTest1');
+              var q = document.querySelector('#test1')
+                if (q.style.visibility === 'visible') { 
+                  q.style.visibility = 'hidden'; 
+                  p.style.height = "300px"
+                  p.style.visibility = "visible"
                   } else { 
-                  p.style.visibility = 'visible'; 
+                  q.style.visibility = 'visible'; 
                   } 
             });
 
             $('#advancedMember').bind('click', function() {
-                var p = document.querySelector('#test2'); 
-                if (p.style.visibility === 'visible') { 
-                  p.style.visibility = 'hidden'; 
+              var p = document.querySelector('#advancedTest2');
+              var q = document.querySelector('#test2')
+                if (q.style.visibility === 'visible') { 
+                  q.style.visibility = 'hidden'; 
+                  p.style.height = "300px"
+                  p.style.visibility = "visible"
                   } else { 
-                  p.style.visibility = 'visible'; 
+                  q.style.visibility = 'visible'; 
                   } 
             });
+
+            $('#backGroup').bind('click', function() {
+                var p = document.querySelector('#advancedTest1');
+                var q = document.querySelector('#test1')
+                if (p.style.visibility === 'visible') { 
+                  p.style.visibility = 'hidden'; 
+                  p.style.height = '0px';
+                  } else { 
+                  p.style.visibility = 'visible'; 
+                  }
+                
+                  if (q.style.visibility === 'visible') { 
+                  q.style.visibility = 'hidden'; 
+                  } else { 
+                  q.style.visibility = 'visible'; 
+                  }
+                 
+            });
+
+            $('#backMember').bind('click', function() {
+                var p = document.querySelector('#advancedTest2');
+                var q = document.querySelector('#test2')
+                if (p.style.visibility === 'visible') { 
+                  p.style.visibility = 'hidden'; 
+                  p.style.height = '0px';
+                  } else { 
+                  p.style.visibility = 'visible'; 
+                  }
+                
+                  if (q.style.visibility === 'visible') { 
+                  q.style.visibility = 'hidden'; 
+                  } else { 
+                  q.style.visibility = 'visible'; 
+                  }
+                 
+            });
+
 
 
             $('i#submit_btn').bind('click', function() {

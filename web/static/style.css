@@ -73,3 +73,19 @@ nav .input-field label i{
 .row .col{
     padding: 0px 0px;
 }
+
+.splitTwo{
+    width: 50%;
+    float:left;
+    height: 100px;
+    border: 1px solid #3B6273;
+}
+
+.advancedSelect{
+    width: 40px;
+    float:left
+}
+
+a.btn{
+    background-color: #e57373;
+}
