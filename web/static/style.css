@@ -27,10 +27,18 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
 nav .nav-wrapper{
     height:60px;
 }
+
+#maintab{
+    width:30%; 
+    text-align:center; 
+    top:150px
+}
+
 .input_section{
     position: absolute; 
     left: 50%;
-    top:200px
+    top:200px;
+    border-radius: 25px;
 }
 .input_inner_section{
     width:700px;

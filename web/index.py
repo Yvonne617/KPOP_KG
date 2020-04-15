@@ -1,9 +1,12 @@
 from flask import Flask,render_template
 from flask import request
+from datetime import timedelta
 import rltk
 import rdflib 
 from flask import jsonify 
 app = Flask(__name__,template_folder='templates')
+app.config['DEBUG'] = True
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds = 1)
 prefix =  """ 
         PREFIX : <undefined>
         PREFIX kpop: <http://inf558.org/kpop/>
