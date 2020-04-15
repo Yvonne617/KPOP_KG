@@ -1,0 +1,61 @@
+#banner{
+    height: 500px;
+    background-image: url("https://www.rollingstone.com/wp-content/uploads/2019/04/blackpink-album-review.jpg");
+    background-size: 100%;
+}
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
+    font-size:40px;
+    margin-left:10px;
+
+}
+
+  /* visited link */
+  a:visited {
+    color:white;
+  }
+
+#nav_input{
+    display: table;
+    margin: 50px auto;
+    background-color:white;
+    width:80%;
+    height: 5px;
+}
+.nav-wrapper .input-field input[type=search]{
+    padding-left:20px;
+}
+nav .nav-wrapper{
+    height:60px;
+}
+.input_section{
+    position: absolute; 
+    left: 50%;
+    top:200px
+}
+.input_inner_section{
+    width:700px;
+    height:300px;
+    position: relative; 
+    left: -50%; 
+    background-color: white;
+    /* border: solid grey 1px; */
+    border-radius: 25px;
+}
+.title{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 4px;
+}
+nav .input-field label i{
+    color:black;
+}
+
+#main_page{
+    height: 700px;
+    position: absolute;
+    top:700px;
+    margin: 0 0;
+    
+}
+.row .col{
+    padding: 0px 0px;
+}
