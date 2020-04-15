@@ -38,8 +38,8 @@
 
         <div class="input_section">
           <div class="input_inner_section" style="background-color:#ffffffcc">
-            <div id="test1" class="col s12">
-              <div style="position: absolute; width:100%;height:300px;">
+            <div id="test1" class="col s12" style="visibility: visible;">
+              <div id="innerDiv" style="position: absolute; width:100%;height:300px;">
                 <div style="text-align: center">
                   <h2 class="title" style="font-family: Bangers">KPOP Wiki</h2>
                 </div>
@@ -51,14 +51,15 @@
                         <i class="material-icons" id="submit_btn" style="color:black">search group</i>
                       </div>
                     </form>
-                    <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:rgb(201, 99, 116) ;">Advanced Search</button>
+                    <button class="btn" id="advancedGroup" type="submit" name="action"
+                      style="background-color:rgb(201, 99, 116) ;">Advanced Search</button>
                   </div>
                 </nav>
               </div>
             </div>
 
-            <div id="test2" class="col s12">
-              <div style="position: absolute; width:100%;height:300px;">
+            <div id="test2" class="col s12" style="visibility: visible;">
+              <div id="innerDiv" style="position: absolute; width:100%;height:300px;">
                 <div style="text-align: center">
                   <h2 class="title" style="font-family: Bangers">KPOP Wiki</h2>
                 </div>
@@ -70,7 +71,8 @@
                         <i class="material-icons" id="submit_btn" style="color:black">search person</i>
                       </div>
                     </form>
-                    <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:rgb(201, 99, 116) ;">Advanced Search</button>
+                    <button class="btn waves-effect waves-light" id="advancedMember" type="submit" name="action"
+                      style="background-color:rgb(201, 99, 116) ;">Advanced Search</button>
                   </div>
                 </nav>
               </div>
@@ -110,7 +112,29 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"> </script>
 <script type=text/javascript>
+
+
+
           $(function() {
+            $('#advancedGroup').bind('click', function() {
+                var p = document.querySelector('#test1'); 
+                if (p.style.visibility === 'visible') { 
+                  p.style.visibility = 'hidden'; 
+                  } else { 
+                  p.style.visibility = 'visible'; 
+                  } 
+            });
+
+            $('#advancedMember').bind('click', function() {
+                var p = document.querySelector('#test2'); 
+                if (p.style.visibility === 'visible') { 
+                  p.style.visibility = 'hidden'; 
+                  } else { 
+                  p.style.visibility = 'visible'; 
+                  } 
+            });
+
+
             $('i#submit_btn').bind('click', function() {
               var radioValue = $("input[name='group']:checked").val();
               console.log(radioValue)
