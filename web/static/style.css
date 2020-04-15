@@ -34,6 +34,12 @@ nav .nav-wrapper{
     top:150px
 }
 
+#sendicon{
+    size:20px;
+    margin: 0px,0px,0px,0px;
+
+}
+
 .input_section{
     position: absolute; 
     left: 50%;
