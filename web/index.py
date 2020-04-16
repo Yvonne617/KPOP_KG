@@ -4,6 +4,8 @@ from datetime import timedelta
 import rltk
 import rdflib 
 from flask import jsonify 
+from SPARQLWrapper import SPARQLWrapper, JSON
+
 app = Flask(__name__,template_folder='templates')
 app.config['DEBUG'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds = 1)
@@ -46,3 +48,14 @@ def members():
 def trend():
     # return "hello world"
     return render_template("trend.html")
+
+@app.route('/query')
+def query_first():
+    return render_template("query.html", title="Query")
+
+@app.route('/query', methods=['POST'])
+def query():
+    queryline = request.form['sparql']
+    return queryline
+
+    # return "hello world"
