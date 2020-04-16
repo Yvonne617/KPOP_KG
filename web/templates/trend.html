@@ -1,9 +1,30 @@
 <!doctype html>
 <html>
-    <title>Hello from Flask</title>
-    {% if name %}
-      <h1>Hello {{ name }}!</h1>
-    {% else %}
-      <h1>Hello, World!</h1>
-    {% endif %}
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../static/materialize.min.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="../static/style.css" media="screen,projection" />
+      
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+
+      <body>
+          <div class="row">
+            <nav>
+              <div class="nav-wrapper">
+                <a href="/" class="brand-logo"><i class="large material-icons">assistant</i></a>
+                <span style="position:absolute;left:50px;top:-10px">KPOP</span>
+                <span style="position:absolute;left:50px;top:10px">Knowledge Graph</span>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li id="trend"><a href="/trend">Trend</a></li>
+                  <li><a href=".">Predict</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+      </body>
 </html>
