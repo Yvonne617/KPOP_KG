@@ -9,6 +9,10 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 app = Flask(__name__,template_folder='templates')
 app.config['DEBUG'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds = 1)
+
+sparql = SPARQLWrapper("http://localhost:3030/kpop/query")
+sparql.setReturnFormat(JSON)
+
 prefix =  """ 
         PREFIX : <undefined>
         PREFIX kpop: <http://inf558.org/kpop/>
@@ -56,6 +60,11 @@ def query_first():
 @app.route('/query', methods=['POST'])
 def query():
     queryline = request.form['sparql']
-    return queryline
+    g = rdflib.Graph()
+    result = g.parse('data/KPOP_graph.ttl', format='n3')
+    qres = g.query(queryline)
+    for row in qres:
+        print(row)
+    
 
     # return "hello world"
