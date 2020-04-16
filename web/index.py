@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask,render_template,url_for,redirect
 from flask import request
 from datetime import timedelta
 import rltk
@@ -41,3 +41,8 @@ def groups():
 def members():
     keyword = request.args.get("keyword")
     return jsonify({"data": keyword})
+
+@app.route('/trend', methods=['GET', 'POST'])
+def trend():
+    # return "hello world"
+    return render_template("trend.html")
