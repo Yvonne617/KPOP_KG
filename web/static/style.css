@@ -3,7 +3,7 @@
     background-image: url("https://www.rollingstone.com/wp-content/uploads/2019/04/blackpink-album-review.jpg");
     background-size: 100%;
 }
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons{
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons, button.material-icons{
     font-size:40px;
     margin-left:10px;
 

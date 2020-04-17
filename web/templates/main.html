@@ -75,10 +75,10 @@
                   </div>
                   <nav id="nav_input">
                     <div class="nav-wrapper">
-                      <form method="get">
+                      <form name="searchGroup" action="/searchGroup" method="POST">
                         <div class="input-field">
-                          <input id="search1" type="search" required>
-                          <i class="material-icons" id="submit_btn" style="color:black">search group</i>
+                          <input id="search1" type="name" name="groupname" required>
+                          <button class="material-icons" id="submit_btn" type="submit" style="color:black">search group</button>
                         </div>
                       </form>
                       <button class="btn" id="advancedGroup" type="submit" name="action"
@@ -127,9 +127,9 @@
                   </div>
                   <nav id="nav_input">
                     <div class="nav-wrapper">
-                      <form method="get">
-                        <div class="input-field">
-                          <input id="search2" type="search" required>
+                      <form  action="/searchPerson" method="GET">
+                        <div class="input-field" >
+                          <input id="search2" style="padding-top: 0;" type="search" required>
                           <i class="material-icons" id="submit_btn" style="color:black">search person</i>
                         </div>
                       </form>
@@ -243,30 +243,30 @@
 
 
 
-            $('i#submit_btn').bind('click', function() {
-              var radioValue = $("input[name='group']:checked").val();
-              console.log(radioValue)
-              if (radioValue == "group"){
-                $.getJSON('/groups',{
-                  "keyword":$('input#search').val()
-                },
-                    function(data) {
-                      console.log(data)
-                  //do nothing
-                });
-              }
-              else{
-                $.getJSON('/members',{
-                  "keyword":$('input#search').val()
-                },
-                    function(data) {
-                      console.log(data)
-                  //do nothing
-                });
-              }
+            // $('i#submit_btn').bind('click', function() {
+            //   var radioValue = $("input[name='group']:checked").val();
+            //   console.log(radioValue)
+            //   if (radioValue == "group"){
+            //     $.getJSON('/groups',{
+            //       "keyword":$('input#search').val()
+            //     },
+            //         function(data) {
+            //           console.log(data)
+            //       //do nothing
+            //     });
+            //   }
+            //   else{
+            //     $.getJSON('/members',{
+            //       "keyword":$('input#search').val()
+            //     },
+            //         function(data) {
+            //           console.log(data)
+            //       //do nothing
+            //     });
+            //   }
 
-              return false;
-            });
+            //   return false;
+            // });
           });
 
 

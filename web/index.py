@@ -44,6 +44,7 @@ def groups():
     for row in qres:
         print(row)
     return jsonify({"data": keyword})
+
 @app.route('/members')
 def members():
     keyword = request.args.get("keyword")
@@ -78,6 +79,16 @@ def query():
                 result.append(line)
         else:
             keys = ['No']
-        # print(result)
+        print(result)
         return render_template("query.html", title="Query", key=keys, result=result)
     # return "hello world"
+
+@app.route('/searchGroup', methods=['POST'])
+def searchGroupName():
+    # print(request.form)
+    groupName = str(request.form['groupname'])
+    queryLine = "SELECT ?group ?name WHERE{ ?group a schema:Class .?group rdfs:label ?name . FILTER regex(?name, '"+groupName+"', 'i')}"
+    sparql.setQuery(prefix + queryLine)
+    temp = sparql.query().convert()
+    print(temp)
+    return temp
