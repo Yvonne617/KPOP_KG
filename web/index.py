@@ -65,6 +65,7 @@ def query():
         temp = sparql.query().convert()
         try:
             keys = temp["results"]["bindings"][0].keys()
+            print(keys)
         except:
             keys = []
         return temp
