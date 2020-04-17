@@ -10,7 +10,7 @@ app = Flask(__name__,template_folder='templates')
 app.config['DEBUG'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds = 1)
 
-sparql = SPARQLWrapper("http://localhost:3030/kpop/query")
+sparql = SPARQLWrapper("http://localhost:3030/test/query")
 sparql.setReturnFormat(JSON)
 
 prefix =  """ 
@@ -22,7 +22,7 @@ prefix =  """
         PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
         PREFIX owl: <http://www.w3.org/2002/07/owl#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX dbo: <http://dbpedia.org/>
+        PREFIX dbo: <http://dbpedia.org/ontology/>
         PREFIX fanm: <https://kpop.fandom.com/wiki/>  """
 @app.route('/')
 def index():
@@ -63,11 +63,21 @@ def query():
     if queryline:
         sparql.setQuery(prefix + queryline)
         temp = sparql.query().convert()
-        try:
+        print(temp)
+        result = []
+        if len(temp["results"]["bindings"]) > 0:
             keys = temp["results"]["bindings"][0].keys()
             print(keys)
-        except:
-            keys = []
+            for i in range(len(temp["results"]["bindings"])):
+                line = []
+                for key in keys:
+                    if temp["results"]["bindings"][i][key]["type"] == 'uri':
+                        #need to replace link
+                        line.append(temp["results"]["bindings"][i][key]["value"])
+                    else:
+                        line.append(temp["results"]["bindings"][i][key]["value"])
+                result.append(line)
+        else:
+            keys = ['No']
         return temp
-
     # return "hello world"
