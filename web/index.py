@@ -22,7 +22,7 @@ prefix =  """
         PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
         PREFIX owl: <http://www.w3.org/2002/07/owl#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX dbo: <http://dbpedia.org/ontology/>
+        PREFIX dbo: <http://dbpedia.org/>
         PREFIX fanm: <https://kpop.fandom.com/wiki/>  """
 @app.route('/')
 def index():
@@ -60,11 +60,13 @@ def query_first():
 @app.route('/query', methods=['POST'])
 def query():
     queryline = request.form['sparql']
-    g = rdflib.Graph()
-    result = g.parse('data/KPOP_graph.ttl', format='n3')
-    qres = g.query(queryline)
-    for row in qres:
-        print(row)
-    
+    if queryline:
+        sparql.setQuery(prefix + queryline)
+        temp = sparql.query().convert()
+        try:
+            keys = temp["results"]["bindings"][0].keys()
+        except:
+            keys = []
+        return temp
 
     # return "hello world"
