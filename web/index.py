@@ -5,7 +5,8 @@ import rltk
 import rdflib 
 from flask import jsonify 
 from SPARQLWrapper import SPARQLWrapper, JSON
-
+import pandas as pd
+import json
 app = Flask(__name__,template_folder='templates')
 app.config['DEBUG'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds = 1)
@@ -52,8 +53,13 @@ def members():
 
 @app.route('/trend', methods=['GET', 'POST'])
 def trend():
+    df = pd.read_csv('data/genre_bar.csv')
+    print(df)
+    chart_data = df.to_dict(orient='records')
+    chart_data = json.dumps(chart_data, indent=2)
+    print(chart_data)
     # return "hello world"
-    return render_template("trend.html")
+    return render_template("trend.html",chart_data=chart_data)
 
 @app.route('/query')
 def query_first():

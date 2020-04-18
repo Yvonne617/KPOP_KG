@@ -9,11 +9,13 @@
         <link type="text/css" rel="stylesheet" href="../static/style.css" media="screen,projection" />
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <!--Let browser know website is optimized for mobile-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
 
       <body>
-          <div class="row">
+        
+          <div class="row col 6">
             <nav>
               <div class="nav-wrapper">
                 <a href="/" class="brand-logo"><i class="large material-icons">assistant</i></a>
@@ -27,13 +29,30 @@
               </div>
             </nav>
           </div>
-          <div id="my_dataviz"></div>
+          <div class="row" style="margin-left: 2em;">
+              <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Explore KPOP trend</span>
+                    <p> South Korean pop culture has grown in prominence to become a major driver of global culture. Have a look of the KPOP trend from 2000-2020! </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>   
+              </div>
+            </div>
+                  
+          <div id="gender_pie" style="float: left"></div>
+          <div id="genre_bar"></div>
+          
       </body>
 </html>
 <script>
-
+    //pie chart
     // set the dimensions and margins of the graph
-    var width = 450
+    var width = 750
         height = 450
         margin = 40
     
@@ -41,7 +60,7 @@
     var radius = Math.min(width, height) / 2 - margin
     
     // append the svg object to the div called 'my_dataviz'
-    var svg = d3.select("#my_dataviz")
+    var svg = d3.select("#gender_pie")
       .append("svg")
         .attr("width", width)
         .attr("height", height)
@@ -49,7 +68,7 @@
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
     
     // Create dummy data
-    var data = {a: 9, b: 20, c:30, d:8, e:12}
+    var data = {"Co_ed": 4, "girl group": 243, "boy group":78}
     
     // set the color scale
     var color = d3.scaleOrdinal()
@@ -85,10 +104,65 @@
       .data(data_ready)
       .enter()
       .append('text')
-      .text(function(d){ return "grp " + d.data.key})
+      .text(function(d){ return d.data.key})
       .attr("transform", function(d) { return "translate(" + arcGenerator.centroid(d) + ")";  })
       .style("text-anchor", "middle")
       .style("font-size", 17)
-    
-    
+      
+    var bar_data = {{chart_data|tojson }};
+    console.log(bar_data)
+    bar_data = JSON.parse(bar_data);
+    var margin = {top: 30, right: 30, bottom: 70, left: 60},
+    width = 860 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+  var svg = d3.select("#genre_bar")
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+// Parse the Data
+  // sort data
+  bar_data.sort(function(b, a) {
+    return a.Value - b.Value;
+  });
+
+  // X axis
+  var x = d3.scaleBand()
+    .range([ 0, width ])
+    .domain(bar_data.map(function(d) { return d.genre; }))
+    .padding(0.2);
+  svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x))
+    .selectAll("text")
+      .attr("transform", "translate(-10,0)rotate(-45)")
+      .style("text-anchor", "end")
+      .style("font-size","1.4em");
+
+  // Add Y axis
+  var y = d3.scaleLinear()
+    .domain([0, 200])
+    .range([ height, 0]);
+  svg.append("g")
+    .call(d3.axisLeft(y))
+    .selectAll("text")
+      .style("font-size","1.4em");
+
+  // Bars
+  svg.selectAll("mybar")
+    .data(bar_data)
+    .enter()
+    .append("rect")
+      .attr("x", function(d) { return x(d.genre); })
+      .attr("y", function(d) { return y(d.Value); })
+      .attr("width", x.bandwidth())
+      .attr("height", function(d) { return height - y(d.Value); })
+      .attr("fill", "#69b3a2")
+
+
     </script>
