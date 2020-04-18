@@ -2515,8 +2515,8 @@ fadm:EXO a schema:Class ;
         "POP",
         "R&B" ;
     kpop:debut "April 8, 2012" ;
-    kpop:female_num 1 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0 ;
+    kpop:gender "Male" ;
     kpop:labels "",
         "Avex Entertainment",
         "SM Entertainment" ;

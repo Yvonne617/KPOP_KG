@@ -31,7 +31,6 @@ prefix =  """
 #get the dict to convert the rdf URI to origin URL
 data = pd.read_csv("/Users/phyllis/Documents/GitHub/KPOP_NG/data/rdf_url.csv")
 dict_url = data.set_index('rdfURL').T.to_dict('list')
-print(dict_url)
 
 @app.route('/')
 def index():
@@ -92,7 +91,7 @@ def query():
                 result.append(line)
         else:
             keys = ['No']
-        print(result)
+        # print(result)
         return render_template("query.html", title="Query", key=keys, result=result)
     # return "hello world"
 
@@ -103,7 +102,7 @@ def searchGroup():
     queryLine = "SELECT ?group ?name WHERE{ ?group a schema:Class .?group rdfs:label ?name . FILTER regex(?name, '"+groupName+"', 'i')}"
     sparql.setQuery(prefix + queryLine)
     temp = sparql.query().convert()
-    print(temp)
+    # print(temp)
     resultGroup = []
     if len(temp["results"]["bindings"]) > 0:
          keysGroup = temp["results"]["bindings"][0].keys()
@@ -118,7 +117,22 @@ def searchGroup():
             resultGroup.append(line)
     else:
         keysGroup = ['No']
-    print(resultGroup)
-    print(dict_url)
+    # print(resultGroup)
+    # print(dict_url)
     # return result
     return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
+
+@app.route('/description', methods=['GET', 'POST'])
+def description():
+    uri = request.args.get('uri')
+    # print(uri,type(uri))
+    name=uri.split('/')[-1]
+    print(name)
+
+
+    # key1 = ['predicate', 'object']
+    _sparql1 = " SELECT  ?predicate ?object WHERE { fadm:"+name+" ?predicate ?object.} LIMIT 200"
+    sparql.setQuery(prefix + _sparql1)
+    results = sparql.query().convert()
+    print(results)
+    return render_template('description.html', requri=uri)

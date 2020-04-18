@@ -186,7 +186,7 @@
                 <td>
                     {% if value[1] == True%}
                     <!-- {{value[0]}} -->
-                    <a href={{value[0]}} id={{value[0]}} style="color: black;">{{value[0]}}</a>
+                    <a href="{{ url_for('description', uri=value[0]) }}" id={{value[0]}} style="color: black;">{{value[0]}}</a>
                     {% else %}
                     {{value[0]}}
                     {% endif %}
