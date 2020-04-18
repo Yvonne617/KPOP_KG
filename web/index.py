@@ -26,6 +26,13 @@ prefix =  """
         PREFIX dbo: <http://dbpedia.org/ontology/>
         PREFIX fadm: <https://kpop.fandom.com/wiki/> 
         PREFIX schema: <http://schema.org/> """
+
+
+#get the dict to convert the rdf URI to origin URL
+data = pd.read_csv("/Users/phyllis/Documents/GitHub/KPOP_NG/data/rdf_url.csv")
+dict_url = data.set_index('rdfURL').T.to_dict('list')
+print(dict_url)
+
 @app.route('/')
 def index():
     return render_template('main.html')
@@ -90,7 +97,7 @@ def query():
     # return "hello world"
 
 @app.route('/searchGroup', methods=['POST'])
-def searchGroupName():
+def searchGroup():
     # print(request.form)
     groupName = str(request.form['groupname'])
     queryLine = "SELECT ?group ?name WHERE{ ?group a schema:Class .?group rdfs:label ?name . FILTER regex(?name, '"+groupName+"', 'i')}"
@@ -108,9 +115,10 @@ def searchGroupName():
                     line.append((temp["results"]["bindings"][i][key]["value"],True))
                 else:
                     line.append((temp["results"]["bindings"][i][key]["value"],False))
-            result.append(line)
+            resultGroup.append(line)
     else:
         keysGroup = ['No']
-    print(result)
+    print(resultGroup)
+    print(dict_url)
     # return result
-    return render_template("main.html", title="SearchGroup", key=keysGroup, result=resultGroup)
+    return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
