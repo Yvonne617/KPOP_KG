@@ -91,12 +91,12 @@ def searchGroupName():
     sparql.setQuery(prefix + queryLine)
     temp = sparql.query().convert()
     print(temp)
-    result = []
+    resultGroup = []
     if len(temp["results"]["bindings"]) > 0:
-         keys = temp["results"]["bindings"][0].keys()
+         keysGroup = temp["results"]["bindings"][0].keys()
          for i in range(len(temp["results"]["bindings"])):
             line = []
-            for key in keys:
+            for key in keysGroup:
                 if temp["results"]["bindings"][i][key]["type"] == 'uri':
                         #need to replace link
                     line.append((temp["results"]["bindings"][i][key]["value"],True))
@@ -104,7 +104,7 @@ def searchGroupName():
                     line.append((temp["results"]["bindings"][i][key]["value"],False))
             result.append(line)
     else:
-        keys = ['No']
+        keysGroup = ['No']
     print(result)
     # return result
-    return render_template("main.html", title="SearchGroup", key=keys, result=result)
+    return render_template("main.html", title="SearchGroup", key=keysGroup, result=resultGroup)
