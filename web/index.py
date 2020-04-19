@@ -136,9 +136,6 @@ def searchGroup():
             resultGroup.append(line)
     else:
         keysGroup = ['No']
-    # print(resultGroup)
-    # print(dict_url)
-    # return result
     return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
 
 @app.route('/searchMember', methods=['POST'])
@@ -187,8 +184,8 @@ def description():
     return render_template('description.html', requri=uri, allinfo=allLabels, infokey=labelKey, realURL=realURL)
 
 
-@app.route('/changeStatusGroup', methods=['GET', 'POST'])
-def changeStatusGroup():
-    keysGroup = []
-    resultGroup = []
-    return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
+# @app.route('/changeStatusGroup', methods=['GET', 'POST'])
+# def changeStatusGroup():
+#     keysGroup = []
+#     resultGroup = []
+#     return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
