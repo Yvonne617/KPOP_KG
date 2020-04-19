@@ -52,13 +52,13 @@
             </div>
           <hr class="style-two">
           <div>
-              <div id="gender_pie" style="float: left"></div>
+              <div id="gender_pie" style="float: left;" ></div>
               <div id="genre_bar"></div>
           </div>     
           
           <hr class="style-two">
          <div>
-            <div style="width:600px;float: left;margin: 5em 10em">
+            <div style="width:500px;float: left;margin: 5em 5em">
                 <span class="title" style="font-size: 2em">Top 10 Most Popular K-Pop Groups (2020)</span>
                 <div>
                     <ul class="collection">
@@ -77,7 +77,7 @@
     
               </div>
               <div id="my_dataviz"></div>
-              <div id="top50_num"></div>
+              <div id="top50_num" ></div>
          </div>
           
       </body>
@@ -85,7 +85,7 @@
 <script>
     //pie chart
     // set the dimensions and margins of the graph
-    var width = 650
+    var width = 450
         height = 350
         margin = 40
     
@@ -145,8 +145,8 @@
     var bar_data = {{chart_data|tojson }};
   
     bar_data = JSON.parse(bar_data);
-    var margin = {top: 30, right: 30, bottom: 70, left: 60},
-    width = 860 - margin.left - margin.right,
+    var margin = {top: 30, right: 30, bottom: 90, left: 150},
+    width = 660 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -201,7 +201,7 @@
 
     //top genre
     var data = {'POP': 29, 'HIPHOP': 3, 'BALLAD': 3, 'DANCE': 2, 'KPOP': 2, 'R&B': 2, 'ELECTROPOP': 1, 'SYNTHPOP': 1, 'POPROCK': 1, 'EDM': 1, 'FUNK': 1, 'JAZZ': 1, 'POPERA': 1}
-    var width = 650
+    var width = 550
     height = 550
     margin = 50
 
