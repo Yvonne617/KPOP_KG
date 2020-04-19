@@ -79,7 +79,8 @@
                           <img  style="width:62px;height:62px" src="{{data.url}}" alt="" class="circle">
                           <div style="margin:15px 25px;width:100px">
                               <span class="title">{{data.index}}</span>
-                              <span>{{data.groupname}}</span>
+                              <a href="{{ url_for('description', uri=data.page) }}" id={{data.groupname}}
+                              style="color: black;">{{data.groupname}}</a>
                           </div>
                           <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
                         </li>
