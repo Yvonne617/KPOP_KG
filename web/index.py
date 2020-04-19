@@ -153,17 +153,26 @@ def searchMember():
                 pred = results["results"]["bindings"][i]['p']['value']
                 obj = results["results"]["bindings"][i]['o']['value']
                 objType = results["results"]["bindings"][i]['o']['type']
-                if member in dict_url:
-                    realURL = dict_url[member][0]
+                #deal with pred
+                if '#' in pred:
+                    label = pred.split('#')[-1]
+                else:
+                    label = pred.split('/')[-1]
+                #deal with member realURL
                 if member not in allMember:
                     allMember[member] = collections.defaultdict(list)
+                if member in dict_url:
+                    realURL = dict_url[member][0]
+                    allMember[member]['realURL'] = realURL
+                #deal with obj
                 if obj != 'None':
                     if objType != 'uri':
-                        allMember[member][pred].append((obj,False))
+                        allMember[member][label].append((obj,False))
                     else:
-                        allMember[member][pred].append((obj,True))                        
-
-    return allMember
+                        allMember[member][label].append((obj,True)) 
+    print(allMember) 
+                                      
+    return render_template("main.html", allMember=allMember)
 
 
 @app.route('/description', methods=['GET', 'POST'])
