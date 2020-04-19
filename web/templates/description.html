@@ -63,7 +63,7 @@
 
             <div style="margin-left: 10%;margin-top: 30px;">
                 {% for key,item in allinfo.items() %}
-                    {% if key != 'image_url' and key!='type' and key!='abstract' and key!="URL"%}
+                    {% if key != 'image_url' and key!='type' and key!='abstract' and key!="URL" and key!='female_num' and key!='male_num'%}
                 <div class="section" style="color: #424242;">
                     <strong style="color:#212121;">{{key.upper()}}: </strong>
                     {% for it in item %}

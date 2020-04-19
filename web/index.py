@@ -148,7 +148,10 @@ def description():
             value = results["results"]["bindings"][i]['object']['value']
             if results["results"]["bindings"][i]['object']['type'] == 'uri':
                 if label == 'bandMember':
-                    allLabels[label].append((dict_url[value][0],True))
+                    if value in dict_url:
+                        allLabels[label].append((dict_url[value][0],True))
+                    else:
+                        allLabels[label].append((value,True))
                 else:
                     allLabels[label].append((value,True))
             else:
