@@ -5,14 +5,21 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
         <!--Import materialize.css-->
-        <link type="text/css" rel="stylesheet" href="../static/materialize.min.css" media="screen,projection" />
-        <link type="text/css" rel="stylesheet" href="../static/style.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="../static/materialize.min.css?q=1280549780" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="../static/style.css?q=1280549780" media="screen,projection" />
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <!--Let browser know website is optimized for mobile-->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
+      <style>
+      hr.style-two {
+        height: 12px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px rgba(218, 115, 195, 0.5);
+    }
 
+      </style>
       <body>
         
           <div class="row col 6">
@@ -43,17 +50,43 @@
                 </div>   
               </div>
             </div>
-                  
-          <div id="gender_pie" style="float: left"></div>
-          <div id="genre_bar"></div>
+          <hr class="style-two">
+          <div>
+              <div id="gender_pie" style="float: left"></div>
+              <div id="genre_bar"></div>
+          </div>     
+          
+          <hr class="style-two">
+         <div>
+            <div style="width:600px;float: left;margin: 5em 10em">
+                <span class="title" style="font-size: 2em">Top 10 Most Popular K-Pop Groups (2020)</span>
+                <div>
+                    <ul class="collection">
+                        {% for data in top_data.json %}
+                        <li class="collection-item avatar" style="float: left;">
+                          <img  style="width:62px;height:62px" src="{{data.url}}" alt="" class="circle">
+                          <div style="margin:15px 25px;width:100px">
+                              <span class="title">{{data.index}}</span>
+                              <span>{{data.groupname}}</span>
+                          </div>
+                          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                  </div>
+    
+              </div>
+              <div id="my_dataviz"></div>
+              <div id="top50_num"></div>
+         </div>
           
       </body>
 </html>
 <script>
     //pie chart
     // set the dimensions and margins of the graph
-    var width = 750
-        height = 450
+    var width = 650
+        height = 350
         margin = 40
     
     // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
@@ -110,7 +143,7 @@
       .style("font-size", 17)
       
     var bar_data = {{chart_data|tojson }};
-    console.log(bar_data)
+  
     bar_data = JSON.parse(bar_data);
     var margin = {top: 30, right: 30, bottom: 70, left: 60},
     width = 860 - margin.left - margin.right,
@@ -165,4 +198,174 @@
       .attr("fill", "#69b3a2")
 
 
-    </script>
+
+    //top genre
+    var data = {'POP': 29, 'HIPHOP': 3, 'BALLAD': 3, 'DANCE': 2, 'KPOP': 2, 'R&B': 2, 'ELECTROPOP': 1, 'SYNTHPOP': 1, 'POPROCK': 1, 'EDM': 1, 'FUNK': 1, 'JAZZ': 1, 'POPERA': 1}
+    var width = 650
+    height = 550
+    margin = 50
+
+// The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+var radius = Math.min(width, height) / 2 - margin
+
+// append the svg object to the div called 'my_dataviz'
+var svg = d3.select("#my_dataviz")
+  .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 3 + "," + height / 2 + ")");
+
+// Create dummy data
+var data = {'POP': 31, 'HIPHOP': 3, 'BALLAD': 3, 'DANCE': 2, 'R&B': 2, 'ELECTROPOP': 1, 'SYNTHPOP': 1, 'POPROCK': 1, 'EDM': 1, 'FUNK': 1, 'JAZZ': 1, 'POPERA': 1}
+
+// set the color scale
+var color = d3.scaleOrdinal()
+  .domain(['POP','HIPHOP','BALLAD','DANCE','R&B','ELECTROPOP','SYNTHPOP','POPROCK','EDM','FUNK','JAZZ','POPERA']
+)
+  .range(d3.schemeDark2);
+
+// Compute the position of each group on the pie:
+var pie = d3.pie()
+  .sort(null) // Do not sort group by size
+  .value(function(d) {return d.value; })
+var data_ready = pie(d3.entries(data))
+
+// The arc generator
+var arc = d3.arc()
+  .innerRadius(radius * 0.5)         // This is the size of the donut hole
+  .outerRadius(radius * 0.8)
+
+// Another arc that won't be drawn. Just for labels positioning
+var outerArc = d3.arc()
+  .innerRadius(radius * 0.9)
+  .outerRadius(radius * 0.95)
+
+// Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+svg
+  .selectAll('allSlices')
+  .data(data_ready)
+  .enter()
+  .append('path')
+  .attr('d', arc)
+  .attr('fill', function(d){ return(color(d.data.key)) })
+  .attr("stroke", "white")
+  .style("stroke-width", "2px")
+  .style("opacity", 0.7)
+svg.append('text')
+   .text("top 50 Most Popular K-Pop Groups Genres")
+   .attr('transform', function(d, i) {return 'translate(' + -100 + ',' + height/2.5 + ')';});
+// Add the polylines between chart and labels:
+var legendRectSize = 18;
+var legendSpacing = 4;
+var legend = svg.selectAll('.legend')
+  .data(color.domain())
+  .enter()
+  .append('g')
+  .attr('class', 'legend')
+  .attr('transform', function(d, i) {
+    var height = legendRectSize + legendSpacing;
+    var offset =  height * color.domain().length / 2;
+    var horz = -2 * legendRectSize;
+    var vert = i * height - offset;
+    return 'translate(' + horz + ',' + vert + ')';
+  });
+        
+  legend.append('rect')
+  .attr('width', legendRectSize)
+  .attr('height', legendRectSize)
+  .style('fill', color)
+  .style('stroke', color)
+  .attr('x', legendRectSize + legendSpacing+220);
+        
+  legend.append('text')
+  .attr('x', legendRectSize + legendSpacing+240)
+  .attr('y', legendRectSize - legendSpacing)
+  .text(function(d) { return d; });
+
+
+
+  //top num
+  var data = {2:0,5: 15, 4: 14, 7: 6, 6: 7, 8: 1, 3: 2, 2: 2, 9: 1,10:1,12:1,11:0}
+    var width = 650
+    height = 550
+    margin = 50
+
+// The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+var radius = Math.min(width, height) / 2 - margin
+
+// append the svg object to the div called 'my_dataviz'
+var svg = d3.select("#top50_num")
+  .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+  .append("g")
+    .attr("transform", "translate(" + width / 3 + "," + height / 2 + ")");
+
+// Create dummy data
+
+// set the color scale
+var color = d3.scaleOrdinal()
+  .domain(['2','3','4','5','6','7','8','9','10','11','12']
+)
+  .range(d3.schemeDark2);
+
+// Compute the position of each group on the pie:
+var pie = d3.pie()
+  .sort(null) // Do not sort group by size
+  .value(function(d) {return d.value; })
+var data_ready = pie(d3.entries(data))
+
+// The arc generator
+var arc = d3.arc()
+  .innerRadius(radius * 0.5)         // This is the size of the donut hole
+  .outerRadius(radius * 0.8)
+
+// Another arc that won't be drawn. Just for labels positioning
+var outerArc = d3.arc()
+  .innerRadius(radius * 0.9)
+  .outerRadius(radius * 0.95)
+
+// Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+svg
+  .selectAll('allSlices')
+  .data(data_ready)
+  .enter()
+  .append('path')
+  .attr('d', arc)
+  .attr('fill', function(d){ return(color(d.data.key)) })
+  .attr("stroke", "white")
+  .style("stroke-width", "2px")
+  .style("opacity", 0.7)
+svg.append('text')
+   .text("top 50 Most Popular K-Pop Groups Number of Members")
+   .attr('transform', function(d, i) {return 'translate(' + -100 + ',' + height/2.5 + ')';});
+// Add the polylines between chart and labels:
+var legendRectSize = 18;
+var legendSpacing = 4;
+var legend = svg.selectAll('.legend')
+  .data(color.domain())
+  .enter()
+  .append('g')
+  .attr('class', 'legend')
+  .attr('transform', function(d, i) {
+    var height = legendRectSize + legendSpacing;
+    var offset =  height * color.domain().length / 2;
+    var horz = -2 * legendRectSize;
+    var vert = i * height - offset;
+    return 'translate(' + horz + ',' + vert + ')';
+  });
+        
+  legend.append('rect')
+  .attr('width', legendRectSize)
+  .attr('height', legendRectSize)
+  .style('fill', color)
+  .style('stroke', color)
+  .attr('x', legendRectSize + legendSpacing+220);
+        
+  legend.append('text')
+  .attr('x', legendRectSize + legendSpacing+240)
+  .attr('y', legendRectSize - legendSpacing)
+  .text(function(d) { return d; });
+
+  </script>

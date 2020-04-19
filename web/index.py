@@ -1,4 +1,4 @@
-from flask import Flask,render_template,url_for,redirect
+from flask import Flask,render_template,url_for,redirect,jsonify
 from flask import request
 from datetime import timedelta
 import rltk
@@ -7,8 +7,8 @@ from flask import jsonify
 from SPARQLWrapper import SPARQLWrapper, JSON
 import pandas as pd
 import json
+from collections import Counter
 import collections
-
 app = Flask(__name__,template_folder='templates')
 app.config['DEBUG'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds = 1)
@@ -31,7 +31,7 @@ prefix =  """
 
 
 #get the dict to convert the rdf URI to origin URL
-data = pd.read_csv("../data/rdf_url.csv")
+data = pd.read_csv("data/rdf_url.csv")
 dict_url = data.set_index('rdfURL').T.to_dict('list')
 
 @app.route('/')
@@ -61,13 +61,30 @@ def members():
 
 @app.route('/trend', methods=['GET', 'POST'])
 def trend():
-    df = pd.read_csv('data/genre_bar.csv')
-    print(df)
-    chart_data = df.to_dict(orient='records')
+    df1 = pd.read_csv('data/genre_bar.csv')
+    chart_data = df1.to_dict(orient='records')
     chart_data = json.dumps(chart_data, indent=2)
-    print(chart_data)
+    
+    df2 = pd.read_csv('data/top.csv')
+    top_data = df2.to_dict(orient='records')
+
+    df3 = pd.read_csv('data/top50_genre.csv')
+    top50_genre = df3.to_dict(orient='records')
+    d = []
+    for group in top50_genre:
+        d.append(group["genre"])
+    top50_genre = Counter(d)
+
+    #top_data = json.dumps(top_data, indent=2)
     # return "hello world"
-    return render_template("trend.html",chart_data=chart_data)
+    df4 = pd.read_csv('data/top50_num.csv')
+    top50_num = df4.to_dict(orient='records')
+    d2 = []
+    for group in top50_num:
+        d2.append(group["num"])
+    top50_num = Counter(d2)
+    print(top50_num)
+    return render_template("trend.html",top_data = jsonify(top_data),chart_data=chart_data,top50_genre=top50_genre,top50_num=top50_num)
 
 @app.route('/query')
 def query_first():
