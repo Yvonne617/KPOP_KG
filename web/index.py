@@ -27,6 +27,12 @@ prefix =  """
         PREFIX dbo: <http://dbpedia.org/ontology/>
         PREFIX fadm: <https://kpop.fandom.com/wiki/> 
         PREFIX schema: <http://schema.org/> """
+
+
+#get the dict to convert the rdf URI to origin URL
+data = pd.read_csv("/Users/phyllis/Documents/GitHub/KPOP_NG/data/rdf_url.csv")
+dict_url = data.set_index('rdfURL').T.to_dict('list')
+
 @app.route('/')
 def index():
     return render_template('main.html')
@@ -103,32 +109,72 @@ def query():
                 result.append(line)
         else:
             keys = ['No']
-        print(result)
+        # print(result)
         return render_template("query.html", title="Query", key=keys, result=result)
     # return "hello world"
 
 @app.route('/searchGroup', methods=['POST'])
-def searchGroupName():
+def searchGroup():
     # print(request.form)
     groupName = str(request.form['groupname'])
     queryLine = "SELECT ?group ?name WHERE{ ?group a schema:Class .?group rdfs:label ?name . FILTER regex(?name, '"+groupName+"', 'i')}"
     sparql.setQuery(prefix + queryLine)
     temp = sparql.query().convert()
-    print(temp)
-    result = []
+    # print(temp)
+    resultGroup = []
     if len(temp["results"]["bindings"]) > 0:
-         keys = temp["results"]["bindings"][0].keys()
+         keysGroup = temp["results"]["bindings"][0].keys()
          for i in range(len(temp["results"]["bindings"])):
             line = []
-            for key in keys:
+            for key in keysGroup:
                 if temp["results"]["bindings"][i][key]["type"] == 'uri':
                         #need to replace link
                     line.append((temp["results"]["bindings"][i][key]["value"],True))
                 else:
                     line.append((temp["results"]["bindings"][i][key]["value"],False))
-            result.append(line)
+            resultGroup.append(line)
     else:
-        keys = ['No']
-    print(result)
+        keysGroup = ['No']
+    # print(resultGroup)
+    # print(dict_url)
     # return result
-    return render_template("main.html", title="SearchGroup", key=keys, result=result)
+    return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
+
+@app.route('/description', methods=['GET', 'POST'])
+def description():
+    uri = request.args.get('uri')
+    # print(uri,type(uri))
+    name=uri.split('/')[-1]
+    # print(name)
+    # key1 = ['predicate', 'object']
+    _sparql1 = " SELECT  ?predicate ?object WHERE { fadm:"+name+" ?predicate ?object.} LIMIT 200"
+    sparql.setQuery(prefix + _sparql1)
+    results = sparql.query().convert()
+    # print(results)
+    results = sparql.query().convert()
+    allLabels = collections.defaultdict(list)
+    if len(results["results"]["bindings"]) > 0:
+        for i in range(len(results["results"]["bindings"])):
+            if results["results"]["bindings"][i]['predicate']['type'] == 'uri':
+                tempLabel = results["results"]["bindings"][i]['predicate']['value']
+                label = tempLabel.split('/')[-1]
+                if '#' in results["results"]["bindings"][i]['predicate']['value']:
+                    label = tempLabel.split('#')[-1]
+                # print(label)
+            value = results["results"]["bindings"][i]['object']['value']
+            if results["results"]["bindings"][i]['object']['type'] == 'uri':
+                if label == 'bandMember':
+                    if value in dict_url:
+                        allLabels[label].append((dict_url[value][0],True))
+                    else:
+                        allLabels[label].append((value,True))
+                else:
+                    allLabels[label].append((value,True))
+            else:
+                allLabels[label].append((value,False))
+    
+    labelKey = list(allLabels.keys())
+    print(labelKey)
+    realURL = dict_url[uri][0]
+    print(realURL)
+    return render_template('description.html', requri=uri, allinfo=allLabels, infokey=labelKey, realURL=realURL)
