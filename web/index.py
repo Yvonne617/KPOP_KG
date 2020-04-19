@@ -31,7 +31,7 @@ prefix =  """
 
 
 #get the dict to convert the rdf URI to origin URL
-data = pd.read_csv("/Users/phyllis/Documents/GitHub/KPOP_NG/data/rdf_url.csv")
+data = pd.read_csv("../data/rdf_url.csv")
 dict_url = data.set_index('rdfURL').T.to_dict('list')
 
 @app.route('/')

@@ -78,11 +78,11 @@
                 <nav id="nav_input">
                   <div class="nav-wrapper">
                     <form name="searchGroup" action="/searchGroup" method="POST">
-                      <div class="input-field">
+                      <!-- <div class="input-field"> -->
                         <input id="search1" type="name" style="padding-top: 0;" name="groupname" required>
                         <button class="material-icons" id="submit_btn" type="submit" style="color:black">search
                           group</button>
-                      </div>
+                      <!-- </div> -->
                     </form>
                     <button class="btn" id="advancedGroup" type="submit" name="action"
                       style="background-color:rgb(201, 99, 116) ;">Advanced Option</button>
@@ -198,29 +198,6 @@
     </table>
 
 
-      <!-- <table class="table" border=1>
-        <thead>
-          <tr>
-            <th scope="col" class="text-center danger"> labels </th>
-            <th scope="col" class="text-center danger"> values </th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for i in range(0,labels| length) %}
-          <tr>
-            {% if labels[i][1]==True %}
-            {% if labels[i][2]==True %}
-            <td><a href={{labels[i][0]}} id={{labels[i][0]}}>{{labels[i][0]}}</a> </td>
-            {% else %}
-            <td><a href="{{ url_for('description', uri=labels[i][0]) }}">{{labels[i][0]}}</a></td>
-            {% endif %}
-            {% else %}
-            <td>{{labels[i][0]}}</td>
-            {% endif %}
-            <td>{{values[i]}}</td>
-          </tr>
-          {% endfor %}
-        </tbody> -->
       </table>
     </div>
     <!--JavaScript at end of body for optimized loading-->
