@@ -7,6 +7,8 @@ from flask import jsonify
 from SPARQLWrapper import SPARQLWrapper, JSON
 import pandas as pd
 import json
+import collections
+
 app = Flask(__name__,template_folder='templates')
 app.config['DEBUG'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds = 1)
@@ -127,12 +129,33 @@ def description():
     uri = request.args.get('uri')
     # print(uri,type(uri))
     name=uri.split('/')[-1]
-    print(name)
-
-
+    # print(name)
     # key1 = ['predicate', 'object']
     _sparql1 = " SELECT  ?predicate ?object WHERE { fadm:"+name+" ?predicate ?object.} LIMIT 200"
     sparql.setQuery(prefix + _sparql1)
     results = sparql.query().convert()
-    print(results)
-    return render_template('description.html', requri=uri)
+    # print(results)
+    results = sparql.query().convert()
+    allLabels = collections.defaultdict(list)
+    if len(results["results"]["bindings"]) > 0:
+        for i in range(len(results["results"]["bindings"])):
+            if results["results"]["bindings"][i]['predicate']['type'] == 'uri':
+                tempLabel = results["results"]["bindings"][i]['predicate']['value']
+                label = tempLabel.split('/')[-1]
+                if '#' in results["results"]["bindings"][i]['predicate']['value']:
+                    label = tempLabel.split('#')[-1]
+                # print(label)
+            value = results["results"]["bindings"][i]['object']['value']
+            if results["results"]["bindings"][i]['object']['type'] == 'uri':
+                if label == 'bandMember':
+                    allLabels[label].append((dict_url[value][0],True))
+                else:
+                    allLabels[label].append((value,True))
+            else:
+                allLabels[label].append((value,False))
+    
+    labelKey = list(allLabels.keys())
+    print(labelKey)
+    realURL = dict_url[uri][0]
+    print(realURL)
+    return render_template('description.html', requri=uri, allinfo=allLabels, infokey=labelKey, realURL=realURL)
