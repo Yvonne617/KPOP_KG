@@ -188,6 +188,7 @@
 
 
     <div id='tableMember' style="margin: 10px;">
+      {% if allMember %}
       <table class="table" border="1">
         <thead>
           <tr>
@@ -196,8 +197,6 @@
           </tr>
         </thead>
       </table>
-
-      {% if allMember %}
       {% for key,value in allMember.items()%}
       <div class="col s12">
         
