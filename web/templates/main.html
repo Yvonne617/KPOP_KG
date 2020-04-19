@@ -31,8 +31,8 @@
     <div class="col s12" id="banner">
       <div class="tabs_section">
         <ul class="tabs tabs_inner_section" style="text-align: center">
-          <li class="tab col s3" style="width: 50%;"><a class="active" href="#tabGroup">Group</a></li>
-          <li class="tab col s3" style="width: 50%;"><a href="#tabMember">Member</a></li>
+          <li class="tab col s3" style="width: 50%;"><a class="active" href="#tabGroup" action="/changeStatusMember">Group</a></li>
+          <li class="tab col s3" style="width: 50%;"><a href="#tabMember" action="/changeStatusGroup">Member</a></li>
         </ul>
       </div>
 
@@ -77,133 +77,118 @@
                 </div>
                 <nav id="nav_input">
                   <div class="nav-wrapper">
-                    <!-- <div style="padding:0%;height: 60px;" class="input-field col s12 "></div> -->
                     <form name="searchGroup" action="/searchGroup" method="POST">
                       <!-- <input id="search1" class="validate" type="name" style="padding-top: 0; display: inline-block; border: 0ch; width:50%; height: 50px;" name="groupname" required> -->
                       <input id="textarea1" class="materialize-textarea" name="groupname"
                         style="display: inline-block; width: 70%; height: 40%; margin-left: 15px;margin-top: 10px;"></input>
-                      <button class="material-icons" id="submit_btn" type="submit" style="color:black;margin-top: 8px;float:right; margin-right: 15px;">search
+                      <button class="material-icons" id="submit_btn" type="submit"
+                        style="color:black;margin-top: 8px;float:right; margin-right: 15px;">search
                         group</button>
-                  <!-- </div> -->
-                  </form>
-                  <button class="btn" id="advancedGroup" type="submit" name="action"
-                    style="background-color:rgb(201, 99, 116) ;">Advanced Option</button>
-              </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-
-        <div id="tabMember">
-          <div id="advancedTest2" class="col s12" style="visibility: hidden;height: 0px;">
-            <div style="height: 10%;">
-              <a class="btn" id="backMember"
-                style="margin-left:10px; margin-bottom: 15px; margin-top: 10px;  background-color:#e57373;">Back</a>
-            </div>
-            <div style="display:inline" style="width: 50%;float:left;">
-              <div class="advancedSelect" style="width:40%; margin:10px">
-                <label>Group Select</label>
-                <select class="browser-default">
-                  <option value="" disabled selected>Sexiaulity</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
+                    </form>
+                    <button class="btn" id="advancedGroup" type="submit" name="action"
+                      style="background-color:rgb(201, 99, 116) ;">Advanced Option</button>
+                  </div>
+                </nav>
               </div>
             </div>
 
-            <div style="display:inline" style="width: 50%;float:left;">
-              <div class="advancedSelect" style="width:40%; margin:10px">
-                <label>Group Select</label>
-                <select class="browser-default">
-                  <option value="" disabled selected>Position</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
-                  <option value="3">Option 3</option>
-                </select>
-              </div>
-            </div>
           </div>
 
-          <div id="test2" class="col s12" style="visibility: visible;">
-            <div id="innerDiv" style="position: absolute; width:100%;height:300px;">
-              <div style="text-align: center">
-                <h2 class="title" style="font-family: Bangers">KPOP Wiki</h2>
+
+          <div id="tabMember">
+            <div id="advancedTest2" class="col s12" style="visibility: hidden;height: 0px;">
+              <div style="height: 10%;">
+                <a class="btn" id="backMember"
+                  style="margin-left:10px; margin-bottom: 15px; margin-top: 10px;  background-color:#e57373;">Back</a>
               </div>
-              <nav id="nav_input">
-                <div class="nav-wrapper">
-                  <form action="/searchPerson" method="GET">
-                    <div class="input-field">
-                      <input id="search2" style="padding-top: 0;" type="search" required>
-                      <i class="material-icons" id="submit_btn" style="color:black">search person</i>
-                    </div>
-                  </form>
-                  <button class="btn waves-effect waves-light" id="advancedMember" type="submit" name="action"
-                    style="background-color:rgb(201, 99, 116) ;">Advanced Option</button>
+              <div style="display:inline" style="width: 50%;float:left;">
+                <div class="advancedSelect" style="width:40%; margin:10px">
+                  <label>Group Select</label>
+                  <select class="browser-default">
+                    <option value="" disabled selected>Sexiaulity</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
                 </div>
-              </nav>
+              </div>
+
+              <div style="display:inline" style="width: 50%;float:left;">
+                <div class="advancedSelect" style="width:40%; margin:10px">
+                  <label>Group Select</label>
+                  <select class="browser-default">
+                    <option value="" disabled selected>Position</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                  </select>
+                </div>
+              </div>
             </div>
+
+            <div id="test2" class="col s12" style="visibility: visible;">
+              <div id="innerDiv" style="position: absolute; width:100%;height:300px;">
+                <div style="text-align: center">
+                  <h2 class="title" style="font-family: Bangers">KPOP Wiki</h2>
+                </div>
+                <nav id="nav_input">
+                  <div class="nav-wrapper">
+                    <form name="searchMember" action="/searchMember" method="POST">
+                      <input id="textarea2" class="materialize-textarea" name="membername"
+                        style="display: inline-block; width: 70%; height: 40%; margin-left: 15px;margin-top: 10px;"></input>
+                      <button class="material-icons" id="submit_btn" type="submit"
+                        style="color:black;margin-top: 8px;float:right; margin-right: 15px;">search
+                        person</button>
+
+                    </form>
+                    <button class="btn" id="advancedMember" type="submit" name="action"
+                      style="background-color:rgb(201, 99, 116) ;">Advanced Option</button>
+                  </div>
+                </nav>
+              </div>
+            </div>
+
           </div>
         </div>
-
-
       </div>
 
-      <!-- <div style="position: absolute; width:100%;height:300px;">
-                    <div style="text-align: center">
-                        <h2 class="title" style="font-family: Bangers">KPOP Wiki</h2>
-                    </div>
-                    <nav id="nav_input">
-                      <div class="nav-wrapper">
-                        <form method="get">
-                          <div class="input-field">
-                            <input id="search" type="search" required>
-                            <i class="material-icons" id="submit_btn" style="color:black">search</i>
-                          </div>
-                        </form>
-                      </div>
-                    </nav>
-                  </div> -->
     </div>
 
-  </div>
 
-
-
-
-  <div class="col s12" style="margin: 10px;" id="tableGroup">
-    <table class="table" border="1">
-      <thead>
-        <tr>
-          {% for k in keyGroup%}
-          <th scope="col"> {{ k }} </th>
+    {% if keyGroup != [] %}
+    <div class="col s12" style="margin: 10px;" >
+      <table class="table" border="1">
+        <thead>
+          <tr>
+            {% for k in keyGroup%}
+            <th scope="col"> {{ k }} </th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for re in resultGroup%}
+          <tr>
+            {% for value in re%}
+            <td>
+              {% if value[1] == True%}
+              <!-- {{value[0]}} -->
+              <a href="{{ url_for('description', uri=value[0]) }}" id={{value[0]}}
+                style="color: black;">{{value[0]}}</a>
+              {% else %}
+              {{value[0]}}
+              {% endif %}
+            </td>
+            {% endfor %}
+          </tr>
           {% endfor %}
-        </tr>
-      </thead>
-      <tbody>
-        {% for re in resultGroup%}
-        <tr>
-          {% for value in re%}
-          <td>
-            {% if value[1] == True%}
-            <!-- {{value[0]}} -->
-            <a href="{{ url_for('description', uri=value[0]) }}" id={{value[0]}} style="color: black;">{{value[0]}}</a>
-            {% else %}
-            {{value[0]}}
-            {% endif %}
-          </td>
-          {% endfor %}
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+        </tbody>
+      </table>
 
-
-    </table>
-  </div>
-  <!--JavaScript at end of body for optimized loading-->
-  <!-- <script type="text/javascript" src="../js/materialize.min.js"></script> -->
+      </table>
+    </div>
+    {% endif %}
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- <script type="text/javascript" src="../js/materialize.min.js"></script> -->
 </body>
 
 </html>

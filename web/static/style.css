@@ -9,6 +9,12 @@ nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons, button.ma
 
 }
 
+#submit_btn{
+    border: 0px;
+}
+#textarea1{
+    border: 0px;
+}
   /* visited link */
   a:visited {
     color:white;
