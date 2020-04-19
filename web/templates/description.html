@@ -52,7 +52,7 @@
                 <small>
                     {% if 'abstract' in infokey %}
                         {% if allinfo.abstract[0][0] != 'None' %}
-                            {{allinfo.abstract[0][0][:200]}}...
+                            {{allinfo.abstract[0][0][:600]}}...
                         {% endif %}
                     {% endif %}
                 </small>
@@ -67,8 +67,8 @@
                 <div class="section" style="color: #424242;">
                     <strong style="color:#212121;">{{key.upper()}}: </strong>
                     {% for it in item %}
-                        {% if it[1] == 'True' %}
-                            <a href="{{it[0]}}">{{it[0]}}
+                        {% if key == 'bandMember' %}
+                            <a style="color:rgb(19, 102, 129)"href="{{it[0]}}">{{it[0]}} </a> 
                         {% else %}
                             {{it[0]}}
                         {% endif %}
@@ -76,8 +76,7 @@
                             , 
                         {% else %}
                             .
-                        {% endif %} 
-                    </a>     
+                        {% endif %}        
                     {% endfor %}
                 </div>
                     {% endif %}
