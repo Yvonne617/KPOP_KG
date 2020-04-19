@@ -8,6 +8,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 import pandas as pd
 import json
 from collections import Counter
+import collections
 app = Flask(__name__,template_folder='templates')
 app.config['DEBUG'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds = 1)
@@ -30,7 +31,7 @@ prefix =  """
 
 
 #get the dict to convert the rdf URI to origin URL
-data = pd.read_csv("/Users/phyllis/Documents/GitHub/KPOP_NG/data/rdf_url.csv")
+data = pd.read_csv("data/rdf_url.csv")
 dict_url = data.set_index('rdfURL').T.to_dict('list')
 
 @app.route('/')
