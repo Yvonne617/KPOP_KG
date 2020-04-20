@@ -859,7 +859,7 @@ fadm:AZM a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "March 2, 2018" ;
     kpop:female_num 4 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "Innok Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -2838,7 +2838,7 @@ fadm:GIRL_CRUSH a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "April 8, 2019" ;
     kpop:female_num 2 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "",
         "DAM Entertainment",
         "Pacemaker Entertainment" ;
@@ -2962,7 +2962,7 @@ fadm:GeeGu a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "October 26, 2017" ;
     kpop:female_num 6 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "",
         "GF Entertainment",
         "Star Ent." ;
@@ -3258,7 +3258,7 @@ fadm:HOTTIES a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "October 5, 2015" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "Solerino" ;
     kpop:male_num 1 ;
     kpop:member_num 3 ;
@@ -3320,30 +3320,16 @@ fadm:HeyGirls a schema:Class ;
     dbo:bandMember fadm:HeyGirls_Areum,
         fadm:HeyGirls_Baekhap,
         fadm:HeyGirls_Daeun_HeyGirls,
-        fadm:HeyGirls_Eunbyeol,
-        fadm:HeyGirls_Heesu,
-        fadm:HeyGirls_Hyuna,
-        fadm:HeyGirls_Jandi,
-        fadm:HeyGirls_Jihyun,
-        fadm:HeyGirls_Jiyoung,
-        fadm:HeyGirls_Jung_A,
-        fadm:HeyGirls_Juyoung,
-        fadm:HeyGirls_Leah,
-        fadm:HeyGirls_Mizi,
-        fadm:HeyGirls_Rani,
-        fadm:HeyGirls_Siyeon_HeyGirls,
-        fadm:HeyGirls_Sulhee,
-        fadm:HeyGirls_Sungha,
         fadm:HeyGirls_Yerim ;
     dbo:genre "DANCE",
         "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Moai Entertainment",
         "Sunwoo Entertainment" ;
     kpop:male_num 1 ;
-    kpop:member_num 18 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 2043 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/HeyGirls" ;
@@ -3357,15 +3343,14 @@ fadm:Hidden a schema:Class ;
     dbo:bandMember fadm:Hidden_Beom_G,
         fadm:Hidden_IDo,
         fadm:Hidden_Kito,
-        fadm:Hidden_Seongbeen,
         fadm:Hidden_WanBe ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "Yanus Music" ;
-    kpop:male_num 1 ;
-    kpop:member_num 5 ;
+    kpop:male_num 4 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 75583 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/Hidden" ;
@@ -3376,18 +3361,16 @@ fadm:Hidden a schema:Class ;
 fadm:HighSchool a schema:Class ;
     rdfs:label "HighSchool" ;
     dbo:abstract "None" ;
-    dbo:bandMember fadm:HighSchool_Dami,
-        fadm:HighSchool_HaeBin_HighSchool,
+    dbo:bandMember fadm:HighSchool_HaeBin_HighSchool,
         fadm:HighSchool_J_HighSchool,
         fadm:HighSchool_SoEun_HighSchool,
-        fadm:HighSchool_YeBin_HighSchool,
-        fadm:HighSchool_Yiseul ;
+        fadm:HighSchool_YeBin_HighSchool;
     kpop:debut "April 30, 2019" ;
     kpop:female_num 4 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "Richworld Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 6 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 7038 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/HighSchool" ;
@@ -3433,17 +3416,13 @@ fadm:HitGirls a schema:Class ;
         fadm:HitGirls_Miji,
         fadm:HitGirls_Momoka,
         fadm:HitGirls_Ryoka,
-        fadm:HitGirls_True,
-        fadm:HitGirls_Yeojeong,
-        fadm:HitGirls_Yeojin,
-        fadm:HitGirls_Yeowon,
         fadm:HitGirls_Yujin ;
     kpop:debut "2020" ;
-    kpop:female_num 4 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 9 ;
+    kpop:gender "F" ;
     kpop:labels "X Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 13 ;
+    kpop:member_num 9 ;
     kpop:url "https://kpop.fandom.com/wiki/HitGirls" ;
     kpop:year_active_from "2018" ;
     kpop:year_active_to "present" ;
@@ -3482,10 +3461,10 @@ fadm:I-REX a schema:Class ;
         fadm:I-REX_Yoonwoo ;
     dbo:genre "DANCE POP" ;
     kpop:debut "October 21, 2013" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "Tarzan Entertainment" ;
-    kpop:male_num 1 ;
+    kpop:male_num 5 ;
     kpop:member_num 5 ;
     kpop:monthly_listener 1938020 ;
     kpop:popularity 5 ;
@@ -3499,18 +3478,13 @@ fadm:I.ONE a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:I.ONE_A-Young,
         fadm:I.ONE_Eunsol,
-        fadm:I.ONE_Hayan,
-        fadm:I.ONE_Joha,
-        fadm:I.ONE_Kiel,
-        fadm:I.ONE_Narin,
-        fadm:I.ONE_Ria,
         fadm:I.ONE_Z.NA ;
     kpop:debut "None" ;
-    kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 3 ;
+    kpop:gender "F" ;
     kpop:labels "LPA Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 8 ;
+    kpop:member_num 3 ;
     kpop:monthly_listener 6821 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/I.ONE" ;
@@ -3551,22 +3525,15 @@ fadm:ILUV a schema:Class ;
         fadm:ILUV_Erika,
         fadm:ILUV_Ga_Hyun,
         fadm:ILUV_Ji_Ho_ILUV,
-        fadm:ILUV_Ji_Won_ILUV,
-        fadm:ILUV_Juhwi,
         fadm:ILUV_Ma_Ri,
-        fadm:ILUV_Mia,
-        fadm:ILUV_Rina,
-        fadm:ILUV_Saki,
-        fadm:ILUV_Seo_Yoon_ILUV,
-        fadm:ILUV_Seoha,
         fadm:ILUV_Soo_Yeon_ILUV ;
     dbo:genre "POP" ;
     kpop:debut "April 30, 2019" ;
-    kpop:female_num 6 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 7 ;
+    kpop:gender "F" ;
     kpop:labels "WKS ENE" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 14 ;
+    kpop:member_num 7 ;
     kpop:monthly_listener 3240 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/ILUV" ;
@@ -3656,8 +3623,8 @@ fadm:ISE a schema:Class ;
         fadm:ISE_Suyeon,
         fadm:ISE_Yunju ;
     kpop:debut "None" ;
-    kpop:female_num 2 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 7 ;
+    kpop:gender "F" ;
     kpop:labels "A team Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 7 ;
@@ -3713,22 +3680,15 @@ fadm:Icia a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:Icia_Arin,
         fadm:Icia_Backjo,
-        fadm:Icia_Hari,
-        fadm:Icia_Hyeon_Ah,
-        fadm:Icia_Lee_Ae,
-        fadm:Icia_Nayoon_Icia,
-        fadm:Icia_SunA,
-        fadm:Icia_Vandi,
-        fadm:Icia_Yoori,
         fadm:Icia_Youmin ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 3 ;
+    kpop:gender "F" ;
     kpop:labels "2L Company",
         "DAM Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 10 ;
+    kpop:member_num 3 ;
     kpop:monthly_listener 5673 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/Icia" ;
@@ -3804,7 +3764,7 @@ fadm:K-TIGERS_ZERO a schema:Class ;
         fadm:K-TIGERS_ZERO_Youjin_K-TIGERS_ZERO ;
     kpop:debut "September 19, 2019" ;
     kpop:female_num 6 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "Co_ed" ;
     kpop:labels "DR Music",
         "K-Tigers E&C" ;
     kpop:male_num 6 ;
@@ -3822,19 +3782,18 @@ fadm:KARA a schema:Class ;
     dbo:bandMember fadm:KARA_Gyuri_KARA,
         fadm:KARA_Han_Seung_Yeon,
         fadm:KARA_Hur_Young_Ji,
-        fadm:KARA_Jiyoung_KARA,
         fadm:KARA_Koo_Hara,
         fadm:KARA_Nicole,
         fadm:KARA_Sunghee ;
     dbo:genre "POP" ;
     kpop:debut "March 29, 2007" ;
     kpop:female_num 6 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "",
         "DSP Media",
         "Universal Sigma" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 60490 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/KARA" ;
@@ -3908,16 +3867,14 @@ fadm:Kitten_Girls a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:Kitten_Girls_Gabin,
         fadm:Kitten_Girls_Haroo,
-        fadm:Kitten_Girls_Juuny,
-        fadm:Kitten_Girls_YeA_Kitten_Girls,
         fadm:Kitten_Girls_Yesol_Kitten_Girls ;
     dbo:genre "POP" ;
     kpop:debut "September 4, 2018" ;
     kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "Stone Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 5 ;
+    kpop:member_num 3 ;
     kpop:monthly_listener 233443 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/Kitten_Girls" ;
@@ -3934,8 +3891,8 @@ fadm:LABELUP a schema:Class ;
         fadm:LABELUP_Seunga,
         fadm:LABELUP_Seyeon_LABELUP ;
     kpop:debut "2020" ;
-    kpop:female_num 2 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 5 ;
+    kpop:gender "F" ;
     kpop:labels "Yedam Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 5 ;
@@ -4126,7 +4083,7 @@ fadm:LPG a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "August 10, 2005" ;
     kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "AquaArgo Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 19 ;
@@ -4142,20 +4099,18 @@ fadm:LUCENTE a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:LUCENTE_Bao,
         fadm:LUCENTE_Hero_LUCENTE,
-        fadm:LUCENTE_Jong_Chan,
         fadm:LUCENTE_Kogun,
         fadm:LUCENTE_Parkha,
         fadm:LUCENTE_Taejun,
         fadm:LUCENTE_U.Seong,
-        fadm:LUCENTE_Xi.N,
         fadm:LUCENTE_Z.Hoo ;
     dbo:genre "POP" ;
     kpop:debut "September 18, 2018" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "N" ;
     kpop:labels "NOGA Entertainment" ;
     kpop:male_num 7 ;
-    kpop:member_num 9 ;
+    kpop:member_num 7 ;
     kpop:monthly_listener 1383517 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/LUCENTE" ;
@@ -4166,17 +4121,16 @@ fadm:LUCENTE a schema:Class ;
 fadm:LUMINOUS a schema:Class ;
     rdfs:label "LUMINOUS" ;
     dbo:abstract "None" ;
-    dbo:bandMember fadm:LUMINOUS_Jay,
-        fadm:LUMINOUS_Steven,
+    dbo:bandMember fadm:LUMINOUS_Steven,
         fadm:LUMINOUS_Suil,
         fadm:LUMINOUS_Woobin,
         fadm:LUMINOUS_Youngbin ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "WIP Company" ;
-    kpop:male_num 3 ;
-    kpop:member_num 5 ;
+    kpop:male_num 4 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 323966 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/LUMINOUS" ;
@@ -4223,7 +4177,7 @@ fadm:Leader_27S a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
     kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "TGN Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 33 ;
@@ -4237,15 +4191,14 @@ fadm:Limesoda a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:Limesoda_Hyerim_Limesoda,
         fadm:Limesoda_Jangmi,
-        fadm:Limesoda_Seungji,
-        fadm:Limesoda_Teeny ;
+        fadm:Limesoda_Seungji;
     dbo:genre "POP" ;
     kpop:debut "July 12, 2017" ;
     kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "Dmaker Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 4 ;
+    kpop:member_num 3 ;
     kpop:monthly_listener 4234 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/Limesoda" ;
@@ -4305,8 +4258,8 @@ fadm:Lusty a schema:Class ;
         fadm:Lusty_Yoonji_Lusty ;
     dbo:genre "POP" ;
     kpop:debut "June 26, 2019" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 5 ;
+    kpop:gender "F" ;
     kpop:labels "BabaPlay" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 5 ;
@@ -4430,29 +4383,19 @@ fadm:MCND a schema:Class ;
 
 fadm:MIDNIGHT_group a schema:Class ;
     rdfs:label "MIDNIGHT_group" ;
-    dbo:abstract "None" ;
+    dbo:abstract "MIDNIGHT (미드나잇) was a five-member trainee girl group under H&I Entertainment. They released their first pre-debut digital single, 'MIDNIGHT Project Single Album Vol.1', on March 9, 2019.[1]" ;
     dbo:bandMember fadm:MIDNIGHT_group_Ahyeon,
         fadm:MIDNIGHT_group_Bian,
         fadm:MIDNIGHT_group_Byeoljji,
-        fadm:MIDNIGHT_group_Cherry_MIDNIGHT,
-        fadm:MIDNIGHT_group_Dami,
-        fadm:MIDNIGHT_group_Danvvb,
-        fadm:MIDNIGHT_group_Eungyul,
-        fadm:MIDNIGHT_group_Ha_Yera,
-        fadm:MIDNIGHT_group_Serin,
-        fadm:MIDNIGHT_group_Seungeun_MIDNIGHT,
-        fadm:MIDNIGHT_group_Seyeon_MIDNIGHT,
-        fadm:MIDNIGHT_group_Yoollin,
-        fadm:MIDNIGHT_group_Yudi,
         fadm:MIDNIGHT_group_Yunu ;
     dbo:genre "HIP HOP",
         "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 12 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "H&I Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 14 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 165869 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/MIDNIGHT_(group)" ;
@@ -4462,7 +4405,7 @@ fadm:MIDNIGHT_group a schema:Class ;
 
 fadm:MINX a schema:Class ;
     rdfs:label "MINX" ;
-    dbo:abstract "None" ;
+    dbo:abstract "MINX (밍스) was a five-member girl group under Happyface Entertainment. They debuted on September 18, 2014 with the single 'Why Did You Come To My Home?'." ;
     dbo:bandMember fadm:MINX_Dami_Dreamcatcher,
         fadm:MINX_JiU_Dreamcatcher,
         fadm:MINX_Siyeon_Dreamcatcher,
@@ -4484,25 +4427,22 @@ fadm:MOMOLAND a schema:Class ;
     rdfs:label "MOMOLAND" ;
     dbo:abstract " Momoland ( Korean : 모모랜드 ) is a South Korean girl group formed by MLD Entertainment (formerly known as Duble Kick Company ) through the 2016 reality show Finding Momoland . The show winners became the seven members Hyebin, Yeonwoo, Jane, Nayun, JooE, Ahin, and Nancy, and they debuted on November 10, 2016, with the EP Welcome to Momoland . In 2017, Momoland added two new members, Daisy and Taeha. In 2019, Taeha and Yeonwoo left the group. In June 2016, Mnet 's survival program Finding Momoland began, a reality show that was created by Duble Kick Entertainment where a group of seven members were selected from 10 trainees. It was decided that the members were going to make their debut, but the Final Mission could not collect 3,000 spectators, so the official debut was delayed for a while to prepare for their debut, promotional events, fan meetings, and the street. On October 26, 2016, the group was appointed as ambassadors for the International Relief Development NGO Plan Korea. The group's debut showcase was held on November 9 of the same year. On November 10, they released their debut extended play Welcome to Momoland and made their debut through M Countdown . Their first debut album is made possible by crowdfunding to cover the cost for producing the physical album. On December 27, six members except Yeonwoo, who stopped working due to lower back pain, attended SBS Gayo Daejeon . In October 2016, Momoland, appointed as the PR ambassador for the International Relief Development NGO Plan Korea, volunteered at the Phuc Luong Village in Thai Nguyen, Vietnam from December 12 to 16, 2017, to encourage Happy Mov students to participate in Kindergarten construction service. On March 28, 2017, Daisy and Taeha joined the group, increasing the group to nine members. In April 2017, the group had a comeback with their digital single \"Wonderful Love\". On August 22, 2017, they released their second EP, Freeze! , with the title track \"Freeze\". On January 3, 2018, they made a comeback with their third EP, Great! with the title track \" Bboom Bboom \". The same month, Serebro accused Momoland of plagiarizing their song \" Mi Mi Mi \" with \"Bboom Bboom\". The composer of \"Bboom Bboom\", Shinsadong Tiger, denied the allegations by pointing out that \"the bass line [is] commonly heard in retro house or electro swing genres, as well as the 4-stanza chord.\" Momoland held promotional events in Tokyo and Osaka from February 28 until March 4, 2018. The group garnered 25,000 spectators at an event held in Japan over four days. Approximately 100 media also participated in the showcase held at Tower Records in Shibuya . Momoland also signed with King Records and debuted in Japan on June 13, 2018, with a Japanese version of their single \"Bboom Bboom\". On June 26, 2018, they released their fourth EP titled Fun to the World with the title track \" Baam \". On August 9, 2018, Momoland became the first girl group – and the second act – to earn a Platinum certification by Gaon Music Chart , for over 100 million streams for the song \"Bboom Bboom\". On March 20, 2019, Momoland released their fifth EP titled Show Me with the lead single \"I'm So Hot\", which became their first release without Daisy and Taeha since Welcome to Momoland . On September 4, 2019, Momoland released their first Japanese studio album Chiri Chiri without Daisy, Taeha and Yeonwoo. On October 4, 2019, the group and MLD Entertainment signed a co-management agreement with the Philippine media corporation ABS-CBN . In late 2019, MLD Entertainment annonced Yeonwoo and Taeha's departure through the group's official fan cafe, and stated that they were still in discussions with Daisy about her future. On December 30, 2019, Momoland released their first single album Thumbs Up with the lead single of the same name. Adapted from their Naver profile. " ;
     dbo:bandMember fadm:MOMOLAND_Ahin,
-        fadm:MOMOLAND_Daisy,
         fadm:MOMOLAND_Hyebin_MOMOLAND,
         fadm:MOMOLAND_Jane_MOMOLAND,
         fadm:MOMOLAND_Joo_E,
         fadm:MOMOLAND_Nancy,
-        fadm:MOMOLAND_Nayun,
-        fadm:MOMOLAND_Taeha_MOMOLAND,
-        fadm:MOMOLAND_Yeonwoo ;
+        fadm:MOMOLAND_Nayun ;
     dbo:genre "EDM",
         "ELECTRO POP",
         "NU DISCO",
         "POP" ;
     kpop:debut "November 10, 2016" ;
-    kpop:female_num 9 ;
+    kpop:female_num 6 ;
     kpop:gender "F" ;
     kpop:labels "King",
         "MLD" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 9 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 1649470 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/MOMOLAND" ;
@@ -4519,21 +4459,20 @@ fadm:MONSTA_X a schema:Class ;
         fadm:MONSTA_X_Joohoney,
         fadm:MONSTA_X_Kihyun,
         fadm:MONSTA_X_Minhyuk_MONSTA_X,
-        fadm:MONSTA_X_Shownu,
-        fadm:MONSTA_X_Wonho ;
+        fadm:MONSTA_X_Shownu ;
     dbo:genre "HIP HOP",
         "POP",
         "RAP" ;
     kpop:debut "May 14, 2015" ;
-    kpop:female_num 1 ;
-    kpop:gender "F" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "Columbia UK",
         "Epic",
         "Maverick",
         "Mercury Tokyo",
         "Starship" ;
     kpop:male_num 6 ;
-    kpop:member_num 7 ;
+    kpop:member_num 6 ;
     kpop:url "https://kpop.fandom.com/wiki/MONSTA_X" ;
     kpop:year_active_from "2015" ;
     kpop:year_active_to "present" ;
@@ -4551,10 +4490,10 @@ fadm:MVP a schema:Class ;
         fadm:MVP_Sion_MVP ;
     dbo:genre "K POP" ;
     kpop:debut "None" ;
-    kpop:female_num 3 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "PH Entertainment" ;
-    kpop:male_num 4 ;
+    kpop:male_num 7 ;
     kpop:member_num 7 ;
     kpop:monthly_listener 436810 ;
     kpop:popularity 4 ;
@@ -4570,16 +4509,15 @@ fadm:MYTEEN a schema:Class ;
         fadm:MYTEEN_Eun_Su,
         fadm:MYTEEN_Han_Seul,
         fadm:MYTEEN_Kim_Kook_Heon,
-        fadm:MYTEEN_Lee_Tae_Vin,
         fadm:MYTEEN_Shin_Jun_Seop,
         fadm:MYTEEN_Song_Yu_Vin ;
     dbo:genre "POP" ;
     kpop:debut "July 26, 2017" ;
-    kpop:female_num 1 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "The Music Works" ;
-    kpop:male_num 4 ;
-    kpop:member_num 7 ;
+    kpop:male_num 6 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 128202 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/MYTEEN" ;
@@ -4599,12 +4537,12 @@ fadm:MYname a schema:Class ;
     dbo:genre "DANCE",
         "POP" ;
     kpop:debut "October 27, 2011" ;
-    kpop:female_num 4 ;
-    kpop:gender "F" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "H2 Media",
         "Universal Music Japan",
         "YM3D" ;
-    kpop:male_num 1 ;
+    kpop:male_num 5 ;
     kpop:member_num 5 ;
     kpop:monthly_listener 34124509 ;
     kpop:popularity 5 ;
@@ -4628,20 +4566,13 @@ fadm:Milkyway a schema:Class ;
     dbo:bandMember fadm:Milkyway_Ayoung,
         fadm:Milkyway_Dayou,
         fadm:Milkyway_Geumju,
-        fadm:Milkyway_Hyeyoon,
-        fadm:Milkyway_J.soul,
-        fadm:Milkyway_Jinju,
-        fadm:Milkyway_Juhui,
-        fadm:Milkyway_Minjung_Milkyway,
-        fadm:Milkyway_Quokka,
-        fadm:Milkyway_Siyeon,
         fadm:Milkyway_Sohee_Milkyway ;
     kpop:debut "None" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "GG E&M Inc" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 11 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 12800 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/Milkyway" ;
@@ -4677,22 +4608,15 @@ fadm:Moonlight_Girls a schema:Class ;
     dbo:bandMember fadm:Moonlight_Girls_Dayul_Moonlight_Girls,
         fadm:Moonlight_Girls_Doha_Moonlight_Girls,
         fadm:Moonlight_Girls_Eunbyul_Moonlight_Girls,
-        fadm:Moonlight_Girls_Gahyeon,
         fadm:Moonlight_Girls_Ine,
-        fadm:Moonlight_Girls_Inez,
-        fadm:Moonlight_Girls_Junkyung,
-        fadm:Moonlight_Girls_Min_Ah_ILUV,
-        fadm:Moonlight_Girls_Nayeon,
         fadm:Moonlight_Girls_Seongeon_Moonlight_Girls,
-        fadm:Moonlight_Girls_Serin_Moonlight_Girls,
-        fadm:Moonlight_Girls_Sia_Moonlight_Girls,
-        fadm:Moonlight_Girls_Yujin ;
+        fadm:Moonlight_Girls_Sia_Moonlight_Girls ;
     kpop:debut "April, 2020" ;
-    kpop:female_num 10 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 6 ;
+    kpop:gender "F" ;
     kpop:labels "NDS Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 13 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 93645 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/Moonlight_Girls" ;
@@ -4702,9 +4626,8 @@ fadm:Moonlight_Girls a schema:Class ;
 
 fadm:MustB a schema:Class ;
     rdfs:label "MustB" ;
-    dbo:abstract "None" ;
-    dbo:bandMember fadm:MustB_Chibin,
-        fadm:MustB_Doha_MustB,
+    dbo:abstract "MustB (머스트비) is a seven-member boy group under MustM Entertainment." ;
+    dbo:bandMember fadm:MustB_Doha_MustB,
         fadm:MustB_Hawoon,
         fadm:MustB_Sangwoo_MustB,
         fadm:MustB_Sihoo_MustB,
@@ -4714,10 +4637,10 @@ fadm:MustB a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "MustM Entertainment" ;
-    kpop:male_num 1 ;
-    kpop:member_num 8 ;
+    kpop:male_num 7 ;
+    kpop:member_num 7 ;
     kpop:monthly_listener 371816 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/MustB" ;
@@ -4750,22 +4673,19 @@ fadm:MyB a schema:Class ;
 
 fadm:My_Darling a schema:Class ;
     rdfs:label "My_Darling" ;
-    dbo:abstract "None" ;
-    dbo:bandMember fadm:My_Darling_Danmi,
-        fadm:My_Darling_Eunbit,
-        fadm:My_Darling_Habyeol,
+    dbo:abstract "My Darling (마이달링) is a five-member girl group under AL Entertainment. " ;
+    dbo:bandMember fadm:My_Darling_Eunbit,
         fadm:My_Darling_Haruka,
         fadm:My_Darling_Mizuki,
-        fadm:My_Darling_Naye,
         fadm:My_Darling_Seora,
         fadm:My_Darling_Ubyeol ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 5 ;
+    kpop:gender "F" ;
     kpop:labels "AL Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 8 ;
+    kpop:member_num 5 ;
     kpop:url "https://kpop.fandom.com/wiki/My_Darling" ;
     kpop:year_active_from "2018" ;
     kpop:year_active_to "present" ;
@@ -4775,7 +4695,6 @@ fadm:N.tic a schema:Class ;
     rdfs:label "N.tic" ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:N.tic_Dowon,
-        fadm:N.tic_Hiemin_희민,
         fadm:N.tic_Jinseo,
         fadm:N.tic_Jion,
         fadm:N.tic_Sangwook,
@@ -4783,10 +4702,10 @@ fadm:N.tic a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "Yechan Media" ;
-    kpop:male_num 1 ;
-    kpop:member_num 6 ;
+    kpop:male_num 5 ;
+    kpop:member_num 5 ;
     kpop:url "https://kpop.fandom.com/wiki/N.tic" ;
     kpop:year_active_from "2018" ;
     kpop:year_active_to "present" ;
@@ -4804,7 +4723,6 @@ called "Pop Cover Project", where the girls vocally cover a popular pop song and
         fadm:NATURE_Lu,
         fadm:NATURE_Saebom_NATURE,
         fadm:NATURE_Sunshine_NATURE,
-        fadm:NATURE_Uchae,
         fadm:NATURE_Yeolmae ;
     dbo:genre "POP" ;
     kpop:debut "August 3, 2018" ;
@@ -4813,7 +4731,7 @@ called "Pop Cover Project", where the girls vocally cover a popular pop song and
     kpop:labels "Pony Canyon (Japan)",
         "n.CH Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 10 ;
+    kpop:member_num 9 ;
     kpop:monthly_listener 1356 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/NATURE" ;
@@ -4824,13 +4742,11 @@ called "Pop Cover Project", where the girls vocally cover a popular pop song and
 fadm:NOIR_group a schema:Class ;
     rdfs:label "NOIR_group" ;
     dbo:abstract "Noir ( Hangul : 느와르) is a South Korean boy group formed by Luk Factory in Seoul . The group debuted on April 9, 2018 with the album Twenty's Noir . Their first official music video was for the track \"Gangsta\". Adapted from the official website. " ;
-    dbo:bandMember fadm:NOIR_group_Choi_Heesu,
-        fadm:NOIR_group_Kim_Daewon,
+    dbo:bandMember  fadm:NOIR_group_Kim_Daewon,
         fadm:NOIR_group_Kim_Minhyuk,
         fadm:NOIR_group_Kim_Siheon,
         fadm:NOIR_group_Kim_Yeonkuk,
         fadm:NOIR_group_Lee_Junyong,
-        fadm:NOIR_group_Myeong,
         fadm:NOIR_group_Nam_Yunsung,
         fadm:NOIR_group_Ryu_Hoyeon,
         fadm:NOIR_group_Shin_Seunghoon,
@@ -4841,8 +4757,8 @@ fadm:NOIR_group a schema:Class ;
     kpop:female_num "None"^^xsd:integer ;
     kpop:gender "M" ;
     kpop:labels "Luk Factory" ;
-    kpop:male_num 10 ;
-    kpop:member_num 11 ;
+    kpop:male_num 9 ;
+    kpop:member_num 9 ;
     kpop:monthly_listener 14820 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/NOIR_(group)" ;
@@ -4862,8 +4778,8 @@ fadm:Nazca_group a schema:Class ;
     dbo:genre "BALLAD",
         "DANCE" ;
     kpop:debut "March 1, 2001" ;
-    kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 6 ;
+    kpop:gender "F" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 6 ;
     kpop:url "https://kpop.fandom.com/wiki/Nazca_(group)" ;
@@ -4903,8 +4819,8 @@ fadm:Nep a schema:Class ;
         fadm:Nep_Jisu_지수,
         fadm:Nep_Sujin_수진 ;
     kpop:debut "None" ;
-    kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Naeum Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -4949,8 +4865,8 @@ fadm:OAHSIS a schema:Class ;
         fadm:OAHSIS_Yeeun ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 5 ;
+    kpop:gender "F" ;
     kpop:labels "",
         "KRAZY Entertainment",
         "Yama&Hotchicks Entertainment" ;
@@ -4966,20 +4882,17 @@ fadm:OAHSIS a schema:Class ;
 fadm:OFF_THE_CUFF a schema:Class ;
     rdfs:label "OFF_THE_CUFF" ;
     dbo:abstract "None" ;
-    dbo:bandMember fadm:OFF_THE_CUFF_Big_Marvel,
-        fadm:OFF_THE_CUFF_Geonho,
-        fadm:OFF_THE_CUFF_Insoo_OFF_THE_CUFF,
+    dbo:bandMember fadm:OFF_THE_CUFF_Insoo_OFF_THE_CUFF,
         fadm:OFF_THE_CUFF_Peter,
         fadm:OFF_THE_CUFF_Renya,
         fadm:OFF_THE_CUFF_Rown,
-        fadm:OFF_THE_CUFF_S.W.E.Y,
         fadm:OFF_THE_CUFF_Se_Ryeon ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "Purple Entertainment" ;
-    kpop:male_num 1 ;
-    kpop:member_num 8 ;
+    kpop:male_num 5 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 6415 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/OFF_THE_CUFF" ;
@@ -5053,12 +4966,12 @@ fadm:ONEWE a schema:Class ;
         "ROCK" ;
     kpop:debut "August 2, 2016" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "GEM Records",
         "Kiss Ent.",
         "RBW",
         "Stone Music" ;
-    kpop:male_num 4 ;
+    kpop:male_num 5 ;
     kpop:member_num 5 ;
     kpop:monthly_listener 53528 ;
     kpop:popularity 2 ;
@@ -5073,17 +4986,16 @@ fadm:ONF a schema:Class ;
     dbo:bandMember fadm:ONF_E-Tion,
         fadm:ONF_Hyojin,
         fadm:ONF_J-Us,
-        fadm:ONF_Laun,
         fadm:ONF_MK,
         fadm:ONF_U_ONF,
         fadm:ONF_Wyatt ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "WM Entertainment" ;
     kpop:male_num 6 ;
-    kpop:member_num 7 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 17589525 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/ONF" ;
@@ -5100,8 +5012,8 @@ fadm:O_My_Jewel a schema:Class ;
         fadm:O_My_Jewel_Sofi ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Acoustic Company" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -5128,7 +5040,7 @@ fadm:OnlyOneOf a schema:Class ;
     kpop:gender "M" ;
     kpop:labels "8D Creative",
         "RSVP" ;
-    kpop:male_num 5 ;
+    kpop:male_num 7 ;
     kpop:member_num 7 ;
     kpop:monthly_listener 27378 ;
     kpop:popularity 2 ;
@@ -5143,7 +5055,6 @@ fadm:PARADISE a schema:Class ;
     dbo:bandMember fadm:PARADISE_Feel_Good_PARADISE,
         fadm:PARADISE_Hoon_PARADISE,
         fadm:PARADISE_Jinsoo,
-        fadm:PARADISE_Seokwoo,
         fadm:PARADISE_Seongchan,
         fadm:PARADISE_Seungjin_PARADISE ;
     dbo:genre "BALLAD",
@@ -5151,10 +5062,10 @@ fadm:PARADISE a schema:Class ;
         "POPERA" ;
     kpop:debut "April 18, 2017" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "HLCOMPANY" ;
-    kpop:male_num 4 ;
-    kpop:member_num 6 ;
+    kpop:male_num 5 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 3048245 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/PARADISE" ;
@@ -5165,8 +5076,7 @@ fadm:PARADISE a schema:Class ;
 fadm:PENTAGON a schema:Class ;
     rdfs:label "PENTAGON" ;
     dbo:abstract "None" ;
-    dbo:bandMember fadm:PENTAGON_DAWN_rapper,
-        fadm:PENTAGON_Hongseok,
+    dbo:bandMember fadm:PENTAGON_Hongseok,
         fadm:PENTAGON_Hui_PENTAGON,
         fadm:PENTAGON_Jinho,
         fadm:PENTAGON_Kino,
@@ -5177,10 +5087,10 @@ fadm:PENTAGON a schema:Class ;
         fadm:PENTAGON_Yuto ;
     dbo:genre "POP" ;
     kpop:debut "October 10, 2016" ;
-    kpop:female_num 1 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "Cube Entertainment" ;
-    kpop:male_num 9 ;
+    kpop:male_num 10 ;
     kpop:member_num 10 ;
     kpop:monthly_listener 755626 ;
     kpop:popularity 4 ;
@@ -5193,18 +5103,16 @@ fadm:PRISM_group a schema:Class ;
     rdfs:label "PRISM_group" ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:PRISM_group_Dakyung_PRISM,
-        fadm:PRISM_group_Gooreum,
         fadm:PRISM_group_Hwijin,
-        fadm:PRISM_group_Leta,
         fadm:PRISM_group_Terra,
         fadm:PRISM_group_Yoonseol ;
     kpop:debut "May 24, 2018" ;
     kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "LCH Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 6 ;
-    kpop:monthly_listener 17 ;
+    kpop:member_num 4 ;
+    kpop:monthly_listener 4 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/PRISM_(group)" ;
     kpop:year_active_from "2017" ;
@@ -5240,16 +5148,15 @@ fadm:PURPLEBECK a schema:Class ;
     dbo:bandMember fadm:PURPLEBECK_La_Yeon,
         fadm:PURPLEBECK_Mini_PURPLEBECK,
         fadm:PURPLEBECK_Seyeon_PURPLEBECK,
-        fadm:PURPLEBECK_Usoul,
         fadm:PURPLEBECK_Yeowool,
         fadm:PURPLEBECK_Yerim_PURPLEBECK ;
     dbo:genre "POP" ;
     kpop:debut "June 24, 2019" ;
-    kpop:female_num 6 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "Majesty Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 6 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 7749 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/PURPLEBECK" ;
@@ -5288,22 +5195,20 @@ fadm:PlayM_GIRLS a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:PlayM_GIRLS_Cho_Hyewon_PlayM_GIRLS,
         fadm:PlayM_GIRLS_Han_Jihyo,
-        fadm:PlayM_GIRLS_Kim_Gaeun,
         fadm:PlayM_GIRLS_Lee_Jaehee,
         fadm:PlayM_GIRLS_Lee_Soojin,
         fadm:PlayM_GIRLS_Monday,
-        fadm:PlayM_GIRLS_Park_Haelin,
         fadm:PlayM_GIRLS_Park_Soeun,
         fadm:PlayM_GIRLS_Shin_Jiyoon ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 9 ;
+    kpop:female_num 7 ;
     kpop:gender "F" ;
     kpop:labels "",
         "FAVE Entertainment",
         "Play M Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 9 ;
+    kpop:member_num 7 ;
     kpop:monthly_listener 4066 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/PlayM_GIRLS" ;
@@ -5359,34 +5264,18 @@ fadm:Pungdeng-E a schema:Class ;
 fadm:RaNia a schema:Class ;
     rdfs:label "RaNia" ;
     dbo:abstract " Rania ( Korean : 라니아 ; shortened from \"Regeneration Idol of Asia\"), formerly known as BP Rania (shortened from \"Black Pearl Rania\") is a South Korean girl group formed by DR Music in 2011, created by American Teddy Riley . They debuted as Rania with their debut single album Teddy Riley, The First Expansion In Asia with title track \"Dr Feel Good\" released in April 2011. Rania was originally set to debut in mid 2010 as the third generation of Baby V.O.X. , however their record company DR Music decided to rebrand them as a new group named Rania with eight members: Saem (later known as Yina), Lucy (later known as Jooyi), Riko, Joy, Di, T-ae, Xia and Sarah. T-ae, Riko and Yina were chosen to star alongside former 2PM member Jay Park in his movie Hype Nation, causing DR Music to push back the group's debut. At the beginning of 2011, Sarah Wang made her decision to leave the group and was replaced by Chinese trainee Yijo. Before the addition of Yijo, Thai Korean trainee Data (Song Daeun) and Canadian Korean trainee Minhee (Moon Minhee) were set to take Sarah's place. However, Minhee left due to parental disapproval due to her age (at the time she was 15), and Data left due to homesickness (her family resided in Thailand). Rania made their debut in April 2011 as an eight-member group, consisting of Saem, Jooyi, Riko, Joy, Di, T-ae, Xia and Yijo. However, upon their debut EP's release, Yijo was not present for live performances. It was later revealed that Yijo was having issues with her work visa. She left the group shortly after. On April 6 they performed on KBS ' Music Bank , with the title track \"Dr Feel Good\", composed by producer Teddy Riley . The song was originally given to Lady Gaga . However, since their music video and live performances caused controversy in Korea as some viewers felt that their image and concept were too provocative, Rania were forced to change their choreography and make minor changes to the outfits. After the conclusion of \"Dr Feel Good\" promotions, the group returned in June with their first digital single \"Masquerade\" (also composed by Riley). Despite having planned an American debut, the group made no advancements. Shortly afterwards Riley announced that he would have nothing more to do with the group after falling out with their record label, releasing a statement saying \"I wish them the best. It's not the girls I dislike, I love Rania, they would be better with me at SM Entertainment. Their manager does shady business, used me for my music. I love Rania, I just don't like their company business. That's why they are not getting bigger. They don't do business upfront. They used my name every where then back door me on the group. It's ok if they will regret it. If they leave that company, I will sign them up quickly. Please know the facts before attacking me. Attack their company. Such great talent will be wasted if they don't get better support.\" The group released their second EP, Time to Rock Da Show , on November 16, 2011. The music video for its title track, \"Pop Pop Pop\", written by Brave Brothers , was revealed four days later. Joy suddenly went on hiatus at this time, which DR Music claimed was because her parents' house had been affected in the flood which occurred in Thailand at the time of the release, and later left Rania in June 2012. In a series of now-deleted tweets, she wrote \"To everyone, I'm sorry I let you guys down so many times, but I’ve been thinking about it for months. I think I can't go back to stand on that place anymore. [...] I can't go back anymore. Thanks for all of your love and all of your hope, thank you so much and I feel so sorry that I [am disappointing beloved fans]…From now…I think I can't be in the entertainment [industry] or back to be a singer anymore since I was sick…But I haven't got any confidence to go back to do it. I'm sorry that I made you all have to wait for me…and I made you all feel confused. Thank you so much for gifts, kindness, love that you give me. Thank you.\" On 30 May 2012, Rania performed a new song named \"Killer\" at the Dream Concert. They made a comeback on September 16 with second digital single \"Style\", whose music video was revealed on September 20. Jooyi did not participate in this comeback, although DR Music claimed she was still a member of the group. Rania released the lead single \"Just Go\" on March 8, 2013, along with their third mini album, also titled Just Go (Goodbye's The New Hello) . They also announced to debut in America in summer 2013. Empire Records was to be handling the girls' distribution while Fireworks was to handle their American management. Larry Rudolph and Adam Leber , two of Britney Spears ' managers, decided to be Rania's managers throughout their U.S. promotions. Starting May 21, Rania began filming for their MTV reality show Road to Fame in Los Angeles and other cities across the U.S. The show would feature the group's preparations for their U.S. debut and would air for three months. It was also revealed that the album would feature collaborations with both Snoop Dogg and 2 Chainz . However, Rania's American debut was delayed again in June. Instead, they began to film a CF for Woongjin Waterpark Play°C and released a special digital single titled \"Up\" for fans on July 5. In May 2014, the group signed with Spanish label INGENIOmedia and confirmed they would have a comeback in July with \"Acceleration\", with a second round of promotions in September. The label also confirmed that they were looking for a sixth member to replace Riko, who was absent from the group since \"Just Go\". Following an incident where a staffer at INGENIOmedia leaked Rania's comeback track to a sasaeng fan , the company severed ties with the group, stating they were \"taking too long\". INGENIOMedia later released a statement saying that they were not looking for a member to replace Riko, apologizing for any confusion, and said that any news on member changes would have to come from Rania's company. In late 2014, Saem stopped attending public events and deactivated her official social media accounts. This led to intense fan speculation that she had left the group, but DR Music did not release an official statement regarding her situation. Soon afterwards, DR Music announced Riko's departure, releasing a statement saying: \"After the completion of the promotions of the single \"Style\", Riko told us with that she would take her university entrance exams to study a career, she asked for a three year break to complete her university studies and once she graduated from college, she could return to the group as a member of RaNia, but the problem came back this year when she reproached subjects in the university, she made us aware of this situation and asked for a year more absence that we found impossible since although she promotes or not with the group, we as a company should continue paying a normal salary, And That is unfair for us and the other members of the group, because she can not postpone her absence anymore, she decided to leave the group and the agency.\" DR Music later added a new member, Sharon Park, who was a model before joining the group. In January 2015, Jooyi stopped attending live performances with RaNia. When asked for an update on the situation, DR Music claimed that she was simply on hiatus. In April 2015, Sharon Park left the group to focus on her modeling career. In July 2015, the group made their appearance with two new members, trainees Seulji and Hyeme. In October 2015, they were announced to be having a comeback as a six-member group on November 6 with their third EP Demonstrate . On 3 November, Seulji and Hyeme were revealed as new members and it was announced that Demonstrate would feature African-American rapper Alexandra Reid, with the possibility of her becoming a new member of the group. On November 4, DR Music confirmed that Alexandra Reid had joined the group, while confirming Saem and Jooyi's departures. Alex is the first African-American woman to be an official member of a South Korean girl group. DR Music sent out a letter to fans that supported their Makestar project, informing them that RaNia's comeback had been pushed back to August 2016, and they were working on a Hyeme & Alex sub-unit instead. On July 13, 2016, however, Makestar announced that due to repeated failed attempts to contact DR Music about the project's progress and \"the continued irresponsible behavior and stance taken by the RaNia project creator, and our unwillingness to ignore the inconvenience this is causing to the project participants\", the project would be terminated and all money returned to the fans. On May 26, it was confirmed that the last three original members of RaNia - Di, T-ae and Xia had withdrawn from the group and parted ways from DR Music after five years. They then signed with their new label Enter Hama, where they announced their plans to redebute as \"Ela8te\", although these plans fell through. On June 26, RaNia performed at a Chinese event with three DR Music trainees: Jian, Jieun (a former member of LPG ) and Crystal. On August 15, 2016, Alex announced that she was the group's new leader. On October 25, RaNia performed with two DR Music trainees (Ttabo and Hyeonji) at the 2016 Seoul ICARUS Drone International Film Festival. Two days later DR Music stated that from seven DR Music trainees they would choose new RaNia members. On December 23, 2016, DR Music revealed a teaser image for \"BP RaNia\" (\"Black Pearl\" RaNia, in reference to Alex's darker skintone) and hinted a comeback as a seven-member group. On December 24, an image teaser for Hyeme and new member Jieun were revealed. On 25 December, Zi.U (formerly known as Seulji) and new member Yumin teaser images were revealed. On December 26, DR Music revealed teaser images for Alex and new Chinese member Ttabo. It was reported that former member Saem had rejoined the group after two years following her departure in late 2014, and that she had changed her stage name to Yina. On December 27, DR Music revealed last teaser image for Saem, confirming that she had re-joined the group. On December 28, RaNia released their first teaser music video for their upcoming comeback track \"Start a Fire\" as BP RaNia. \"Start a Fire\" was released on December 30, 2016, along with their fourth EP of the same name. DR Music said \"Through Spanish company INGENIOmedia, the song will be available in more than 60 countries around the world.\" On February 10 2017, DR Music announced that BP RaNia would start promotions for their second song \"Make Me Ah\" from the Start a Fire EP, on February 14. It was also announced that this would be the first time that Alex would take part in the entire choreography. On February 21, DR Music revealed that the company was approached by a well established production company with an acting opportunity for Alex, to which they responded by releasing a statement saying that they hoped that fans could understand the benefits of this opportunity, and that the opportunity would \"allow the group to gain exposure and help BP RaNia's success by expanding their fan base.\" DR Music assured the fans that Alex would remain a fully active member of BP RaNia, and would return to her regular schedules after her return to Korea. The company asked people to send positivity to Alex and to wait patiently and enthusiastically for their return. On February 28, RaNia released their first compilation album RaNia Legends , comprising songs from \"Dr Feel Good\" to \"Start a Fire\". On May 12, DR Music announced that they were looking for three to four new members to start BP RaNia W, a worldwide group that would promote alongside the current members of BP RaNia. Near the end of March fans noticed that Yina was absent from group promotions, to which DR Music replied that Yina was busy with her own individual activities. On June 8, Yina announced in an Instagram post that she was leaving BP RaNia. The agency later confirmed that Yina had decided to focus on her acting career. BP RaNia remained as a six-membered group, releasing their seventh EP Refresh 7th on August 12, with title track \"Beep Beep Beep\". Promotions became controversial when fans noticed that Alex had very few lines, and in fact spent the majority of performances standing off to the side while the other girls danced and sang. On August 19, DR Music announced that Alex had left the group, and that the group would continue promotions as five. Following her departure, Alex took to Twitter and criticized the company in regards to how she was treated and her departure, saying \"People think they can push you around, take advantage of you, manipulate you, violate you then throw you in the trash and walk. Dead wrong.\" On September 13, it was announced that the group would be making a comeback with \"Breathe Heavy\" from their Refresh 7th EP. In January 2018, after fans noticed that Ttabo had missed several appearances with the group, DR Music issued a statement stating she was filming a movie in China. On May 31, DR Music announced the departure of Yumin from the group due to her having \"recently been faced with circumstances that make it increasingly hard for her to follow the extremely demanding team schedule\". It was also announced that the group would be having a comeback in June and releasing a \"Best Of\" album in August, but neither event occurred. On June 28, it was announced that a new member named Namfon had joined the group. She made her first appearance on RaNia's Malaysia tour. On July 17, former member Yumin was announced to be marrying former Topp Dogg member P-Goon. In February 2019, Yumin revealed that following the birth of their son, she and P-Goon had separated, and she was raising the baby herself. On November 7, when asked via SNS by fans if she was still a member Ttabo stated that she is a “former idol”, and following the discovery that every remaining member of the group had removed \"RaNia\" from their social media accounts and that the company had unfollowed some of the members, rumours began to circulate that DR Music as a company had gone bankrupt and was unable to continue operations, resulting in an unofficial disbandment. On August 18, 2019, RaNia announced via their official Instagram account that they would be performing in Romania from September 4–5 with three unconfirmed members. Fans began speculating that this meant Zi.U and Jieun had left the group. On August 28, the group's official YouTube account uploaded a video confirming the Romania performance as well as revealing the three new members as Seunghyun, Larissa, and ex- Stellar member Youngheun, as well as confirming departures of Jieun, Zi.U and Ttabo. On January 25, 2020, Namfon was announced to have left the group, bringing the group's total number of former members to 14. It was also revealed that the group has had no further activities since the performance in Romania. On February 18, Namfon spoke with a fansite and alleged that DR Music did not care about the group, and expressed her hopes that the other members would be able to leave as quickly as possible. In March, Larissa was revealed to have returned to her home country of Brazil, and fans noticed she had \"liked\" a fan comment on RaNia's official instagram that said the company \"should just let the group die in peace\", as well as liking several other comments with the same sentiment. " ;
-    dbo:bandMember fadm:RaNia_Alex_RaNia,
-        fadm:RaNia_Cosmic_Girl,
-        fadm:RaNia_Da_Rae_Ela8te,
-        fadm:RaNia_Data_Song_Daeun,
-        fadm:RaNia_Hyemi_RaNia,
-        fadm:RaNia_Jin_Young_Ela8te,
-        fadm:RaNia_Joy_RaNia,
+    dbo:bandMember fadm:RaNia_Hyemi_RaNia,
         fadm:RaNia_Larissa,
         fadm:RaNia_Minhee_Moon_Minhee,
-        fadm:RaNia_Namfon,
-        fadm:RaNia_Riko,
-        fadm:RaNia_Sarah_Wang_Huizi,
-        fadm:RaNia_Seonghyun,
-        fadm:RaNia_Sharon,
-        fadm:RaNia_Tae_Eun_Ela8te,
-        fadm:RaNia_Ttabo,
-        fadm:RaNia_Yijo,
-        fadm:RaNia_Yina_RaNia,
-        fadm:RaNia_Yumin_RaNia,
-        fadm:RaNia_Zi.U ;
+        fadm:RaNia_Namfon;
     dbo:genre "EDM",
         "POP" ;
     kpop:debut "April 6, 2011" ;
-    kpop:female_num 14 ;
+    kpop:female_num 4 ;
     kpop:gender "F" ;
     kpop:labels "DR Music" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 20 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 4425819 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/RaNia" ;
@@ -5419,13 +5308,13 @@ fadm:Rainbow_group a schema:Class ;
     schema:image_url "https://vignette.wikia.nocookie.net/kpop/images/0/04/Rainbow_10th_Anniversary_group_photo.png/revision/latest?cb=20191114212237" .
 
 fadm:Ramisu a schema:Class ;
-    rdfs:label "Ramisu" ;
+    rdfs:label "Ramisu (라미슈; also stylized as RAMISU) is a two-member girl group under UI Entertainment. They debuted as a three-member group on June 22, 2017 with the digital single 'Oh! Boy'." ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:Ramisu_Hanseol_Ramisu,
         fadm:Ramisu_Roa ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 2 ;
+    kpop:gender "F" ;
     kpop:labels "UI Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 2 ;
@@ -5469,19 +5358,14 @@ fadm:Rendezvous_group a schema:Class ;
     dbo:bandMember fadm:Rendezvous_group_Eunjung,
         fadm:Rendezvous_group_Jenna,
         fadm:Rendezvous_group_Lily,
-        fadm:Rendezvous_group_Lingyi,
-        fadm:Rendezvous_group_Mary,
-        fadm:Rendezvous_group_Seulgi,
-        fadm:Rendezvous_group_Seunghee,
-        fadm:Rendezvous_group_Soyeon,
         fadm:Rendezvous_group_Younseo ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Parksal Company" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 9 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 2056 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/Rendezvous_(group)" ;
@@ -5520,18 +5404,15 @@ fadm:Rose_Finger a schema:Class ;
     dbo:bandMember fadm:Rose_Finger_Daun_Rose_Finger,
         fadm:Rose_Finger_Han,
         fadm:Rose_Finger_Hyebin_Rose_Finger,
-        fadm:Rose_Finger_Hyojin,
-        fadm:Rose_Finger_Segye,
-        fadm:Rose_Finger_Seulgi,
         fadm:Rose_Finger_Soobin ;
     dbo:genre "HIP HOP" ;
     kpop:debut "October 3, 2018" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "YC:BROS Entertainment",
         "Yechan Media" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 6750 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/Rose_Finger" ;
@@ -5615,8 +5496,8 @@ fadm:S2U a schema:Class ;
         fadm:S2U_Sei,
         fadm:S2U_Soojeong ;
     kpop:debut "May 25, 2017" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "One Shot Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -5631,20 +5512,17 @@ fadm:SATURDAY a schema:Class ;
     rdfs:label "SATURDAY" ;
     dbo:abstract "Saturday (세러데이) is a South Korean girl group formed by SD Entertainment in 2018. The group debuted on July 18, 2018, with MMook JJi BBa . Current Former " ;
     dbo:bandMember fadm:SATURDAY_Ayeon_SATURDAY,
-        fadm:SATURDAY_Chaewon_SATURDAY,
-        fadm:SATURDAY_Chohee,
         fadm:SATURDAY_Haneul_SATURDAY,
         fadm:SATURDAY_Juyeon_SATURDAY,
         fadm:SATURDAY_Minseo_SATURDAY,
-        fadm:SATURDAY_Sunha,
         fadm:SATURDAY_Yuki ;
     dbo:genre "POP" ;
     kpop:debut "July 18, 2018" ;
-    kpop:female_num 7 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "SD Entertainment" ;
     kpop:male_num 1 ;
-    kpop:member_num 8 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 11041686 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/SATURDAY" ;
@@ -5657,9 +5535,7 @@ fadm:SECHSKIES a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:SECHSKIES_Eun_Ji_Won,
         fadm:SECHSKIES_Jang_Su_Won,
-        fadm:SECHSKIES_Kang_Sung_Hoon,
         fadm:SECHSKIES_Kim_Jae_Duk,
-        fadm:SECHSKIES_Ko_Ji_Yong,
         fadm:SECHSKIES_Lee_Jai_Jin ;
     dbo:genre "BALLAD",
         "DANCE",
@@ -5668,12 +5544,12 @@ fadm:SECHSKIES a schema:Class ;
         "R&B" ;
     kpop:debut "April 15, 1997" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "",
         "DSP Media",
         "YG Entertainment" ;
-    kpop:male_num 2 ;
-    kpop:member_num 6 ;
+    kpop:male_num 4 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 81875 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/SECHSKIES" ;
@@ -5684,31 +5560,26 @@ fadm:SECHSKIES a schema:Class ;
 fadm:SEVENTEEN a schema:Class ;
     rdfs:label "SEVENTEEN" ;
     dbo:abstract "None" ;
-    dbo:bandMember fadm:SEVENTEEN_BSS,
-        fadm:SEVENTEEN_DK_SEVENTEEN,
+    dbo:bandMember fadm:SEVENTEEN_DK_SEVENTEEN,
         fadm:SEVENTEEN_Dino_SEVENTEEN,
-        fadm:SEVENTEEN_Hip-Hop_Team,
+        fadm:SEVENTEEN_The8,
         fadm:SEVENTEEN_Hoshi,
         fadm:SEVENTEEN_Jeonghan,
         fadm:SEVENTEEN_Joshua,
         fadm:SEVENTEEN_Jun_SEVENTEEN,
         fadm:SEVENTEEN_Mingyu_SEVENTEEN,
-        fadm:SEVENTEEN_Performance_Team,
         fadm:SEVENTEEN_S.Coups,
-        fadm:SEVENTEEN_SVT_LEADERS,
         fadm:SEVENTEEN_Seungkwan,
-        fadm:SEVENTEEN_The8,
         fadm:SEVENTEEN_Vernon,
-        fadm:SEVENTEEN_Vocal_Team,
         fadm:SEVENTEEN_Wonwoo,
         fadm:SEVENTEEN_Woozi ;
     dbo:genre "POP" ;
     kpop:debut "May 26, 2015" ;
-    kpop:female_num 1 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "Pledis Entertainment" ;
     kpop:male_num 13 ;
-    kpop:member_num 18 ;
+    kpop:member_num 13 ;
     kpop:monthly_listener 298865 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/SEVENTEEN" ;
@@ -5750,9 +5621,9 @@ fadm:SIGNAL_group a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "August 28, 2019" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "J-Star Entertainment" ;
-    kpop:male_num 1 ;
+    kpop:male_num 4 ;
     kpop:member_num 4 ;
     kpop:monthly_listener 10 ;
     kpop:popularity 1 ;
@@ -5766,19 +5637,14 @@ fadm:SIOSIJAK a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:SIOSIJAK_Eunbee,
         fadm:SIOSIJAK_Hayeon,
-        fadm:SIOSIJAK_Heejin,
-        fadm:SIOSIJAK_Jiyoo,
-        fadm:SIOSIJAK_Minji,
-        fadm:SIOSIJAK_Sohee_SIOSIJAK,
-        fadm:SIOSIJAK_Suji,
         fadm:SIOSIJAK_Sun-A_SIOSIJAK,
         fadm:SIOSIJAK_Yelim_SIOSIJAK ;
     kpop:debut "March 12, 2018" ;
-    kpop:female_num 5 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Good Dream Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 9 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 2409884 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/SIOSIJAK" ;
@@ -5844,10 +5710,10 @@ fadm:SNUPER a schema:Class ;
     dbo:genre "J POP",
         "K POP" ;
     kpop:debut "November 16, 2015" ;
-    kpop:female_num 3 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "Widmay Entertainment" ;
-    kpop:male_num 3 ;
+    kpop:male_num 6 ;
     kpop:member_num 6 ;
     kpop:url "https://kpop.fandom.com/wiki/SNUPER" ;
     kpop:year_active_from "2015" ;
@@ -5861,16 +5727,15 @@ fadm:SONAMOO a schema:Class ;
         fadm:SONAMOO_High.D,
         fadm:SONAMOO_Min_Jae_SONAMOO,
         fadm:SONAMOO_Na_Hyun_SONAMOO,
-        fadm:SONAMOO_New_Sun,
-        fadm:SONAMOO_Su_Min_SONAMOO ;
+        fadm:SONAMOO_New_Sun ;
     dbo:genre "DANCE",
         "HIP HOP" ;
     kpop:debut "December 29, 2014" ;
-    kpop:female_num 6 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "TS Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 6 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 128987 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/SONAMOO" ;
@@ -5908,16 +5773,17 @@ fadm:SPICA a schema:Class ;
     dbo:bandMember fadm:SPICA_Kim_Boa,
         fadm:SPICA_Kim_Bohyung,
         fadm:SPICA_Park_Narae,
+        fadm:SPICA_Yang_Ji_Won,
         fadm:SPICA_Park_Sihyun ;
     dbo:genre "K POP" ;
     kpop:debut "None" ;
-    kpop:female_num 4 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "ASA Music LLC",
         "B2M",
         "CJ E&M" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 4 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 7297 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/SPICA" ;
@@ -5935,8 +5801,8 @@ fadm:SUPA a schema:Class ;
         fadm:SUPA_Kim_Seeun ;
     dbo:genre "DANCE POP" ;
     kpop:debut "November 8, 2016" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 5 ;
+    kpop:gender "F" ;
     kpop:labels "GA Entertainment",
         "SP Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
@@ -5956,25 +5822,22 @@ fadm:SUPER_JUNIOR a schema:Class ;
         fadm:SUPER_JUNIOR_Eunhyuk,
         fadm:SUPER_JUNIOR_Hangeng,
         fadm:SUPER_JUNIOR_Heechul,
-        fadm:SUPER_JUNIOR_Kangin,
-        fadm:SUPER_JUNIOR_Kibum,
         fadm:SUPER_JUNIOR_Kyuhyun,
         fadm:SUPER_JUNIOR_Leeteuk,
         fadm:SUPER_JUNIOR_Ryeowook,
         fadm:SUPER_JUNIOR_Shindong,
         fadm:SUPER_JUNIOR_Siwon,
-        fadm:SUPER_JUNIOR_Sungmin_SUPER_JUNIOR,
         fadm:SUPER_JUNIOR_Yesung ;
     dbo:genre "POP" ;
     kpop:debut "November 6, 2005" ;
-    kpop:female_num 1 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "Avex Asia",
         "Label SJ",
         "Rhythm Zone",
         "SM Entertainment" ;
-    kpop:male_num 12 ;
-    kpop:member_num 13 ;
+    kpop:male_num 10 ;
+    kpop:member_num 10 ;
     kpop:monthly_listener 1562106 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/SUPER_JUNIOR" ;
@@ -5985,18 +5848,17 @@ fadm:SUPER_JUNIOR a schema:Class ;
 fadm:SURPRISE_U a schema:Class ;
     rdfs:label "SURPRISE_U" ;
     dbo:abstract "None" ;
-    dbo:bandMember fadm:SURPRISE_U_Cha_In_Ha,
-        fadm:SURPRISE_U_Eun_Hae_Seong,
+    dbo:bandMember fadm:SURPRISE_U_Eun_Hae_Seong,
         fadm:SURPRISE_U_Ji_Geon_Woo,
         fadm:SURPRISE_U_Kim_Hyun_Seo,
         fadm:SURPRISE_U_Yoon_Jeong_Hyuk ;
     dbo:genre "POP" ;
     kpop:debut "July 7, 2017" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "Fantagio Music" ;
-    kpop:male_num 1 ;
-    kpop:member_num 5 ;
+    kpop:male_num 4 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 296 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/SURPRISE_U" ;
@@ -6014,8 +5876,8 @@ fadm:Secret_group a schema:Class ;
     dbo:genre "J POP",
         "K POP" ;
     kpop:debut "October 13, 2009" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "TS Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -6057,8 +5919,7 @@ fadm:Seven_O_27clock a schema:Class ;
         <https://kpop.fandom.com/wiki/Seven_O_27clock_Hyun_Seven_O'clock>,
         <https://kpop.fandom.com/wiki/Seven_O_27clock_Jeonggyu_Seven_O'clock>,
         <https://kpop.fandom.com/wiki/Seven_O_27clock_Rui_Seven_O'clock>,
-        <https://kpop.fandom.com/wiki/Seven_O_27clock_Taeyoung_Seven_O'clock>,
-        fadm:Seven_O_27clock_Vaan ;
+        <https://kpop.fandom.com/wiki/Seven_O_27clock_Taeyoung_Seven_O'clock> ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
@@ -6066,7 +5927,7 @@ fadm:Seven_O_27clock a schema:Class ;
     kpop:labels "Forest Network",
         "Staro Entertainment" ;
     kpop:male_num 7 ;
-    kpop:member_num 8 ;
+    kpop:member_num 7 ;
     kpop:monthly_listener 5610928 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/Seven_O%27clock" ;
@@ -6082,8 +5943,8 @@ fadm:ShaFLA a schema:Class ;
         fadm:ShaFLA_Suhyeon_ShaFLA,
         fadm:ShaFLA_Yujin ;
     kpop:debut "None" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "VINE Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -6096,18 +5957,16 @@ fadm:Sol-T a schema:Class ;
     rdfs:label "Sol-T" ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:Sol-T_Chae_Hee,
-        fadm:Sol-T_Doa,
         fadm:Sol-T_Doo_Ri,
         fadm:Sol-T_Edo,
-        fadm:Sol-T_Gyeo_Wool,
         fadm:Sol-T_Ji_Ni ;
     dbo:genre "K POP" ;
     kpop:debut "None" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Probeat Company" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 6 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 22358 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/Sol-T" ;
@@ -6128,7 +5987,7 @@ fadm:Stellar a schema:Class ;
         fadm:Stellar_Youngheun ;
     dbo:genre "K POP" ;
     kpop:debut "August 28, 2011" ;
-    kpop:female_num 5 ;
+    kpop:female_num 8 ;
     kpop:gender "F" ;
     kpop:labels "The Entertainment Pascal" ;
     kpop:male_num "None"^^xsd:integer ;
@@ -6170,22 +6029,15 @@ fadm:Sunny_Days a schema:Class ;
         fadm:Sunny_Days_Dayoung,
         fadm:Sunny_Days_Gyuhee,
         fadm:Sunny_Days_Heuira,
-        fadm:Sunny_Days_Jihee,
-        fadm:Sunny_Days_Jung-Yun,
-        fadm:Sunny_Days_Minji,
-        fadm:Sunny_Days_Seoyeon,
-        fadm:Sunny_Days_Soohyun,
-        fadm:Sunny_Days_Soojeong,
-        fadm:Sunny_Days_Sunkyung,
         fadm:Sunny_Days_Terry ;
     dbo:genre "BALLAD",
         "DANCE POP" ;
     kpop:debut "May 18, 2012" ;
-    kpop:female_num 1 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "Haeun Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 12 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 217889 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/Sunny_Days" ;
@@ -6224,30 +6076,19 @@ fadm:SuperM a schema:Class ;
 fadm:Switch_Berry a schema:Class ;
     rdfs:label "Switch_Berry" ;
     dbo:abstract "None" ;
-    dbo:bandMember fadm:Switch_Berry_Coca,
-        fadm:Switch_Berry_Gayoung,
-        fadm:Switch_Berry_Hana,
-        fadm:Switch_Berry_Jena_LABELUP,
-        fadm:Switch_Berry_Jenny,
-        fadm:Switch_Berry_Kwon_Minseo,
-        fadm:Switch_Berry_Minah,
+    dbo:bandMember fadm:Switch_Berry_Hana,
         fadm:Switch_Berry_Minji,
         fadm:Switch_Berry_Saerom,
-        fadm:Switch_Berry_Sarang,
-        fadm:Switch_Berry_Sujung,
-        fadm:Switch_Berry_Yeon_I,
-        fadm:Switch_Berry_Yerin,
-        fadm:Switch_Berry_Yoowoo,
         fadm:Switch_Berry_Yora ;
     dbo:genre "POP" ;
     kpop:debut "July 19, 2013" ;
-    kpop:female_num 15 ;
+    kpop:female_num 4 ;
     kpop:gender "F" ;
     kpop:labels "",
         "DAM Entertainment",
         "Starcubic Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 15 ;
+    kpop:member_num 4 ;
     kpop:url "https://kpop.fandom.com/wiki/Switch_Berry" ;
     kpop:year_active_from "2012" ;
     kpop:year_active_to "2018" ;
@@ -6258,24 +6099,20 @@ fadm:T-ARA a schema:Class ;
     dbo:abstract """ T-ara ( / t i ˈ ɑː r ə / ; Korean : 티아라 ) is a South Korean girl group , formed in 2009 by MBK Entertainment . T-ara's career is marked by hook-heavy dance-pop music, a result of their close partnership with composer Shinsadong Tiger . A broad array of visual concepts have earned the group a "chameleon-like" reputation. [b] The group officially debuted in July 2009 with the single "Lie", following line-up changes due to creative differences. Their debut studio album Absolute First Album was released in December 2009 and spawned several hit songs including " TTL (Time to Love) ", " Bo Peep Bo Peep ", and "You Drive Me Crazy". T-ara gained nationwide recognition after releasing " Roly-Poly " in 2011, which went on to become the Gaon chart's best-selling single of the year. At the height of K-pop's popularity in Japan, T-ara signed onto management agency J-Rock for $4.7 million—reportedly the highest figure of any Korean girl group expanding into the territory at the time. Both their debut Japanese single and studio album reached number one on the Oricon weekly charts and were subsequently certified Gold. T-ara's late-2011 Korean release Black Eyes spawned three consecutive number ones: "Cry Cry", "We Were in Love" and " Lovey-Dovey ". In 2012, T-ara experienced a dip in popularity as the group faced accusations of internal discord, resulting in Hwayoung 's immediate departure with Areum following a year after. T-ara's later material was released to varying degrees of success before the group began focusing on promotional activities in China, where they attracted attention for their cover of Chopstick Brothers' " Little Apple " in 2014. T-ara is regarded as one of the most popular K-pop girl groups in China. T-ara's final release as six members was tentatively scheduled for May 2017, ahead of Soyeon and Boram 's expiring contracts; however, conflicts with their management delayed What's My name? until June 2017, effectively without their involvement. Qri , Eunjung , Hyomin and Jiyeon had previously extended their terms with MBK Entertainment until December 31, 2017. The original pre-debut five T-ara members (Jiae, Jiwon, Eunjung , Hyomin and Jiyeon ) trained together for three years under Mnet Media . The meaning behind the group's name, which is based on the word " tiara ", comes from the idea that they will become the "queens of the music industry". In April 2009, they released their first song "Joheun Saram (Ver. 1)" (좋은 사람, "Good Person") for the Cinderella Man soundtrack. Jiyeon teamed up with labelmates SeeYa and Davichi for a collaboration single titled "Yeoseong Shidae" (여성시대, "Women's Generation"), which was released in May 2009. In June 2009, Mnet Media announced that Jiae and Jiwon would be leaving T-ara due to differences in music style. The first new member to be added to the group was Boram , the daughter of singer Jeon Young-rok and actress Lee Mi-young. Soyeon , a former trainee of SM Entertainment who was supposed to be the leader of Girls' Generation , and Qri were added to T-ara three weeks prior to debut. In early July 2009, the group was moved from Mnet Media to its subsidiary company Core Contents Media. T-ara made their debut on MBC 's Radio Star talk show on July 29, 2009. Their first performance was on Mnet 's M Countdown music show on July 30, where they performed " Geojitmal " (거짓말, "Lies") and "Norabollae?" (놀아볼래?, "Wanna Play?") from their debut single. Their debut was looked upon negatively by webpostings, where people stated that it was lipsynched and commented that it seemed like an "elementary school" performance. The group announced afterwards that future performances would be live. In September 2009, Eunjung, Soyeon, Hyomin and Jiyeon collaborated with labelmates Kwangsu, Jihyuk, and Geonil of Supernova for the single " TTL (Time to Love) ". It was released on September 15, 2009, and became both groups' first number one song as it topped many of the online charts. T-ara and Supernova collaborated again for " TTL Listen 2 ", a sequel to "TTL (Time to Love)", which was released on October 9, 2009, and included all the members from both groups. T-ara released their debut studio album, Absolute First Album , on November 27, 2009. In order to determine the album's title track, Core Contents Media held a survey in which the public had to choose between " Bo Peep Bo Peep " or "Cheoeum Cheoreom" (처음처럼, "Like the First Time"). 9,000 people took the survey on various music portals with 53% (4,770 people) choosing "Cheoeum Cheoreom" over "Bo Peep Bo Peep". However, the latter was promoted on music shows instead for unknown reasons. "Bo Peep Bo Peep" peaked at number four on the Gaon chart, while "Cheoeum Cheoreom" peaked at number ten. They held their comeback performance on Music Bank on December 4, 2009. At the 24th Golden Disk Awards , T-ara was awarded Rookie of the Year along with girl group 4minute . The group won their first-ever music show award with "Bo Peep Bo Peep" on the New Year's Day episode of Music Bank . The song went on to win five awards in total: two on Music Bank and three on Inkigayo , earning them a "Triple Crown". Later in January 2010, the group announced promotions for their follow up single, "Cheoeum Cheoreom", which ended quickly as Soyeon was diagnosed with H1N1 . The same month, T-ara made a cameo appearance on the seventh and eight episodes of God of Study , in which Jiyeon played a main role. In February 2010, the group announced a re-release of their debut album under the title Breaking Heart . The two lead singles, "Neo Ttaemune Michyeo" (너 때문에 미쳐; "I Go Crazy Because of You") and "Naega Neomu Apa" (내가 너무 아파, "I'm Really Hurt"), were digitally released on February 23, 2010, and peaked at number one and number thirty-one on the Gaon chart, respectively.
 T-ara held their comeback performance on the same day on M Countdown , and won several music awards for "Neo Ttaemune Michyeo" over the course of their promotions: two consecutive Mutizen wins on Inkigayo and one first place award on M Countdown . Breaking Heart was released physically on March 3, 2010, peaking at number two on the weekly Gaon chart and number thirty-five on the yearly chart; selling 40,695 copies. After promotions for "Neo Ttaemune Michyeo" ended, T-ara performed "Naega Neomu Apa" on music shows until early April 2010. In June 2010, the group donated all the proceeds of the World Cup merchandise sold on their online clothing shop T-ara Dot Com to a charity for African children. On July 16, 2010 T-ARA representatives announced the addition of Hwayoung Ryu as the seventh member of the group. The reason given was that with so many solo projects, they would be able to have a more complete lineup for T-ARA when individual members were filming or doing other appearances. They also stated that it would allow the members to undertake more solo activities, and would give them all some relief from their heavy schedules. In November 2010, the group was in the third season of the reality show Hello Baby , in which they took care of Moon Mason and his two brothers. T-ara released the digital download for " Wae Ireoni " (왜 이러니, "Why Are You Being Like This"), the lead single for their first extended play, Temptastic , on November 23, 2010. Temptastic was released in digital format on December 1, 2010, along with their second single, " Yayaya ". The album's physical release was delayed until December 3 due to the bombardment of Yeonpyeong earlier in November 2010. T-ara held their first comeback performance through Music Bank on December 3 and began promotions with their new seventh member, Hwayoung , and new leader, Boram, and received two consecutive wins for "Wae Ireoni" and "Yayaya" on M Countdown . T-ara's second EP John Travolta Wannabe was released on June 29, 2011. It charted at number three on the Gaon Album Chart and has sold 30,116 copies as of 2011. The EP's only single, " Roly-Poly ", peaked at number two on the Gaon Digital Chart and number one on the Korea K-Pop Hot 100 chart. The single became a breakthrough success, becoming the top-grossing and highest-selling single of 2011 in South Korea with over four digital million units sold. "Roly-Poly" was awarded Best Music Video at the 3rd Melon Music Awards and Singer of the Year (July) at the 1st Gaon Chart Awards , and was nominated Best Dance Performance by a Female Group and Song of the Year at the 13th Mnet Asian Music Awards . The group released a limited edition re-issue of John Travolta Wannabe , titled Roly-Poly in Copacabana , on August 2, 2011. The title track, "Roly-Poly in Copacabana", is a eurodance remix of "Roly-Poly", named after the song " Copacabana " which was popularized in the 80's in Jongno disco clubs. The album peaked at number three, while the single peaked at number forty and forty-five on the Gaon and Billboard Korea K-Pop Hot 100 charts. The group began follow up promotions for the remixed single on Music Bank . T-ara released their debut Japanese single " Bo Peep Bo Peep " on September 28, which peaked at number one on the Oricon weekly singles chart with over 49.7 thousand copies sold, making them the first non-Japanese girl group to rank at number one for a debut single in Oricon history. The single peaked at number one on the Billboard Japan Hot 100 , and was certified Gold by the RIAJ for both full-length cellphone downloads and PC downloads. In November 2011, T-ara released their third extended play Black Eyes which charted at number two on the Gaon charts. The album was preceded by the release of "Cry Cry", which peaked at number one on the Billboard Korea K-Pop Hot 100 and won two consecutive first-place awards on M Countdown . The music video for "Cry Cry" was noted for having a billion Korean won production budget and a thirty-minute drama story line. The group released their second Japanese single, a remake of " Yayaya " from their Temptastic EP, on November 30. The single peaked at number seven on the Oricon charts and number six on the Billboard Japan Hot 100 . In December 2011, Core Contents Media announced that T-ara's third leader Hyomin would be passing on her leadership to Soyeon . The group performed a three-day mini-concert tour titled X-mas Premium Live, that was held at the Shinagawa Stella Hall in Tokyo , the Zepp in Nagoya , and the Zepp in Osaka . T-ara rose to become the second biggest girl group in Korea in 2011 by ranking at number eight on the Gallup Korea poll. T-ara and Davichi released their Christmastide ballad, "Uri Saranghaetjanha" (우리 사랑했잖아, "We Were in Love") on December 23, 2011; which was later included on T-ara's Funky Town re-release album. The single reached number one on the Gaon Chart and peaked at number two on the Billboard Korea K-Pop Hot 100 . Both groups performed the song weekly on SBS 's Inkigayo in the midst of T-ara's heavy preparations for their year-end ceremonies. T-ara re-released Black Eyes under the title Funky Town on January 3, 2012. The album peaked at number one on the Gaon weekly album chart and number two on the monthly album chart, selling 76.749 copies. " Lovey-Dovey " was released as the second single from the album, which peaked at number one on both the Gaon and Billboard Korea K-pop Hot 100 charts. The single has sold more than 3 million digital copies in South Korea alone. In February, Forbes Korea, in celebration of their ninth year of establishment, reported the year's list of the "Top 40 Power Celebrities". T-ara ranked on the list at number seventeen, thus making them as the third most powerful girl group and the seventh most powerful female celebrity in Korea. In April, Core Contents Media announced that two new members were to be added to T-ara's line-up in July, thus transforming T-ara into a nine-member group. On May 30, 2012, 14-year-old Dani was announced as one of the group's new members. She later starred in the drama version of T-ara's "Day by Day" music video. However, as of August 2016, Dani is still a trainee and has not debuted as a member of T-ara. On June 14, 2012, Core Contents Media introduced 18-year-old Areum as the new maknae ( 막내 , youngest member) and last of the group's two new additions. The group released their first Japanese album Jewelry Box on June 6, 2012. The album debuted at number two on the Oricon weekly albums chart with sales of over 57,000 copies. They embarked on their first Japanese concert tour T-ara Japan Tour 2012: Jewelry Box in Nagoya on June 19; the tour's attendance was expected to exceed 40,000 people. Four singles had been released prior to the album: " Bo Peep Bo Peep ", " Yayaya ", " Roly-Poly " and Lovey-Dovey ". On July 3, T-ara released their fourth extended play, Day by Day , which charted at number five on the Gaon chart. The title track, " Day by Day ", was released as a single on the same day, peaking at number two. The first comeback performance for "Day by Day" was held on July 7, 2012, on Music Core , which was backed by a 70-person orchestra and featured the stage debut of the group's eighth member, Areum. On July 25 and 26, T-ara held a concert in Japan, with Hwayoung only performing one song due to a leg injury. After the concert, one member of T-ara tweeted a general message about determination, and four of the other members agreed with her. Subsequently, Hwayoung and her sister, Hyoyoung, tweeted about a "bad person," which gave Korean netizens the impression that there was a conflict within the group. Netizens retweeted the messages and speculated that Hwayoung was being bullied. When the bullying controversy got out of hand, Core Contents Media abruptly announced Hwayoung's immediate departure on July 30, after being with the group for one year and eight months. CCM's CEO, Kim Kwang-soo, claimed that Hwayoung's contract was terminated because staff members felt her behavior was hurting teamwork, and the bullying controversy was not the reason for her departure. The controversy caused the group to temporarily suspend activities, while the members continued with their individual activities. Both Hwayoung and the other members of T-ara have said that facts about their bullying issue were made-up by netizens, but on the other hand confirmed there was in fact a conflict between Hwayoung and the other members. It was later announced that there would be no changes to T-ara's upcoming comeback; however, their agency took the statement back and announced that their comeback would be postponed indefinitely. Their Day by Day extended play re-issue, Mirage , was eventually released on September 3, 2012. Two singles, "Sexy Love" and "Najgwa Bam (Love All)" (낮과 밤, "Day and Night"), were released from the album on the same day, with "Sexy Love" peaking at number four on the Gaon charts and number three on the Billboard Korea K-pop Hot 100 charts. "Najgwa Bam (Love All)" was a collaboration single featuring T-ara's Areum with Gun-ji of Gavy NJ and Shannon. On September 10, 2012, it was announced that the group would release a best of album in Japan consisting of all of their Korean singles to date (excluding "Day by Day" and "Sexy Love") in celebration of one year since their Japanese debut. The album was eventually released on October 10. On September 26, T-ara released the Japanese version of "Day by Day", which is mainly composed of scenes from their Korean music videos for that song. In October, T-ara released the Japanese version of "Sexy Love" and shortly after, the group departed to Japan to promote for their upcoming single. T-ara released their sixth Japanese single " Bunny Style! " ( バニスタ! , Banisuta! ) on March 20, 2013. The A-side "Bunny Style!" is their first single composed specifically for the Japanese market. The single was released in ten different editions each with a different B-side: seven regular editions that contain a solo song by one of the members, and three limited editions which contain a song performed by a sub-unit. To promote the single, the group held special showcases in 10 Japanese cities, starting on February 20, 2013, at the Sapporo Factory Atrium and ending on March 9, 2013, at the Seagull Square in Nagasaki. On April 1, 2013, T-ara's Japanese label, EMI Music Japan , was absorbed into Universal Music Japan , became defunct as a company and was renamed to EMI Records Japan . Therefore, all of T-ara's further Japanese promotions will be done through Universal Music Japan . In early April 2013, it was announced that T-ara would be forming a sub-unit with members Eunjung , Hyomin , Jiyeon , and Areum called T-ara N4 . This is a shortened form of 'T-ara Brand New 4', signifying the transformation of the four members. The sub-unit debuted on April 29, 2013, with the song " Jeon Won Diary " (전원일기), produced by Duble Sidekick . T-ara performed at the Nippon Budokan on July 13, 2013, to celebrate the release of their second Japanese album Treasure Box due August 7, 2013. The title for Treasure Box was revealed on June 15, 2013, along with the album's track list of thirteen songs. The group's concept for the album will be "treasure hunting" ( 宝探し , "takarasagashi") . T-ara released the music video "Painkiller" as a digital single song. The song was a collaboration with T-ara, Davichi, See Ya, 5dolls and Speed. Jiyeon appeared as the main character in the music video. On July 10, 2013, it was confirmed with a video released by Core Contents Media that Areum would be leaving the group to pursue a solo career "towards the beginning of next year". In August, T-ara released the music video "Bikini" featuring Davichi and Skull. At their Budokan Concert, it was announced that Qri would be the new leader of T-ara. [ citation needed ] On September 15, Core Contents Media announced that T-ara would hold their long-awaited Korean comeback on October 10. Before their comeback, T-ara, together with Davichi , SPEED and The SeeYa was holding a concert in Mongolia , which attracted a crowd of 20,000 people. On October 6, T-ara performed "Number 9" for the first time at "Hallyu Dream Concert" along with "Sexy Love". "Number Nine" was released with T-ara's mini album Again on October 10. T-ara also released a Japanese album to promote a Japanese movie, Jinx , featuring Hyomin named Kioku ~Kimi ga Kureta Michishirube~ , in November. The album was released according to the date on which the movie will premiere. [ citation needed ] T-ara had a Korean comeback on December 2 with the song "Do You Know Me". Their concept for this comeback and music video according to theater concept with retro style. They also release a repackage album named Again 1977 which contains the best songs from their album, Again . The group also released a ballad version of "Do You Know Me". On December 13, T-ara released a Christmas song, " Hide & Seek ". T-ara was ranked seventh as the group with most number one hit songs on digital music charts in the past decade with 13 songs, despite debuting 4.5 years ago. On January 19, T-ara had their second concert in Chengdu, China, one out of five concerts they planned to stage China in 2014. On February 14, T-ara held a joint concert with label-mates Speed in Phnom Penh, Cambodia. On the 19th of February CCM released a music video for a promotional track from Cho Young Soo's All Star Project with the single titled as "First Love" sung by Hyomin, Jiyeon and Soyeon featuring rapper EB. T-ara had a Japanese comeback with the double A-side single "Lead The Way" and "LA'booN" on March 5, and their third Japanese album Gossip Girls was released on May 14. On September 11, T-ara's sixth mini album And & End was released along with two music videos for the title track, "Sugar Free". The song was inspired by EDM and is part of the big room subgenre of electro house music. On September 24, a remix album was released called EDM CLUB Sugar Free Edition . This album included an English version of "Sugar Free", which was the first song T-ara had recorded in English. On October 13, T-ara signed a management contract with influential Chinese entertainment company, Longzhen Culture Development. The contract worth 5 billion KRW (~US$4.8 million). On November 24, T-ara released a Korean/Chinese cover of " Little Apple " by Chopstick Brothers, as well as a music video. This video featured Jiyeon, Eunjung, Qri, and Hyomin, as well as Seunghee from F-ve Dolls and Dani. The video hit ́8 millions views within two days on website Tudou. On December 25, T-ara held their first domestic concert named "Dear My Family" at COEX Auditorium in Samseongdong, Seoul. In order to be close with fans and spend a meaningful time with them, the concert was small with 1100 seats. On December 27, T-ara held their concert in Shanghai as the beginning stop of their 2013–2014 China tour. After their first concert in Korea, T-ara headed to Vietnam for a Mini Concert. On January 9, the group arrived at the airport, where problems occurred which resulted in scheduling changes. Nevertheless, the group's mini-concert, which took place on October 10, drew in more than 3000 Vietnamese and International Fans. On February 7, 2015, MBK Entertainment debuted a project group known as "TS" with the artists Eunjung , Soyeon , Cho Seunghee, Minkyung ( The SeeYa ), Ki-O, Jongkook and Sejun ( SPEED ). The group released a winter single, titled "Don't Forget Me." In March 2015, it was announce that T-ara would be the main performer for Malaysia's Sultan Of Johor Coronation celebrations in Johor Bahru . The group will appear at the event alongside Sistar and The Black Eyed Peas ' Taboo , which attracted 50,000 audience. On June 20, 2015, T-ara began their first China tour, Great China Tour started from Nanjing, Beijing and Hefei. It was the first concert held by T-ara after signing with their new agency Banana Plan, who manages their Chinese promotions. The group performed 22 songs and sold out 4,000 tickets. The next concert on their Great China Tour was held in Guangzhou on December 19, and sold more than 5,000 tickets – making it the second consecutive sold-out concert on the tour. [ citation needed ] On July 17, 2015, MBK Entertainment confirmed that the group will join the summer comeback lineup in the first week of August. On August 3, 2015, T-ara's seventh extended plays , So Good with title track "So Crazy" was released. It was composed by Brave Brothers, the composer of Hyomin 's solo debut title track "Nice Body", and surpassed 1 million views in 2 days. On August 13, T-ara held a press conference for their web-drama "Sweet Temptation" which features a total of 6 episodes for 6 separate stories.The drama was released on October 2015. On October 15, the website "Insider Monkey" published a list of 16 best selling girl groups of all time where T-ara was placed N°10 with a total of 36.18 million sales recorded. The group continued to make further impact by appear on season 3 of a famous Chinese variety show The Brain , making them the 2nd Korean act to appear on this show after Kim Soo-hyun , who visited the show during season 1. On June 4, T-ara participated alongside other artists at the Dream Concert 2016. The group's performance was a remix of Be Peep Bo Peep, Roly Poly and So Crazy, which was well received by the public. As of 2016, the Dong-a Ilbo newspaper has published many items on the Korean idol stars who have had influence in the last 20 years based on a poll of 2,000 people in Korea. In the category "Top 14 Favorite Songs", T-ara ranked 14th with the song "Roly-Poly". On September 9, T-ara performed 3 songs for the IASGO in Seoul. On September 11, T-ara flew to Japan for their Tokyo Fan-meeting. The "Premium Live Concert" was held the Tokyo Dome City Hall where T-ara performed 7 songs and talked to their fans. T-ara performed twice during the day as the event was divided into 2 parts, one in the afternoon and the other in the evening. T-ara performed their song "Memories" for the first time live. On September 17, T-ara held their last Concert for their Great China Tour at the Mercedes-Benz Arena in Shanghai with around 8500 people attending. On September 29 was the first broadcast of the new Variety Show "Master of Driving" with Hyomin and Eunjung as part of the cast. The show consists of 3 experimented celebrity drivers who will give them driving lessons. T-ara participated in the Busan One Asia Festival 2016 on the opening performance on October 1. They also took part in Kpop concert on October 4 and performed 8 different songs, with many Chinese and international fans attending and cheering them on. Following their appearance, T-ara flew to Jeju to perform at the Jeju Olleh Duty Free Shop Concert on the 9th and performed 5 songs such as "Sexy Love" or "I don't want you". In October 2016, MBK Entertainment announced that T-ara would be releasing a mini-album produced by Duble Sidekick in November. T-ara's eighth extended play , Remember , with lead single TIAMO was released on November 9. The release was followed by 3 fan-signing events. In February 2017, Hwayoung and her twin sister Hyoyoung appeared on a reality show and spoke about the controversy again; with Hwayoung saying her sister was the only person who had supported her during the incident, and how hard everything had been for her. Soon afterwards a former staff member stepped forwards and alleged that it had actually been the twins who had "bullied" the other members, and released texts that appeared to show Hyoyoung threatening former member Areum with physical harm for not supporting Hwayoung's behaviour. Soon afterwards, more and more staffers came forwards with evidence that Hwayoung had been disrespectful to the other members as well as stylists, and had faked how severe her initial injury was in order to get more sympathy. Hwayoung initially tried to deny the rumours, lashing out at the staffers in return, but eventually admitted that the texts were real. After suffering from an intense backlash, including being removed from several television shows, Hwayoung deleted her Instagram account. On March 6, 2017, MBK Entertainment announced that T-ara will be releasing their final album in May, with Soyeon and Boram terminating their contracts after its release.· Qri, Eunjung, Hyomin, and Jiyeon will stay with the label until December 31, 2017. On May 7, MBK Entertainment revealed the group's plans had changed, and that the final album had been rescheduled to release in June 2017, with members Boram and Soyeon not being able to partake due to the expiry of their contracts. On May 8, it was announced that T-ara's last performance as six-members will be in Taiwan concert on May 13. The remaining four members continued as a group with releasing their ninth extended plays and last promotional album, What's My name? on June 14, 2017. After a five-year period without receiving any awards on music shows, T-ara won first place on The Show on June 20. T-ara has released track "My Love" on July 15 for KBS 2TV's drama Greatest One-Shot . On November 4, the group held their first concert in Ho Chi Minh city, Vietnam, which reportedly attracted 10,000 attendees. A portion of the ticket sales would be donated to charity in Vietnam in honour of the 25th anniversary of diplomatic relations between Vietnam and South Korea. On January 3, 2018, Hyomin took to her Instagram account to announced that herself, Jiyeon, Eunjung, and Qri had decided to not renew their contracts with MBK, thus leaving the company. The company later confirmed that the group had left the company, however they did not state that the group had disbanded. MBK Entertainment later confirmed that they had been registered a trademark for T-ara on December 28. The members officially filed documentation outlining grounds for rejection of MBK Entertainment's trademark on January 19. On August 8, MBK Entertainment trademarks for T-ara had been denied by Trademark Act. Jiae and Jiwon left the group in 2009, prior to debut due to creative differences. Boram , Qri , and Soyeon were added to the group shortly before debut single, "Lie". Hwayoung joined the group on July 26, 2010, thus making T-ara a seven-member group. Core Contents Media announced on May 30, 2012, that a new member named Dani would join the group following the completion of her training, and one month later, Areum joined T-ara. Following the bullying controversy, CCM announced Hwayoung's contract was to be terminated. On July 10, 2013, T-ara returned to its original debut lineup after Areum left to start a solo career. T-ara then continued as a six-member group until Core Contents Media (now under MBK) announced Soyeon and Boram were leaving the group. On April 12, 2013, Core Contents Media announced the launch of the group's first sub-unit, T-ara N4 (티아라 엔포), which stands for "T-ara Brand New 4", consisting of four members: Jiyeon, Eunjung, Hyomin, and Areum. T-ara had previously tried sub-units with the promotions of their sixth Japanese single " Bunny Style! ", in which the B-sides were sung by units of two and three members; however this was their first time doing formal unit activities. The group's debut song, " Jeon Won Diary " (전원일기; Jeon-won Ilgi ), was inspired by the 1980s drama of the same name. Produced by Duble Sidekick, it is a "funky and intense" dance song with elements of hip-hop. with the main motif of "Jeon Won Diary" being about breaking away from the same everyday routine. T-ara N4's extended play, Jeon Won Diary , and the music video for the title track were released on April 29, 2013. A Japanese sub-unit called QBS was announced in May 2013, featuring members Qri, Boram and Soyeon. The group focused on the Japanese market. The sub-unit released their debut single " Kaze no You ni " (風のように, Like the Wind ) on June 26, 2013. Written and composed by Takanori Fukuta, the song is described as a refreshing pop tune with an evergreen melody that leaves a "lasting impression". To promote the single, QBS held a live show at the Sunshine City Fountain Square in Ikebukuro , Tokyo on June 10, 2013. The group performed "Kaze no Yō ni", along with Boram and Qri's "Shabontama no Yukue" ( シャボン玉のゆくえ ) and Soyeon's "Love Poem" from their " Bunny Style! " single, in front of 2000 fans. In October 2009, the group signed a contract for their first commercial-film with Nonghyup Apples. They recorded the song "Apple Song" especially for the CF, which was later included and retitled as "Apple is A" on the group's debut studio album Absolute First Album . In 2010, the group modeled for such companies as Mentholatum Korea, Tedin Water Parks, and Olympus cameras. T-ara was chosen to model for Tedin Waterpark again in 2011. In 2011, T-ara modeled in commercial films for sports brand Spris, electronics brand iRiver , software company Windysoft, optical store Look Optical, instant noodles brand Shin Ramyun , Crown Mountain and many others. T-ara launched their own café franchise called Cafe Page One that will expand into a chain of 500 nationwide stores. The name of their café was influenced from the cafe that member Eunjung ran in her drama Coffee House . Cafe Page One was opened on July 1, 2011, where the members were present to greet the customers. The same year, T-ara was chosen as the new advertisement models for cosmetics brand Tony Moly . The group is expected to model for the brand in not only South Korea, but China, Japan, and other Asian countries as well. T-ara is also the first idol group to sign a contract with online shopping mall Hi-Mart . In February 2012, T-ara became models for the chicken chain Brilliant Chicken. In early 2015, T-ara reportedly signed a US$1 million contract with Celucasn, a Chinese popular clothing brand with images and a short promotional video also have already been released. In November, T-ara became spokesperson for Chinese server of an multiplayer game World of Warships and released the Chinese version of "Cry Cry" as the official Theme Song. The group also became the face of the mobile game Dream of the Three Kingdoms. In the same month, T-ara was appointed ambassadors in respect of the establishment of business partnership between Hankyung Media Group and Sina Weibo . In 2016, the group became brand ambassadors in Vietnam for Pantech Korea as the company was launching new phone models. T-ara held a charity event on December 14, 2013, in Eunjung 's mothers cafe, Cafenne. T-ara's old clothing, stage costumes and donations from Davichi , Ha Seokjin , Hwang Jungeum and Son Hojun were to be auctioned off. T-ara raised a total of 12.5 million won (~US$12,000) from the sales and donated about 2.5 million won (~$2,400) directly on the same day. On the 27th, T-ara donated the remaining 10 million won (~$10,000) to the Sharing Campaign "Hope Windmill" organized by the Red Cross by directly visiting the event. T-ara said, "We are able to end the year with a warm heart thanks to the many people who took part in the charity event and we give thanks to those who helped T-ara take the steps necessary for it." """ ;
     dbo:bandMember fadm:T-ARA_Areum,
-        fadm:T-ARA_Boram,
         fadm:T-ARA_Eunjung_T-ARA,
         fadm:T-ARA_Hwayoung,
         fadm:T-ARA_Hyomin,
-        fadm:T-ARA_Jiae_지원,
-        fadm:T-ARA_Jiwon_지애,
         fadm:T-ARA_Jiyeon_T-ARA,
-        fadm:T-ARA_Qri,
-        fadm:T-ARA_Soyeon_T-ARA ;
+        fadm:T-ARA_Qri;
     dbo:genre "J POP",
         "K POP" ;
     kpop:debut "July 29, 2009" ;
-    kpop:female_num 10 ;
+    kpop:female_num 6 ;
     kpop:gender "F" ;
     kpop:labels "EMI Japan",
         "MBK" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 10 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 461482 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/T-ARA" ;
@@ -6289,7 +6126,6 @@ fadm:TARGET a schema:Class ;
     dbo:bandMember fadm:TARGET_Boun,
         fadm:TARGET_G.I_TARGET,
         fadm:TARGET_Hyun,
-        fadm:TARGET_K.EEN_케인,
         fadm:TARGET_Roi_TARGET,
         fadm:TARGET_Seul_Chan,
         fadm:TARGET_Woojin_TARGET,
@@ -6300,8 +6136,8 @@ fadm:TARGET a schema:Class ;
     kpop:female_num "None"^^xsd:integer ;
     kpop:gender "M" ;
     kpop:labels "JSL Company" ;
-    kpop:male_num 8 ;
-    kpop:member_num 8 ;
+    kpop:male_num 7 ;
+    kpop:member_num 7 ;
     kpop:monthly_listener 421 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/TARGET" ;
@@ -6373,7 +6209,6 @@ fadm:TREASURE a schema:Class ;
         fadm:TREASURE_Bang_Ye_Dam,
         fadm:TREASURE_Choi_Hyun_Suk,
         fadm:TREASURE_Doyoung_TREASURE,
-        fadm:TREASURE_Ha_Yoon_Bin,
         fadm:TREASURE_Haruto,
         fadm:TREASURE_Jihoon_TREASURE,
         fadm:TREASURE_Junkyu,
@@ -6386,8 +6221,8 @@ fadm:TREASURE a schema:Class ;
     kpop:female_num "None"^^xsd:integer ;
     kpop:gender "M" ;
     kpop:labels "YG Entertainment" ;
-    kpop:male_num 13 ;
-    kpop:member_num 13 ;
+    kpop:male_num 12 ;
+    kpop:member_num 12 ;
     kpop:monthly_listener 3708087 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/TREASURE" ;
@@ -6446,18 +6281,15 @@ fadm:TST a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:TST_Ain_TST,
         fadm:TST_Junghoon_TST,
-        fadm:TST_K,
-        fadm:TST_Kyeongha,
-        fadm:TST_Wooyoung_TST,
         fadm:TST_Yohan,
         fadm:TST_Yonghyeon ;
     dbo:genre "POP" ;
     kpop:debut "January 4, 2017" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "KJ Music Entertainment" ;
-    kpop:male_num 7 ;
-    kpop:member_num 7 ;
+    kpop:male_num 4 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 59864 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/TST" ;
@@ -6544,20 +6376,19 @@ fadm:The_Grace a schema:Class ;
     dbo:abstract "The Grace (stylized as CSJH The Grace ), an initialism for Cheon Sang Ji Hui Deo Geureiseu ( Chinese : 天上智喜 The Grace), also known in Japan as Tenjochiki (天上智喜, Tenjōchiki ), is a South Korean A cappella group formed by SM Entertainment in 2005, with the four members: Lina , Dana , Sunday and Stephanie . They debuted with the single Too Good on April 29, 2005. Through the group's career, they releases and performs music in Korean and Japanese with a total of three studio albums and many more singles. The group continue to release music until their second Japanese album Dear... in January 2009. After the injury of Stephanie in 2010, the group's activities to be halted. In July 2011, the group returned with duo unit Dana&Sunday , which the duo continuing to release some digital single before also went to hiatus. All of The Grace's members later maintain solo careers in fields including music, theater, and television, while member Stephanie signed another music label to her solo music and maintain with SM until her contract expired in 2016. The Grace made their first live performance in China on April 29, 2005. They performed their debut songs \"Too Good\" and \"Boomerang\", and the performance was broadcast weeks later by the Chinese channel CCTV . The verses in \"Boomerang\" were also sung in Chinese. The quartet made their first live performance in South Korea with \"Too Good\" on SBS 's music program Inkigayo on May 1, 2005. They promoted the song for a few months before switching to \"Boomerang\". After 7 months of promoting their first singles in Korea, the group headed off to promote in China. The Chinese version of the single was officially released in March 2006. The single included three new tracks: the Chinese versions of \"Too Good\" and \"Boomerang\" and the pre-group track \"Fight To The End\". After promotional activities concluded, The Grace headed to Japan. They debut Japanese single Boomerang was released January 25, 2006. Later, the song was re-recorded and released with Japanese lyrics and an altered instrumental track, and a B-side called Do You Know? , a solo song by member Sunday . Boomerang ranked #110 in the Japanese Singles Top 200 chart. On March 8, they released second Japanese single The Club , along with a solo song by Stephanie called What U Want was released. It reached #131 on the Japanese Oricon Charts. The single was also promoted briefly in South Korea. After quick promotional activities in Korea, the group went back to Japan for their third Japanese single, Sweet Flower which was used as the theme for the month of April on the TBS Radio & Communications music show Count Down TV . \"Sweet Flower\" entered the charts at #151. The single was also released in Korea by SM, but it was left unchanged from its Japanese version. They released Chinese version of their Japanese single Boomerang was released in China on June 19 by Avex Trax 's official Chinese distributor CRSC . In Taiwan and Hong Kong , also included the Korean version of The Club was released and contained a Chinese version of The Club plus a DVD with the Korean music video. Even with the first few singles having low sales, another single was scheduled to be released. Juicy Love was in stark contrast with The Grace's previous singles, as it had a reggae beat. Japanese reggae singer Corn Head was featured in this song. The B-side was Sayonara no Mukō ni , The Grace's first Japanese ballad written and sung by Dana. Like the previous single, Juicy Love was released in Korea, left unchanged. They returned to Korea with releasing single My Everything on November 3, 2006 and starting promotion as CSJH The Grace . The song is a ballad track unlike their previous singles. The B-side track included a cappella version of George Michael 's Faith , The Final Sentence and Iris ( 할 말이 있어요 ) . However, the changes did not greatly increase sales; the single entered at #30 on the Music Industry Association of Korea's monthly sales charts. The group's first album, 한번 더, OK? ( Hanbeon Deo, OK? ; One More Time, OK? ) was released on May 4, 2007. The title song One More Time, OK? was The Grace's most successful song to date, topping Mnet M! Countdown and SBS Inkigayo charts. The album reached sixth place for the month. On June 15, the album was released in Taiwan, The Grace's first major release overseas. \"One More Time, OK?\" won the Best Dance Music award at the 2007 Mnet Asian Music Awards (M.Net KM Music Festival). Their fifth Japanese single, Piranha was released in August consists of Piranha and Japanese versions of My Everything and Just For One Day , featuring TVXQ 's Jaejoong. The single debuted at #26 on the Oricon daily charts and ended at #50 on weekly charts. In November, their first Japanese album Graceful 4 was released, consisted of nine previously released songs and new material, including the Japanese version of One More Time, OK? from their first Korean album's title song. During the first months of 2008, The Grace performed at various events in support of their first Japanese album. They held three concerts in April and May named ' Graceful Party Vol. 1' . The last one, at Daikanyama UNIT in Tokyo , featured their upcoming release Here , a collaboration with hip-hop group Cliff Edge . Their sixth Japanese single called Stand Up People , was released on July 23. It was consists of Dear Friend , remixes of Stand Up People and remices of One More Time, OK . Their seventh single, Here was released on October 22, but after the song leaked, it was offered for free download for a limited time. \"Here\" was the theme song of both the drama and movie of Homeless School Student , based on a Japanese best-seller book. A second song and music video were released, titled \"Near\". \"Here\" reached #16 at the Oricon Charts with sales of over 16,000. [ citation needed ] The group's second Japanese album Dear... was released on January 7, 2009. The album debuted on #14 on the Oricon Chart. [ citation needed ] The Grace appeared on the soundtrack of the Japanese movie Subaru with the songs \"Sukoshi De Ii Kara / A Bit of Good\" ( 少しでいいから ) and \"Coming To You\". \"Sukoshi De Ii Kara / A Bit of Good\" was part of The Grace's second Japanese Album Dear... . Stephanie also appeared in the movie as a ballet trainer. In early 2010, Stephanie were confirmed to sustaining a major back injury and went to US for her recovery. On May 21, 2010, The Grace remained with three-members performance My Everything and One More Time, Ok? at the SM Town Live' 10 World Tour in Seoul. In 2011, Dana and Sunday formed the first sub-unit of the group called The Grace - Dana & Sunday . Since then, the group has been on while all members have continued to focus on solo activities. On May 15, 2016, it was confirmed that Stephanie's contract with SM Entertainment had expired on May 15, 2016. She decided to not renew her contract with the company and continue to promote as soloist with Mafia Records. On July 5, 2011, S.M. Entertainment announced the formation of its first official sub-group unit of The Grace. Breaking their 4-year hiatus, the duo is composed of Dana and Sunday . Their debut single, \"One More Chance (나 좀 봐줘)\", was released digitally along with the accompanying music video on July 11. Dana & Sunday's debut performance was on July 8 on KBS Music Bank . On September 23, Dana & Sunday featured on part four of the soundtrack for the drama Hooray for Love (애정만만세) with the track \"Now You\" (지금 그대). Dana and Sunday's \"With Coffee Project Part 1\" was released on December 20 together with the music video of the song. The duo also participated in the eighth SM Town winter compilation album, 2011 Winter SMTown – The Warmest Gift . The two performed the song \"Amazing\", which was released as a physical album only on December 13, 2011. Though performing as solo artists, Dana and Sunday performed in SM Town Live 2019 in Tokyo on August 3–5, 2019. " ;
     dbo:bandMember fadm:The_Grace_Dana,
         fadm:The_Grace_Lina,
-        fadm:The_Grace_Stephanie,
         fadm:The_Grace_Sunday ;
     dbo:genre "BALLAD",
         "DANCE",
         "POP",
         "R&B" ;
     kpop:debut "April 29, 2005" ;
-    kpop:female_num 4 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 3 ;
+    kpop:gender "F" ;
     kpop:labels "Avex Asia",
         "Rhythm Zone",
         "SM Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 4 ;
+    kpop:member_num 3 ;
     kpop:monthly_listener 3785 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/The_Grace" ;
@@ -6713,7 +6544,7 @@ fadm:UNI a schema:Class ;
         fadm:UNI_Siyeon ;
     kpop:debut "None" ;
     kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "GLOBAL Entertainment",
         "TNK Entertainment",
         "The Best Entertainment",
@@ -7644,7 +7475,7 @@ fadm:YJIG a schema:Class ;
     dbo:genre "DANCE POP" ;
     kpop:debut "September 5, 2018" ;
     kpop:female_num 4 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "GR Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -7677,8 +7508,8 @@ fadm:YULiONi a schema:Class ;
     schema:image_url "https://vignette.wikia.nocookie.net/kpop/images/7/7d/YULiONi_profile_picture.png/revision/latest?cb=20191013121524" .
 
 fadm:Ye-A a schema:Class ;
-    rdfs:label "Ye-A (예아) was a girl group initially under Kiroy Company, and later Shinhoo Entertainment. They debuted on July 18, 2014 with their only single 'National Treasure'. After Kiroy Company was purchased by Shinhoo Entertainment, updates of the girl group were no longer released. They are assumed to have disbanded sometime in late 2015 without any official statement" ;
-    dbo:abstract "None" ;
+    rdfs:label "Ye-A";
+    dbo:abstract "Ye-A (예아) was a girl group initially under Kiroy Company, and later Shinhoo Entertainment. They debuted on July 18, 2014 with their only single 'National Treasure'. After Kiroy Company was purchased by Shinhoo Entertainment, updates of the girl group were no longer released. They are assumed to have disbanded sometime in late 2015 without any official statement" ;
     dbo:bandMember fadm:Ye-A_Chai_Ye-A,
         fadm:Ye-A_Dohye,
         fadm:Ye-A_Hady,
