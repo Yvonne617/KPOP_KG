@@ -15,18 +15,16 @@
     dbo:bandMember <https://kpop.fandom.com/wiki/100_25_group_Chanyong>,
         <https://kpop.fandom.com/wiki/100_25_group_Hyukjin>,
         <https://kpop.fandom.com/wiki/100_25_group_Jonghwan>,
-        <https://kpop.fandom.com/wiki/100_25_group_Minwoo_100_>,
-        <https://kpop.fandom.com/wiki/100_25_group_Rockhyun>,
-        <https://kpop.fandom.com/wiki/100_25_group_Sanghoon> ;
+        <https://kpop.fandom.com/wiki/100_25_group_Rockhyun> ;
     dbo:genre "BALLAD",
         "POP" ;
     kpop:debut "September 18, 2012" ;
-    kpop:female_num 1 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "KISS Entertainment",
         "TOP Media" ;
-    kpop:male_num 1 ;
-    kpop:member_num 6 ;
+    kpop:male_num 4 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 243 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/100%25_(group)" ;
@@ -37,8 +35,7 @@
 <https://kpop.fandom.com/wiki/10X10> a schema:Class ;
     rdfs:label "10X10" ;
     dbo:abstract "None" ;
-    dbo:bandMember <https://kpop.fandom.com/wiki/10X10_Cindy>,
-        <https://kpop.fandom.com/wiki/10X10_HanU>,
+    dbo:bandMember <https://kpop.fandom.com/wiki/10X10_HanU>,
         <https://kpop.fandom.com/wiki/10X10_Hyeon_Sung>,
         <https://kpop.fandom.com/wiki/10X10_Jiyoon_10X10>,
         <https://kpop.fandom.com/wiki/10X10_Yein_rapper>,
@@ -46,10 +43,10 @@
     dbo:genre "POP" ;
     kpop:debut "July 22, 2015" ;
     kpop:female_num 5 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "Gaon Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 6 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 1603 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/10X10" ;
@@ -81,17 +78,18 @@
 
 <https://kpop.fandom.com/wiki/1PS> a schema:Class ;
     rdfs:label "1PS" ;
-    dbo:abstract "None" ;
+    dbo:abstract "1PS (원피스, short for 1Piece-Score) was a girl group under Maroo Entertainment. They debuted with the single 'The First Score' on March 3, 2014. The group disbanded in 2015." ;
     dbo:bandMember <https://kpop.fandom.com/wiki/1PS_Jieun_1PS>,
         <https://kpop.fandom.com/wiki/1PS_Saeha_1PS>,
+        <https://kpop.fandom.com/wiki/1PS_Yena_(1PS)>,
         <https://kpop.fandom.com/wiki/1PS_Yoonseo_1PS> ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 2 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Maroo Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 3 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 2980926 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/1PS" ;
@@ -105,14 +103,15 @@
     dbo:bandMember <https://kpop.fandom.com/wiki/1TEAM_Je_Hyun>,
         <https://kpop.fandom.com/wiki/1TEAM_Jin_Woo_1TEAM>,
         <https://kpop.fandom.com/wiki/1TEAM_Jung_Hoon_1TEAM>,
+        <https://kpop.fandom.com/wiki/1TEAM_BC>,
         <https://kpop.fandom.com/wiki/1TEAM_Rubin> ;
     dbo:genre "POP" ;
     kpop:debut "March 27, 2019" ;
-    kpop:female_num 1 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "Live Works Company" ;
-    kpop:male_num 3 ;
-    kpop:member_num 4 ;
+    kpop:male_num 5 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 62584 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/1TEAM" ;
@@ -149,27 +148,18 @@
 <https://kpop.fandom.com/wiki/24K> a schema:Class ;
     rdfs:label "24K" ;
     dbo:abstract "None" ;
-    dbo:bandMember <https://kpop.fandom.com/wiki/24K_Byungho>,
-        <https://kpop.fandom.com/wiki/24K_Changsun>,
-        <https://kpop.fandom.com/wiki/24K_Corbyn>,
-        <https://kpop.fandom.com/wiki/24K_Daeil>,
+    dbo:bandMember <https://kpop.fandom.com/wiki/24K_Changsun>,
         <https://kpop.fandom.com/wiki/24K_Dojun_24K>,
-        <https://kpop.fandom.com/wiki/24K_Hongseob>,
-        <https://kpop.fandom.com/wiki/24K_Hui>,
         <https://kpop.fandom.com/wiki/24K_Imchan>,
-        <https://kpop.fandom.com/wiki/24K_Kim_Jeong_Uk>,
-        <https://kpop.fandom.com/wiki/24K_Kisu>,
         <https://kpop.fandom.com/wiki/24K_Kiyong>,
-        <https://kpop.fandom.com/wiki/24K_Seokjune>,
-        <https://kpop.fandom.com/wiki/24K_Sungoh>,
         <https://kpop.fandom.com/wiki/24K_Xiwoo> ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "Choeun Entertainment" ;
-    kpop:male_num 8 ;
-    kpop:member_num 14 ;
+    kpop:male_num 5 ;
+    kpop:member_num 5 ;
     kpop:url "https://kpop.fandom.com/wiki/24K" ;
     kpop:year_active_from "2012" ;
     kpop:year_active_to "present" ;
@@ -188,11 +178,11 @@
         "SOUL" ;
     kpop:debut "July 11, 2008" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "",
         "Big Hit Entertainment",
         "JYP Entertainment" ;
-    kpop:male_num 3 ;
+    kpop:male_num 4 ;
     kpop:member_num 4 ;
     kpop:url "https://kpop.fandom.com/wiki/2AM" ;
     kpop:year_active_from "2008" ;
@@ -205,6 +195,7 @@
 """ ;
     dbo:bandMember <https://kpop.fandom.com/wiki/2NE1_CL>,
         <https://kpop.fandom.com/wiki/2NE1_Dara>,
+        <https://kpop.fandom.com/wiki/2NE1_Minzy>,
         <https://kpop.fandom.com/wiki/2NE1_Park_Bom> ;
     dbo:genre "DANCE POP",
         "HIP HOP",
@@ -212,7 +203,7 @@
         "K POP",
         "R&B" ;
     kpop:debut "May 6, 2009" ;
-    kpop:female_num 3 ;
+    kpop:female_num 4 ;
     kpop:gender "F" ;
     kpop:labels "Avex Group",
         "Capitol",
@@ -220,7 +211,7 @@
         "Warner Music",
         "YG" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 3 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 1396526 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/2NE1" ;
@@ -232,7 +223,6 @@
     rdfs:label "2PM" ;
     dbo:abstract " 2PM ( Korean : 투피엠 ) is a South Korean boy band formed by JYP Entertainment . The current members are Jun. K (formerly known as Junsu), Nichkhun , Taecyeon , Wooyoung , Junho and Chansung . Former leader Jaebeom officially left the band in early 2010. The history of 2PM started when Korean musician Park Jin-young formed an eleven-member band known as One Day. Eventually the band was split into 2PM and a similar but independent group known as 2AM . 2PM debuted with the song \"10 Jeom Manjeome 10 Jeom\" ( 10점 만점에 10점 , lit. \"10 Points Out of 10 Points\"), which showcased their acrobatic dance styles. They achieved their first number 1 single with \"Again & Again\". Both singles featured on their first studio album, 01:59PM , released in 2009. The band went on to release another Korean album, known as Hands Up , in 2011. They made their Japanese debut later that year with Republic of 2PM . After more than a year, the group returned in 2013 with their third studio album Grown . In early September 2014, 2PM returned with their fourth studio album Go Crazy . On 15 June 2015, 2PM made a comeback with their fifth studio album No.5 . After much anticipation 2PM returned on 13 September 2016 with their sixth studio album Gentlemen's Game . Since July 2017, the group has been on an official hiatus. The members of 2PM all auditioned (except Nichkhun , who was scouted) to become part of JYP Entertainment. Some members already had experience in the entertainment industry, including Jun. K , who had won several singing competitions. Ok Taecyeon , Lee Junho and Hwang Chansung had participated in the show SuperStar Survival . Some of the members had previously lived in the U.S., former leader Jaebeom in the Seattle area, Nichkhun in Southern California , while Taecyeon spent seven years in Massachusetts before returning to Korea. Originally, the members of 2PM were part of a larger group known as One Day. A documentary called Hot Blood Men captured the group's training days. In this documentary, former member Jaebeom finished at the top spot and received the most fan votes. It also featured the elimination of three trainees from the group: Lee Swichi, Jeong Jinwoon , and Yoon Doo-joon were all cut. However, Jinwoon replaced Im Daehun upon the latter's withdrawal. By the end of the training process, One Day had been reduced to an eleven-member group. The band was then split into four-member ballad group 2AM and seven-member hip-hop group 2PM. While most Korean boy bands at the time adopted a \"pretty boy\" (Korean: kkonminam ) image, 2PM constructed a tough and macho beast-like image when they made their debut. By emphasizing their masculine images, 2PM created the \"jimseung-dol\" (jimseung means an animal or beast in Korean) phenomenon in 2008. Jaebeom was chosen to serve as the group's leader, as he was the oldest member and also the one where all the members acknowledged as the most talented one. He played key roles in several of the band's early singles and associated music videos. 2PM debuted with their single \" 10 Out of 10 \" ( 10점 만점에 10점 ) on 4 September 2008. In October 2008, they began to promote \"Only You\", another song from their debut mini album, Hottest Time of the Day . Concurrently, 2PM hosted the third season of Korean variety show Idol Army . In April 2009, the group released their second mini album, 2:00PM Time For Change , which they began promoting that month with the single \"Again and Again\". In May they won their first Mutizen Song award on M!Countdown , followed by two more and a Music Bank award. On 11 June, 2PM began promotions for \"Niga Mipda\" ( 니가 밉다 , lit. I Hate You ) on M!Countdown . In July 2PM achieved first place on the M!Countdown and Music Bank charts for the song \"Niga Mipda\". On 30 July, 2PM won the 'Only One Song' award on M!Countdown . At this time, 2PM also starred in the popular Korean variety show Wild Bunny. Later that year a controversy regarding Jaebeom emerged. On 4 September 2009, articles surfaced on the internet regarding Jaebeom's posts from 2005 on his personal Myspace account, in which he expressed his dislike for Korea while still a trainee for JYP Entertainment . These posts, leaked by a netizen who hacked his Myspace account, were taken out of context and severely misinterpreted by the Korean media. Jaebeom issued an apology regarding this matter. Although some demanded that Jaebeom should be forced out of 2PM, JYP Entertainment CEO Park Jin-young stated on 7 September lent the singer a vote of confidence, suggesting that he would remain in the group. Yet the following day, Jaebeom announced on his official fancafe that he would leave the group and return to the United States for a while to calm the situation. He planned to return to school and improve his understanding of music. At the same time, he apologized to his fellow band members for not being a good leader and older brother for them. He also promised to come back as a better person. Park Jin-young confirmed that 2PM would continue on as a six-member group. Due to the sensitive topic of Jaebeom's departure, 2PM withdrew for several weeks from their appearances on variety shows. Despite the controversy, the group went ahead with release of its first studio album. Known as 01:59PM , the album was released on 10 November 2009. Yet questions about Jaebeom remained. The day after the album's release, Park Jin-young announced that Jaebeom could return to 2PM if he wished to make a comeback, although the singer's return was not imminent. In support of Jaebeom, the six 2PM members decided to equally split their income from their first album with him. The album included tracks voiced by Jaebeom, although his face was excluded from the cover. The group finished re-filming their music video for \" Heartbeat \", the title song, without Jaebeom in October 2009. The group began promotional activities for the album on a variety of music shows, including M.Net O Good Concert , KBS Music Bank , MBC Music Core and SBS Inkigayo in November 2009. A week and a half after the album's release, 2PM performed at and was honored at the M.net Asian Music Awards with awards for Best Male Group and Artist of the Year (the latter being one of the three most prestigious awards at the show). The group paid homage to Jaebeom during their performance of \"Again & Again\". During the performance, a spotlight shone over Jaebeom's usual position in the dance formation, and his vocals played over the speakers without being replaced. In late November 2009, after two weeks of promotional activities for the 1:59PM , 2PM earned their first #1 on a TV music show (KBS Music Bank's \"K-Chart\") since the album's release, with \"Heartbeat\", which went on to take #1 on the K-Chart for three more weeks. In addition, \"Heartbeat\" achieved the \"Mutizen\" song award Triple Crown on SBS Inkigayo by being the #1 song the Inkigayo \"Take 7\" chart for three weeks, the maximum amount of time for which a nominated song is eligible to win. On 30 December 2009, at Korean Broadcasting System (KBS)'s end of the year Music Festival, \"Again & Again\" was recognized as \"Song of the Year\", winning with 57,060 votes. 2PM's second single from 01:59PM was \"Tired of Waiting\". The song was performed live for the first time at the SBS Music Festival in December 2009. 2PM's promotion for the album ended with their SBS Inkigayo performance in January 2010. In February 2010, JYP Entertainment announced that Jaebeom would not return to 2PM, as his contract with the company had been permanently terminated, with the agreement of all 6 members. A combined fan meeting and press conference was held two days later with the six remaining members of 2PM and JYP Entertainment CEO Choi Jungwook in attendance. Various 2PM fansites were shut down immediately after the conference as a protest of Jaebeom's termination. Management announced that although 2PM would move forward with six members, a new leader would not be chosen to replace Jaebeom. In April 2010, the band released Don't Stop Can't Stop , a mini-album consisting of six tracks. The group intended for the release to illustrate a stronger side of themselves than did their previous releases. The group made their television performance comeback on Mnet's music program M! Countdown in April 2010. 2PM served as the opening act for nine Wonder Girls summer shows in the United States in 2010. 2PM also performed at the eighth annual Korea Times Music Festival in Los Angeles, California in May 2010, and at the Dream Concert in Seoul, South Korea in May 2010. In May 2010, 2PM released the song \"What's Your Celebration?\" for the FIFA 2010 World Cup . The song samples K'Naan 's Wavin' Flag . In July 2010, Taecyeon and Wooyoung left their position of MCs at SBS Inkigayo. The next month, Wooyoung also left Winwin to concentrate on 2PM's busy schedule. The 1st concerts took place on 31 July 1 August (in Seoul) & 7, 8 August (in Busan) ( 2AM & Miss A were invited as the guests of the concert). More than 12,000 fans attended 2PM's first concerts in Seoul. 2PM performed all their hit-songs since 2008 plus solo performance from each member. 2PM held two encore concerts in Seoul on 4–5 September to celebrate their second anniversary. In October 2010, 2PM released their fourth EP, Still 2:00PM , with the lead single \"I'll Be Back\" staying at number one for two consecutive weeks in the Music Bank . In November 2010, Still 2:00PM debuted unexpectedly on the 13th spot of the Billboard's World Album-Chart though no promotions for the album were made in the United States. 2PM was granted the \"Most Popular Asian Singer\" award at the Mandarin Music Honors 2010 in China. The group attended the event on 18 October at Wukesong Arena; it was the tenth annual MMH. Previously, Rain, Jang Nara, and Shin Seung Hoon have each taken home the \"Year’s Best Korean Singer\" award, but this is the first time a Korean artist has won the \"Most Popular Asian Singer\" award. 2PM performed \"Heartbeat\" and \"I’ll Be Back\". 2PM officially made their Japanese debut in December 2010 with their first live event in Japan at the Ryogoku Kokugikan Gymnasium, a place well known for sumo games. The platinum showcase was called \"2PM 1st Contact in JAPAN\" LIVE. In May 2011, 2PM released their Japanese debut-single, \"Take Off.\" The song was featured as an ending song in the Blue Exorcist anime series. 2PM’s first Japanese concert tour, known as the \"2PM 1st Japan Tour 2011 Take Off,\" began in Sapporo on 6 May and ended a week later in Tokyo. In June 2011, JYP Entertainment released the track list of their upcoming second studio album, which would be known as \"Hands Up.\" The album was released later that month on 20 June 2011. For the first time, the album featured two songs composed by 2PM members: \"HOT\" by Minjun and \"Give it to Me\" by Junho. The promotion period for the album was short; it ended just one month after the album's release. This allowed the band to prepare for their Japanese promotions and for their \"Hands Up Asia Tour.\" The 2PM Show began broadcasting in July 2011 on SBS’s E!TV cable channel and featured all six members. It was the first time 2PM would emcee a program with their name on it. On 30 November 2011, 2PM released their first studio album in Japanese language, Republic of 2PM . It contains all of their Japanese singles released to date (Take Off, I'm Your Man and Ultra Lover) plus the Japanese version of their most recent Korean hit song \"Hands Up\", as well as a new song composed by Minjun for Japanese fans called \"Hanarete Itemo\" (離れていても, Even When We're Apart) and 4 other completely new songs. The main point of the album artwork motif is a taste of the 1950s and 1960s. Oricon released their sales for 2011, announcing that 2PM was the 2nd best selling new artist in Japan, only behind Johnny & Associates 's group Kis-My-FT2 , with 990 million yen (12.68 million USD) only in singles, albums and DVDs sales. In April 2012, 2PM announced plans to release a documentary film with 2AM , to be known as Beyond The One Day , in Japan. One Day refers to the group from which 2PM and 2AM both split. On 13 April, they released the trailer for the film. After more than a year, 2PM made their Korean comeback in 2013 with their third studio album, Grown . A teaser for the music video of \"Comeback When You Hear This Song\", the lead single of their album, was released on 2 May 2013 on 2PM's official YouTube account. The full music video was released on 6 May 2013 along with 10 songs from the album. This album is a two title track album, the track \"A.D.T.O.Y.\" was released on 11 May 2013. As part of their promotion activities for the album, from 2 May to 31 July 2013, the group took part in the 2PM G+Star Zone exhibition, at the Apgujeongrodeo Station . It is part of the G+Dream Project by Gangnam-gu Office for disadvantaged youth. The group made their promotional appearance for the album was on M.net 's M! Countdown on 16 May, where they performed \"A.D.T.O.Y.\" and \"Comeback When You Hear This Song\", along with Shinhwa , for their album The Classic and Seo In-young for her EP Forever Young . In 2014, during the filming of the music video of the group's upcoming comeback, a fire broke out on the set of the music video. Authorities stated after the fire had been handled that the fire was relatively small and had been controlled by the time the fire team arrived, and apparently started when a spark from some fireworks which were being used in the music video landed on a sponge. All the members and staff present at the time were confirmed to be unharmed. The long-awaited comeback that was to be in April was postponed by JYP Entertainment and 2PM due to their individual activities, for early June with a possibility that they will return in July at the earliest or even later in the year. According to ALLKPOP , JYP Entertainment rep told Newsen on the 14th, \"2PM's comeback has been delayed for the time being. It will be in the latter-half of this year but the exact date has not been decided yet.\" On 31 August, 2pm released teaser photos for their comeback album GO CRAZY! and revealed that their comeback would be released on 10 September. They then released individual teasers on 2 September before the official release of the song. On 10 September, the group released their official music video for the dance track \"GO CRAZY!\" on JYP Entertainment's official YouTube account and garnered over 1 million views in the first 24 hours. They made their comeback performance on m!countdown on the subsequent day. 2PM's fifth studio album, No.5 , was released 15 June 2015. Nine of the twelve songs on the album were written by the members, with the title song \"My House\" written by Jun. K . On 3 September 2016 Junho posted the group's schedule for the coming week on his Instagram profile hinting at a comeback. On 4 September the group celebrated their eight-year anniversary together. On the same day 2PM began teasing a comeback by posting individual photos of each member on social media. Their sixth studio album was released on 13 September, titled Gentlemen's Game along with the new single \"Promise (I'll Be)\". Gentlemen's Game was their last album before they began their military enlistment. On January 31, 2018, five of the six members of 2PM signed their renewal to JYP Entertainment with Taecyeon's renewal to be discussed after he served his military service, and they were named directors of external affairs as they are the most senior group in JYP Entertainment the next day. Jun.K also entered the military on May 8. Wooyoung enlisted on July 8, serving active duty. On July 25, Taecyeon decided not to re-sign with JYP Entertainment , instead signing with 51K. However, he will continue promoting with 2PM. Taecyeon was discharged on May 16, 2019. Junho began his military service on May 30 as a public service worker, while Chansung enlisted on June 11. Jun. K completed his military service and was discharged on January 2, 2020. Wooyoung was also discharged on February 25. In December 2008, 2PM began to host the third season of MBC's Idol Show (아이돌군단의 떴다!그녀). The segment ran from 4 December 2008 to 26 March 2009, with a total of seventeen episodes. The group also starred in a reality show on M.net, titled Wild Bunny , in which the members escaped the pressures of stardom by performing ten forbidden activities of idols. The show ran from 21 July 2009 to 1 September 2009, with seven episodes aired; the airing of the final episode, which coincidentally featured the members engaged in a \"Leader Olympics\" game to select a new leader, was postponed indefinitely due to Jaebeom 's internet controversy and his subsequent departure from the group. In addition, Taecyeon and Wooyoung have been hosting SBS ( Seoul Broadcasting System )'s weekly music show Inkigayo , while Jaebeom and Chansung have also made regular appearances on 'Introducing Star Friends'. Since Jaebeom was voted off, Nichkhun replaced his position as the guest. Nichkhun and Wooyoung were also frequent guests on SBS's variety talent show Star King between April and October 2009, with the other 2PM members occasionally joining them. In March 2009, 2PM was selected to model for EXR , a clothing company in Korea. In July 2009, the members of 2PM were selected as the representatives of foreign artists by the Thai government-led tourism campaign, I Love Thailand. Member Nichkhun has also been selected by the Tourism Authority of Thailand (TAT) as the face of their newest campaign, \"Come to Thailand; Let's Take a Break!\" In August 2009, 2PM collaborated with the Body Shop in 'Soft Hands, Kind Heart', a worldwide campaign that calls for the protection of children and teenagers against sex trafficking. The members will act as Korea's spokespeople for the campaign. In late October 2009, a commercial film (CF) of 2PM promoting Hanami (a Thai snack company) was released, which also included Jaebeom ; the commercial was said to be filmed prior to his departure in September. November 2009 saw multiple new endorsement deals for the group, the first of which being a commercial and print campaign for Market O's \"Real Brownie\" pastry. Shortly thereafter, the group endorsed the Samsung Corby mobile phone, one of the newest mobile devices in Samsung's popular \"Anycall\" series, both on television and on the Samsung website. 2PM is also currently endorsing Paris-Croissant Food Company 's Paris Baguette bakery franchise, for which the group recorded a special Christmas song and are featured in a series of commercials with popular Korean actress Kim Tae-hee . In 2010, 2PM has signed on to endorse Coca-Cola as well as the clothing company SPRIS (also known as PONY). Members Nichkhun, Taecyeon, Minjun and Wooyoung endorse Cass Beer, and Nichkhun has continued advertising for the Suzuki Jelato motorcycle in Thailand. In addition, 2PM now endorses Calvin Klein South Korea, as well as, most recently, It's Skin, a South Korean cosmetics and skin care brand. In mid-2010, 2PM were chosen along with Girls' Generation to be the spokesperson for Caribbean Bay . Shortly after, the members of 2PM (except for Nichkhun ) were chosen to sing the song \"Fly to Seoul (Boom Boom Boom)\" to support tourism in Korea. Due to renewal of their endorsement deal with Samsung , 2PM recorded the song \"Nori For U\" for Samsung Anycall NORi . " ;
     dbo:bandMember <https://kpop.fandom.com/wiki/2PM_Chansung>,
-        <https://kpop.fandom.com/wiki/2PM_Jay_Park>,
         <https://kpop.fandom.com/wiki/2PM_Jun._K>,
         <https://kpop.fandom.com/wiki/2PM_Junho>,
         <https://kpop.fandom.com/wiki/2PM_Nichkhun>,
@@ -249,8 +239,8 @@
         "JYP Entertainment",
         "Sony Music",
         "United Asia Management" ;
-    kpop:male_num 5 ;
-    kpop:member_num 7 ;
+    kpop:male_num 6 ;
+    kpop:member_num 6 ;
     kpop:url "https://kpop.fandom.com/wiki/2PM" ;
     kpop:year_active_from "2008" ;
     kpop:year_active_to "2017" ;
@@ -258,7 +248,7 @@
 
 <https://kpop.fandom.com/wiki/2Z> a schema:Class ;
     rdfs:label "2Z" ;
-    dbo:abstract "None" ;
+    dbo:abstract "2Z (투지) is a five-member boy band under Morph Management. They made their debut on January 14, 2020 with their first EP We Tuzi" ;
     dbo:bandMember <https://kpop.fandom.com/wiki/2Z_Bum_Jun>,
         <https://kpop.fandom.com/wiki/2Z_Ho_Jin_2Z>,
         <https://kpop.fandom.com/wiki/2Z_Hyun_Woong>,
@@ -267,9 +257,9 @@
     dbo:genre "POP ROCK" ;
     kpop:debut "January 14, 2020" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "Morph Management" ;
-    kpop:male_num 1 ;
+    kpop:male_num 5 ;
     kpop:member_num 5 ;
     kpop:monthly_listener 75917 ;
     kpop:popularity 3 ;
@@ -283,23 +273,16 @@
     dbo:abstract "None" ;
     dbo:bandMember <https://kpop.fandom.com/wiki/365_Practice_Cho_Seo_Young>,
         <https://kpop.fandom.com/wiki/365_Practice_Jang_Eun_Seong>,
-        <https://kpop.fandom.com/wiki/365_Practice_Jung_Do_Hae_정도해>,
-        <https://kpop.fandom.com/wiki/365_Practice_Kim_Sung_Eun_김성은>,
-        <https://kpop.fandom.com/wiki/365_Practice_Kim_Young_Seo_김영서>,
         <https://kpop.fandom.com/wiki/365_Practice_Lee_Chae_Young>,
-        <https://kpop.fandom.com/wiki/365_Practice_Lee_Ye_Sol>,
-        <https://kpop.fandom.com/wiki/365_Practice_Mo_Mo_모모>,
         <https://kpop.fandom.com/wiki/365_Practice_Mori_Koyuki>,
         <https://kpop.fandom.com/wiki/365_Practice_Na_Go_Eun>,
         <https://kpop.fandom.com/wiki/365_Practice_Park_Ji_Eun>,
-        <https://kpop.fandom.com/wiki/365_Practice_Park_Su_Jin>,
-        <https://kpop.fandom.com/wiki/365_Practice_Seo_Ji_Heun_서지흔> ;
-    kpop:debut "None" ;
-    kpop:female_num 6 ;
-    kpop:gender "Unknown" ;
+        <https://kpop.fandom.com/wiki/365_Practice_Park_Su_Jin> ;
+    kpop:female_num 7 ;
+    kpop:gender "F" ;
     kpop:labels "RBW" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 13 ;
+    kpop:member_num 7 ;
     kpop:monthly_listener 4 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/365_Practice" ;
@@ -334,17 +317,18 @@ On October 16, Stray Kids became the new model of the Korean sportswear brand �
     dbo:bandMember <https://kpop.fandom.com/wiki/4minute_Heo_Gayoon>,
         <https://kpop.fandom.com/wiki/4minute_Jenyer>,
         <https://kpop.fandom.com/wiki/4minute_Sohyun>,
+        <https://kpop.fandom.com/wiki/4minute_Jiyoon>,
         <https://kpop.fandom.com/wiki/4minute_Son_Jihyun> ;
     dbo:genre "J POP",
         "K POP" ;
     kpop:debut "June 18, 2009" ;
-    kpop:female_num 4 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "Cube",
         "Far Eastern Tribe",
         "Universal Music" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 4 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 743575 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/4minute" ;
@@ -405,19 +389,18 @@ On October 16, Stray Kids became the new model of the Korean sportswear brand �
 
 fadm:A-Feel a schema:Class ;
     rdfs:label "A-Feel" ;
-    dbo:abstract "None" ;
+    dbo:abstract "A-Feel (에이필) is a four-member performance girl group under SA Entertainment. They made their debut with the single "Dance Over Night" on July 15, 2019." ;
     dbo:bandMember fadm:A-Feel_Jini,
-        fadm:A-Feel_Jung_Haeseon,
         fadm:A-Feel_Mina_A-Feel,
         fadm:A-Feel_Mini_A-Feel,
         fadm:A-Feel_Ssun ;
     dbo:genre "DANCE POP" ;
     kpop:debut "July 15, 2019" ;
-    kpop:female_num 2 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "SA Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 5 ;
+    kpop:member_num 4 ;
     kpop:url "https://kpop.fandom.com/wiki/A-Feel" ;
     kpop:year_active_from "2015" ;
     kpop:year_active_to "present" ;
@@ -430,18 +413,15 @@ fadm:A-JAX a schema:Class ;
         fadm:A-JAX_Hyojun,
         fadm:A-JAX_Jaehyung,
         fadm:A-JAX_Joonghee,
-        fadm:A-JAX_Seungjin,
-        fadm:A-JAX_Seungyeop,
-        fadm:A-JAX_Sungmin,
         fadm:A-JAX_Yunyoung ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "DSP Media",
         "Universal Sigma" ;
-    kpop:male_num 4 ;
-    kpop:member_num 8 ;
+    kpop:male_num 5 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 716297 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/A-JAX" ;
@@ -451,7 +431,7 @@ fadm:A-JAX a schema:Class ;
 
 fadm:A.C.E_boy_group a schema:Class ;
     rdfs:label "A.C.E_boy_group" ;
-    dbo:abstract "None" ;
+    dbo:abstract "A.C.E (에이스) is a five-member boy group under Beat Interactive. They debuted on May 23, 2017 with their first single album 'Cactus'." ;
     dbo:bandMember fadm:A.C.E_boy_group_Chan_A.C.E,
         fadm:A.C.E_boy_group_Donghun,
         fadm:A.C.E_boy_group_Jun_A.C.E,
@@ -473,16 +453,17 @@ fadm:A.sia a schema:Class ;
     rdfs:label "A.sia" ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:A.sia_Oh_Yumi,
+        fadm:A.sia_Sion,
         fadm:A.sia_Suen,
         fadm:A.sia_Zoo.Y ;
     dbo:genre "DANCE",
         "POP" ;
     kpop:debut "May 11, 2006" ;
-    kpop:female_num 2 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Starmade Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 3 ;
+    kpop:member_num 4 ;
     kpop:url "https://kpop.fandom.com/wiki/A.sia" ;
     kpop:year_active_from "2006" ;
     kpop:year_active_to "2007" ;
@@ -490,7 +471,7 @@ fadm:A.sia a schema:Class ;
 
 fadm:AA a schema:Class ;
     rdfs:label "AA" ;
-    dbo:abstract "None" ;
+    dbo:abstract "AA (Double A; 더블에이) was a boy group under Wellmade StarM. They debuted on November 3, 2011 with the single 'So Crazy'." ;
     dbo:bandMember fadm:AA_Aoora,
         fadm:AA_Hoik,
         fadm:AA_Jinhong,
@@ -500,9 +481,9 @@ fadm:AA a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "Wellmade StarM" ;
-    kpop:male_num 1 ;
+    kpop:male_num 6 ;
     kpop:member_num 6 ;
     kpop:monthly_listener 312949 ;
     kpop:popularity 3 ;
@@ -535,15 +516,15 @@ fadm:AB6IX a schema:Class ;
 
 fadm:ACE_girl_group a schema:Class ;
     rdfs:label "ACE_girl_group" ;
-    dbo:abstract "None" ;
+    dbo:abstract "ACE (에이스) was a four-member girl group under Worthy Entertainment. They debuted on September 11, 2015 and disbanded the following year." ;
     dbo:bandMember fadm:ACE_girl_group_Aria_Blue_Fox,
         fadm:ACE_girl_group_Darum,
         fadm:ACE_girl_group_Eunbyeol,
         fadm:ACE_girl_group_Seora ;
     dbo:genre "K POP" ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Worthy Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -554,7 +535,7 @@ fadm:ACE_girl_group a schema:Class ;
 
 fadm:AL a schema:Class ;
     rdfs:label "AL" ;
-    dbo:abstract "None" ;
+    dbo:abstract "AL (알) was a four-member girl group under Mascom Company. The debuted on September 1, 2001 with the studio album Feeling. They disbanded sometime in 2002." ;
     dbo:bandMember fadm:AL_Jung_Hye_Min,
         fadm:AL_Kang_Jihyun,
         fadm:AL_Lee_Jaeyoung,
@@ -592,7 +573,7 @@ fadm:ALLS-GIRL a schema:Class ;
 
 fadm:ALiKE a schema:Class ;
     rdfs:label "ALiKE" ;
-    dbo:abstract "None" ;
+    dbo:abstract "ALiKE  (얼라이크) is currently a duo under 87 Sound. They debuted on August 25, 2018 with the first single 'Summer Love'." ;
     dbo:bandMember fadm:ALiKE_Ga_Hyeon_ALiKE,
         fadm:ALiKE_Sung_A_ALiKE,
         fadm:ALiKE_Wook_Jin ;
@@ -611,20 +592,21 @@ fadm:ALiKE a schema:Class ;
 
 fadm:AOA a schema:Class ;
     rdfs:label "AOA" ;
-    dbo:abstract "None" ;
+    dbo:abstract "AOA (에이오에이; an acronym for Ace of Angels) is a five-member girl group under FNC Entertainment. " ;
     dbo:bandMember fadm:AOA_Chanmi_AOA,
         fadm:AOA_Hyejeong,
         fadm:AOA_Seolhyun,
+        fadm:AOA_Jimin,
         fadm:AOA_Yuna_AOA ;
     dbo:genre "POP" ;
     kpop:debut "August 9, 2012" ;
-    kpop:female_num 4 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "",
         "FNC Entertainment",
         "Universal Music" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 4 ;
+    kpop:member_num 5;
     kpop:monthly_listener 507293 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/AOA" ;
@@ -642,7 +624,7 @@ fadm:AOA_Black a schema:Class ;
         fadm:AOA_Black_Yuna ;
     dbo:genre "POP ROCK" ;
     kpop:debut "July 26, 2013" ;
-    kpop:female_num 3 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "CJ E&M",
         "Delicious Deli",
@@ -680,21 +662,20 @@ fadm:API a schema:Class ;
 
 fadm:APRIL a schema:Class ;
     rdfs:label "APRIL" ;
-    dbo:abstract "None" ;
+    dbo:abstract "APRIL (에이프릴) is a six-member girl group under DSP Media. They debuted on August 24, 2015 with the mini album Dreaming." ;
     dbo:bandMember fadm:APRIL_Chaekyung,
         fadm:APRIL_Chaewon_APRIL,
-        fadm:APRIL_Jeon_Somin,
         fadm:APRIL_Jinsol,
         fadm:APRIL_Naeun_APRIL,
         fadm:APRIL_Rachel_APRIL,
         fadm:APRIL_Yena_APRIL ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 7 ;
+    kpop:female_num 6 ;
     kpop:gender "F" ;
     kpop:labels "DSP Media" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 149731 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/APRIL" ;
@@ -704,17 +685,20 @@ fadm:APRIL a schema:Class ;
 
 fadm:AQUA a schema:Class ;
     rdfs:label "AQUA" ;
-    dbo:abstract "None" ;
+    dbo:abstract "AQUA (아쿠아) is a six-member project girl group managed by KRAZY Entertainment. They debuted on November 17, 2018 with the digital single 'Log In'." ;
     dbo:bandMember fadm:AQUA_Haesol_AQUA,
+        fadm:AQUA_Sua,
         fadm:AQUA_Hyeonju,
+        fadm:AQUA_Seungji,
+        fadm:AQUA_Hyerim,
         fadm:AQUA_Sihyeon_AQUA ;
     dbo:genre "POP" ;
     kpop:debut "November 17, 2018" ;
-    kpop:female_num 3 ;
+    kpop:female_num 6 ;
     kpop:gender "F" ;
     kpop:labels "KRAZY Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 3 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 394 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/AQUA" ;
@@ -724,7 +708,7 @@ fadm:AQUA a schema:Class ;
 
 fadm:ARGON a schema:Class ;
     rdfs:label "ARGON" ;
-    dbo:abstract "None" ;
+    dbo:abstract "ARGON (아르곤) is a six-member boy group under MSH Entertainment. They debuted on March 11, 2019 with their first single album 'Master Key'." ;
     dbo:bandMember fadm:ARGON_Gon_ARGON,
         fadm:ARGON_Haneul_ARGON,
         fadm:ARGON_Jaeun,
@@ -734,9 +718,9 @@ fadm:ARGON a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "MSH Entertainment" ;
-    kpop:male_num 1 ;
+    kpop:male_num 6 ;
     kpop:member_num 6 ;
     kpop:monthly_listener 8672 ;
     kpop:popularity 2 ;
@@ -749,12 +733,8 @@ fadm:ARIAZ a schema:Class ;
     rdfs:label "ARIAZ" ;
     dbo:abstract "Ariaz ( Korean : 아리아즈 ; stylized as ARIAZ ) is a South Korean idol group formed by Star Empire Entertainment in 2018. The group debuted on October 24, 2019, under Star Empire's label Rising Star, with the EP Grand Opera . Prior to the group's debut, various members already had some experience in the entertainment industry. Yunji had appeared in the fifth season of talent show series Superstar K in 2013, and later appeared in the first season of reality television talent show Produce 101 in 2015 along with future band-mate Sihyeon. Yunji and Sihyeon were set to debut in the girl group OMZM with other members, however, the group's debut was postponed and their fan cafe was later closed. Sihyeon sang \"Wonderful Day ( 오늘 같은 날 )\" for the soundtrack of the drama Fantastic in 2016. Prior to Ariaz, Hyogyeong had released numerous songs as a soloist, including some using the stage name Mugayeong ( 머가영 ). [ citation needed ] Hyogyeong also represented Star Entertainment in the survival reality show Mix Nine in 2017. Yunji, Sihyeon, Hyogyeong and Yeori had been backup dancers before their debut, for groups such as Jewelry , ZE:A , Nine Muses and Imfact . [ citation needed ] Dawon appeared in an episode of episode of I Can See Your Voice in early 2019, performing I.O.I 's song \" Downpour \" along with Hong Ju-hyeon and Im Do-yeon. The group was briefly known as Empire Girls ( Korean : 엠파이어 걸스 ) prior to their debut. A three-episode variety show, Empire Girls at the MT , aired before their debut. The show was a bonding experience for the members, and showcased their teamwork. [ citation needed ] On September 16, Rising Star Entertainment, a subsidiary of Star Empire Entertainment, released a statement to announce that Empire Girls would be debuting under the name Ariaz in October. Various teasers were released for the EP, and Grand Opera was released on October 24, along with its lead single \"Moonlight Aria\" and its accompanying music video. The EP is the first in a trilogy the group aim to release. Their debut showcase was held the same day at the Ilji Art Hall in Gangnam , Seoul. " ;
     dbo:bandMember fadm:ARIAZ_DaWon_ARIAZ,
-        fadm:ARIAZ_Han_Hye_Ri,
         fadm:ARIAZ_HyoGyeong_ARIAZ,
         fadm:ARIAZ_JuEun_ARIAZ,
-        fadm:ARIAZ_Lee_A-ra_이아라,
-        fadm:ARIAZ_Lee_Si-eun_이시은,
-        fadm:ARIAZ_Shim_Chae-eun_심채은,
         fadm:ARIAZ_SiHyeon_ARIAZ,
         fadm:ARIAZ_YeoRi_ARIAZ,
         fadm:ARIAZ_YunJi_ARIAZ ;
@@ -764,7 +744,7 @@ fadm:ARIAZ a schema:Class ;
     kpop:labels "Rising Star",
         "Star Empire" ;
     kpop:male_num 1 ;
-    kpop:member_num 10 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 315349 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/ARIAZ" ;
@@ -774,24 +754,17 @@ fadm:ARIAZ a schema:Class ;
 
 fadm:ASTIN a schema:Class ;
     rdfs:label "ASTIN" ;
-    dbo:abstract "None" ;
-    dbo:bandMember fadm:ASTIN_Changseo,
-        fadm:ASTIN_Elvin,
-        fadm:ASTIN_Hongil,
+    dbo:abstract "ASTIN (아스틴) is a three-member boy group under KINGTOP Entertainment. They originally debuted as seven on March 7, 2019 with their first EP Mirror Mirror." ;
+    dbo:bandMember fadm: fadm:ASTIN_Hongil,
         fadm:ASTIN_Hyeongseok,
-        fadm:ASTIN_Junghun_ASTIN,
-        fadm:ASTIN_Seunghoon,
-        fadm:ASTIN_Seungjun_ASTIN,
-        fadm:ASTIN_Teo,
-        fadm:ASTIN_Yeram,
-        fadm:ASTIN_Yoochan ;
+        fadm:ASTIN_Seungjun_ASTIN;
     dbo:genre "POP" ;
     kpop:debut "March 7, 2019" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "KINGTOP Entertainment" ;
-    kpop:male_num 4 ;
-    kpop:member_num 10 ;
+    kpop:male_num 3 ;
+    kpop:member_num 3 ;
     kpop:monthly_listener 54327 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/ASTIN" ;
@@ -801,7 +774,7 @@ fadm:ASTIN a schema:Class ;
 
 fadm:ASTRO a schema:Class ;
     rdfs:label "ASTRO" ;
-    dbo:abstract "None" ;
+    dbo:abstract "ASTRO (아스트로) is a six-member boy group under Fantagio Music. They debuted on February 23, 2016 with the mini album Spring Up." ;
     dbo:bandMember fadm:ASTRO_Cha_Eun_Woo,
         fadm:ASTRO_JinJin,
         fadm:ASTRO_MJ,
@@ -810,10 +783,10 @@ fadm:ASTRO a schema:Class ;
         fadm:ASTRO_Yoon_San_Ha ;
     dbo:genre "POP" ;
     kpop:debut "February 23, 2016" ;
-    kpop:female_num 1 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0;
+    kpop:gender "M" ;
     kpop:labels "Fantagio Music" ;
-    kpop:male_num 5 ;
+    kpop:male_num 6 ;
     kpop:member_num 6 ;
     kpop:monthly_listener 8533010 ;
     kpop:popularity 5 ;
@@ -853,23 +826,22 @@ fadm:ATEEZ a schema:Class ;
 
 fadm:AWEEK a schema:Class ;
     rdfs:label "AWEEK" ;
-    dbo:abstract "None" ;
+    dbo:abstract "AWEEK (Korean: 어위크; Japanese: アウィーク) is a seven-member boy group under Illusion Entertainment and Oneworld Entertainment. Originally with six members, they held pre-debut activities in Japan in 2018 before officially debuting on January 31, 2019 with the digital single 'The More I See'." ;
     dbo:bandMember fadm:AWEEK_Aiden,
         fadm:AWEEK_Chawon,
         fadm:AWEEK_Di1e,
         fadm:AWEEK_Hyeon,
         fadm:AWEEK_Ilkwon,
         fadm:AWEEK_Jingyu,
-        fadm:AWEEK_Logan,
-        fadm:AWEEK_Woori ;
+        fadm:AWEEK_Logan;
     dbo:genre "POP" ;
     kpop:debut "January 31, 2019" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "Illusion Entertainment",
         "Oneworld Entertainment" ;
-    kpop:male_num 2 ;
-    kpop:member_num 8 ;
+    kpop:male_num 7 ;
+    kpop:member_num 7 ;
     kpop:monthly_listener 11 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/AWEEK" ;
@@ -879,21 +851,18 @@ fadm:AWEEK a schema:Class ;
 
 fadm:AZM a schema:Class ;
     rdfs:label "AZM" ;
-    dbo:abstract "None" ;
+    dbo:abstract "AZM (에이지엠) is a four-member girl group under Innok Entertainment. They debuted on March 2, 2018 with the single 'Edge'." ;
     dbo:bandMember fadm:AZM_Eun_Ji_AZM,
-        fadm:AZM_Home,
         fadm:AZM_Lok,
-        fadm:AZM_Seo_Yeon_AZM,
         fadm:AZM_Su_Hyun_AZM,
-        fadm:AZM_Ye_Jin_AZM,
         fadm:AZM_You_Kyung_AZM ;
     dbo:genre "POP" ;
     kpop:debut "March 2, 2018" ;
-    kpop:female_num 5 ;
+    kpop:female_num 4 ;
     kpop:gender "Unknown" ;
     kpop:labels "Innok Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 4 ;
     kpop:url "https://kpop.fandom.com/wiki/AZM" ;
     kpop:year_active_from "2018" ;
     kpop:year_active_to "2019" ;
@@ -953,7 +922,7 @@ fadm:After_School a schema:Class ;
 
 fadm:Alice_White a schema:Class ;
     rdfs:label "Alice_White" ;
-    dbo:abstract "None" ;
+    dbo:abstract "Alice White (엘리스 화이트) was a five-member girl group under SMAF Entertainment. They debuted on March 31, 2014 with the single 'Baby Like That'." ;
     dbo:bandMember fadm:Alice_White_Arlene,
         fadm:Alice_White_Eunjo,
         fadm:Alice_White_Minyeong,
@@ -961,8 +930,8 @@ fadm:Alice_White a schema:Class ;
         fadm:Alice_White_YeHana_We_Girls ;
     dbo:genre "K POP" ;
     kpop:debut "March 31, 2014" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 5 ;
+    kpop:gender "F" ;
     kpop:labels "SMAF Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 5 ;
@@ -1035,11 +1004,11 @@ fadm:B.I.G a schema:Class ;
         fadm:B.I.G_Minpyo ;
     dbo:genre "POP" ;
     kpop:debut "July 9, 2014" ;
-    kpop:female_num 2 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "GH Entertainment",
         "HY Entertainment" ;
-    kpop:male_num 4 ;
+    kpop:male_num 6 ;
     kpop:member_num 6 ;
     kpop:url "https://kpop.fandom.com/wiki/B.I.G" ;
     kpop:year_active_from "2014" ;
@@ -1057,12 +1026,12 @@ fadm:B1A4 a schema:Class ;
     dbo:genre "J POP",
         "K POP" ;
     kpop:debut "April 23, 2011" ;
-    kpop:female_num 4 ;
-    kpop:gender "F" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "Pony Canyon",
         "Universal J (Japan)",
         "WM" ;
-    kpop:male_num 1 ;
+    kpop:male_num 5 ;
     kpop:member_num 5 ;
     kpop:monthly_listener 401995 ;
     kpop:popularity 4 ;
@@ -1077,29 +1046,15 @@ fadm:BADKIZ a schema:Class ;
     dbo:bandMember fadm:BADKIZ_Han_Jung_A,
         fadm:BADKIZ_Hana,
         fadm:BADKIZ_Hanbit_BADKIZ,
-        fadm:BADKIZ_Haneul,
-        fadm:BADKIZ_Hayoung,
-        fadm:BADKIZ_Jain,
-        fadm:BADKIZ_Jeje,
-        fadm:BADKIZ_Jina_BADKIZ,
-        fadm:BADKIZ_K.Me,
-        fadm:BADKIZ_Lohee,
-        fadm:BADKIZ_Lua,
-        fadm:BADKIZ_Monika,
-        fadm:BADKIZ_Sihyun_HOT_PLACE,
-        fadm:BADKIZ_Sol.B,
-        fadm:BADKIZ_Taeri_HOT_PLACE,
-        fadm:BADKIZ_U-Si,
-        fadm:BADKIZ_Yeunji_BADKIZ,
         fadm:BADKIZ_Yoomin ;
     dbo:genre "POP" ;
     kpop:debut "March 24, 2014" ;
-    kpop:female_num 8 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "LOUD-ers Entertainment",
         "ZOO Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 18 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 3797 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/BADKIZ" ;
@@ -1132,17 +1087,16 @@ fadm:BEBE6 a schema:Class ;
     dbo:bandMember fadm:BEBE6_A_Rin,
         fadm:BEBE6_Bom_A,
         fadm:BEBE6_Hye_Rin,
-        fadm:BEBE6_Lia,
         fadm:BEBE6_Rena_BEBE6,
         fadm:BEBE6_Sun_Su,
         fadm:BEBE6_Yoon_Soul ;
     dbo:genre "POP" ;
     kpop:debut "August 10, 2017" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 6 ;
+    kpop:gender "F" ;
     kpop:labels "K12 Company" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 4576174 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/BEBE6" ;
@@ -1178,8 +1132,8 @@ fadm:BELLA4 a schema:Class ;
         fadm:BELLA4_Lina_WANNA.B,
         fadm:BELLA4_Wonji ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Happyface Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -1223,10 +1177,10 @@ fadm:BIGBANG a schema:Class ;
         "POP",
         "R&B" ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
+    kpop:female_num 0 ;
     kpop:gender "Co_ed" ;
     kpop:labels "YG Entertainment" ;
-    kpop:male_num 4 ;
+    kpop:male_num 5 ;
     kpop:member_num 5 ;
     kpop:monthly_listener 3697683 ;
     kpop:popularity 5 ;
@@ -1239,22 +1193,16 @@ fadm:BIGFLO a schema:Class ;
     rdfs:label "BIGFLO" ;
     dbo:abstract "Bigflo ( Korean : 빅플로 ; stylized BIGFLO ) is a South Korean boy group formed by HO Company. The group consists of three members: Lex, Euijin, and Sungmin, and six former members: Z-UK, Kichun, Ron, HighTop, Jungkyun And Yuseong. They made their debut with the mini-album First Flow on June 23, 2014. The band was formed on June 19, 2014, with five members, Jungkyun, HighTop, Ron, Yuseong and Jiwook (Z-UK). On June 23, 2014, the group debuted with their first EP First Flow , which included the songs \"Delilah\", \"It's You Again\", and \"Fly\". The group's leader at the time Jungkyun and member HighTop contributed lyrics, music and arrangements for all three. HighTop said they worked on it for about three months, and selected songs that best reflected the individuality and merits of the members. On April 15, 2015, they debuted in Japan with a single album Delilah (Japanese version), after signing with the same Japanese Company, KISS Entertainment, who other groups BtoB , Girl's Day , and Secret were signed with for their Japanese promotions. The held solo concerts in Japan on April 18 and 26, and album release events in Osaka , Nagoya and Tokyo . While in Japan, they also performed at the KCON Saitama concert on April 22, at the Saitama Super Arena . On June 18, 2015, they reformed as a six-member group following the additional of new member Kichun, a singer, dancer and actor who studied in China for several years, and is fluent in Chinese, Japanese and Korean. On December 13, 2016, Z-UK and Kichun announced their departure from the group. As a result, the three new members have been added for Bigflo's upcoming mini-album \"Stardom\" in February 2017. In October 2017, It was confirmed that Lex and Euijin as well as former member Z-Uk joined The Unit: Idol Rebooting Project . In the finale episode, Euijin received 2nd place and make it into lineup of winning boy group UNB. On January 17, 2019, It was confirmed that Ron, HighTop, Jungkyun And Yuseong officially departure from the group after their contract expired. Adapted from WAN Entertainment's official website. " ;
     dbo:bandMember fadm:BIGFLO_Euijin_BIGFLO,
-        fadm:BIGFLO_HighTop,
-        fadm:BIGFLO_Jungkyun,
-        fadm:BIGFLO_Kichun,
         fadm:BIGFLO_Lex,
-        fadm:BIGFLO_Ron,
-        fadm:BIGFLO_Sungmin,
-        fadm:BIGFLO_Yuseong,
-        fadm:BIGFLO_Z-UK ;
+        fadm:BIGFLO_Sungmin;
     dbo:genre "HIP HOP",
         "POP" ;
     kpop:debut "June 23, 2014" ;
-    kpop:female_num 1 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "HO Company" ;
-    kpop:male_num 1 ;
-    kpop:member_num 9 ;
+    kpop:male_num 3 ;
+    kpop:member_num 3 ;
     kpop:monthly_listener 1171668 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/BIGFLO" ;
@@ -1269,16 +1217,14 @@ fadm:BLACKMAMBA a schema:Class ;
         fadm:BLACKMAMBA_Bora_BLACKMAMBA,
         fadm:BLACKMAMBA_Dabin,
         fadm:BLACKMAMBA_Huiwon,
-        fadm:BLACKMAMBA_Subin,
-        fadm:BLACKMAMBA_Taeryoung,
         fadm:BLACKMAMBA_Yesol ;
     kpop:debut "None" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 5 ;
+    kpop:gender "F" ;
     kpop:labels "ONO Entertainment",
         "Star Ent." ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 360 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/BLACKMAMBA" ;
@@ -1394,11 +1340,11 @@ fadm:BTOB a schema:Class ;
     dbo:genre "BALLAD",
         "POP" ;
     kpop:debut "March 21, 2012" ;
-    kpop:female_num 1 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "Cube",
         "Universal Music Japan" ;
-    kpop:male_num 6 ;
+    kpop:male_num 7 ;
     kpop:member_num 7 ;
     kpop:monthly_listener 914782 ;
     kpop:popularity 4 ;
@@ -1423,13 +1369,13 @@ fadm:BTS a schema:Class ;
         "R&B",
         "ROCK" ;
     kpop:debut "June 13, 2013" ;
-    kpop:female_num 2 ;
+    kpop:female_num 0 ;
     kpop:gender "M" ;
     kpop:labels "Big Hit",
         "Columbia",
         "Def Jam Japan",
         "Pony Canyon" ;
-    kpop:male_num 5 ;
+    kpop:male_num 7 ;
     kpop:member_num 7 ;
     kpop:url "https://kpop.fandom.com/wiki/BTS" ;
     kpop:year_active_from "2013" ;
@@ -1478,31 +1424,20 @@ fadm:BVNDIT a schema:Class ;
 
 fadm:BaBa a schema:Class ;
     rdfs:label "BaBa" ;
-    dbo:abstract "None" ;
+    dbo:abstract "BaBa (바바) is a six-member girl group under PR Entertainment. They debuted on March 24, 2015 with their first single 'Sergeant Kim's Return from Vietnam'.The girl group has seen the addition and departure of twenty members in the span of five years since their debut in 2015. All of the original members, with the exception of Pureum, have left the lineup." ;
     dbo:bandMember fadm:BaBa_Bimby,
         fadm:BaBa_Byulha_BaBa,
         fadm:BaBa_Chaeha,
         fadm:BaBa_Choi_Bo_Mi,
         fadm:BaBa_Daya,
-        fadm:BaBa_Dayul_BaBa,
-        fadm:BaBa_Hae_Na_Blue_Fox,
-        fadm:BaBa_Hyoah_BaBa,
-        fadm:BaBa_Jo_Min_Ji,
-        fadm:BaBa_Johwa,
-        fadm:BaBa_Kim_Hye_Won,
-        fadm:BaBa_Seoae,
-        fadm:BaBa_Seungha,
-        fadm:BaBa_Seyul,
-        fadm:BaBa_Song_Eyaki,
-        fadm:BaBa_Sooreem,
-        fadm:BaBa_Starlight_BaBa ;
+        fadm:BaBa_Dayul_BaBa ;
     dbo:genre "K POP" ;
     kpop:debut "None" ;
-    kpop:female_num 14 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 6 ;
+    kpop:gender "F" ;
     kpop:labels "PR Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 17 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 3217922 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/BaBa" ;
@@ -1515,17 +1450,16 @@ fadm:Bambino a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:Bambino_Dahee,
         fadm:Bambino_Eun_Sol,
-        fadm:Bambino_Hadam,
         fadm:Bambino_Minhee,
         fadm:Bambino_Seo_A ;
     dbo:genre "DANCE",
         "POP" ;
     kpop:debut "June 23, 2015" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "JS Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 5 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 91209 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/Bambino" ;
@@ -1567,23 +1501,15 @@ fadm:Blady a schema:Class ;
         fadm:Blady_CoCo_CoCoSoRi,
         fadm:Blady_Darae,
         fadm:Blady_Dayoung,
-        fadm:Blady_Gabin,
-        fadm:Blady_Giru,
-        fadm:Blady_Kangyoon,
-        fadm:Blady_Nahyun,
-        fadm:Blady_Ryeowon_PRISM,
-        fadm:Blady_Soojin,
-        fadm:Blady_Sunyoung,
-        fadm:Blady_Tina_Blady,
-        fadm:Blady_Yeeun ;
+        fadm:Blady_Gabin ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 2 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "SY6",
         "Star Planet" ;
-    kpop:male_num 1 ;
-    kpop:member_num 13 ;
+    kpop:male_num 0 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 16879 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/Blady" ;
@@ -1601,8 +1527,8 @@ fadm:Blah_Blah_group a schema:Class ;
         fadm:Blah_Blah_group_Seol_Hwa ;
     dbo:genre "K POP" ;
     kpop:debut "November 22, 2017" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 5 ;
+    kpop:gender "F" ;
     kpop:labels "FAB Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 5 ;
@@ -1619,19 +1545,17 @@ fadm:Bling a schema:Class ;
     dbo:bandMember fadm:Bling_Gaon,
         fadm:Bling_Howon,
         fadm:Bling_Mint_Bling,
-        fadm:Bling_Rian,
-        fadm:Bling_Seo_Aerim,
         fadm:Bling_Seohyang,
         fadm:Bling_Shinwoo,
         fadm:Bling_Sia_Bling ;
     dbo:genre "DANCE",
         "POP" ;
     kpop:debut "May 4, 2016" ;
-    kpop:female_num 2 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 6 ;
+    kpop:gender "F" ;
     kpop:labels "PS Creative" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 8 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 11234942 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/Bling" ;
@@ -1720,19 +1644,16 @@ fadm:Busters a schema:Class ;
         fadm:Busters_Hyungseo,
         fadm:Busters_Jieun_Busters,
         fadm:Busters_Jisoo_Busters,
-        fadm:Busters_Kim_Min_Ji,
-        fadm:Busters_Minji_Busters,
-        fadm:Busters_Soyeon_Busters,
         fadm:Busters_Takara,
         fadm:Busters_Yeseo ;
     dbo:genre "POP" ;
     kpop:debut "November 27, 2017" ;
-    kpop:female_num 8 ;
+    kpop:female_num 6 ;
     kpop:gender "F" ;
     kpop:labels "JTG Entertainment",
         "Marbling E&M Inc." ;
-    kpop:male_num 1 ;
-    kpop:member_num 9 ;
+    kpop:male_num 0 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 19844 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/Busters" ;
@@ -1770,8 +1691,8 @@ fadm:CAMILA a schema:Class ;
         fadm:CAMILA_Yuna_CAMILA ;
     dbo:genre "POP" ;
     kpop:debut "August 29, 2018" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "C.C Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -1790,11 +1711,11 @@ fadm:CHECKMATE a schema:Class ;
         fadm:CHECKMATE_Sieun_CHECKMATE,
         fadm:CHECKMATE_Suri_CHECKMATE ;
     kpop:debut "None" ;
-    kpop:female_num 2 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 1 ;
+    kpop:gender "Co_ed" ;
     kpop:labels "GRACE COMPANY Entertainment" ;
-    kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 4 ;
+    kpop:male_num 2 ;
+    kpop:member_num 3 ;
     kpop:url "https://kpop.fandom.com/wiki/CHECKMATE" ;
     kpop:year_active_from "2019" ;
     kpop:year_active_to "present" ;
@@ -1854,11 +1775,11 @@ fadm:CIX a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "July 23, 2019" ;
     kpop:female_num 1 ;
-    kpop:gender "Co_ed" ;
+    kpop:gender "M" ;
     kpop:labels "",
         "C9 Entertainment",
         "Warner Music Japan" ;
-    kpop:male_num 4 ;
+    kpop:male_num 5 ;
     kpop:member_num 5 ;
     kpop:monthly_listener 23933122 ;
     kpop:popularity 5 ;
@@ -1921,17 +1842,15 @@ fadm:CRAXY a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:CRAXY_ChaeY,
         fadm:CRAXY_Hana,
-        fadm:CRAXY_Hyejin_CRAXY,
-        fadm:CRAXY_Karin_CRAXY,
         fadm:CRAXY_Swan_CRAXY,
         fadm:CRAXY_Woo-Ah_CRAXY,
         fadm:CRAXY_Yujin ;
     kpop:debut "March 3, 2020" ;
     kpop:female_num 5 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "S.A ITAINMENT" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 2793873 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/CRAXY" ;
@@ -1944,11 +1863,8 @@ fadm:CROSS_GENE a schema:Class ;
     dbo:abstract """Cross Gene ( Korean : 크로스진; stylized as CROSS GENE ) is a four-member boy group based in South Korea which debuted on June 11, 2012. Signed under Amuse Korea , the group consists of South Korean members: Shin , Sangmin, Yongseok and Seyoung. They released their debut mini-album Timeless: Begins in 2012, which peaked at #8 on the Gaon weekly album chart. On May 26, 2012, Amuse Korea revealed that they would be debuting a multinational group consisting of South Korean, Japanese and Chinese singers. Among the members is Shin Won-ho (Shin), an actor who had previously appeared in television dramas and advertisements. Terada Takuya , an Amuse model and actor, was also announced in the lineup and upon Cross Gene's debut became the first fully Japanese K-Pop idol. The entertainment company explained the meaning behind the group's name, stating that the group would "cross the superior genes of each country to create one perfect group". Cross Gene originally consisted of three South Korean members, two Chinese members and one Japanese member. On June 7, the group held their first showcase at the Ax Korea concert hall. They released their first mini-album Timeless: Begins on June 8. Ten days later, a limited edition version of the mini-album was released. Timeless: Begins debuted at #9 on the Gaon weekly albums chart, and peaked at #8 the following week. In January 2013, Amuse Korea announced that Seyoung would be joining Cross Gene as a new member. He replaced J.G., who left Cross Gene to start a career as a solo artist. Following J.G.'s departure, Takuya stepped down as the leader and the position was given to Shin instead. On February 27, Cross Gene released their Japanese debut single, "Shooting Star". The song was performed for the first time during a promotional event for the Korean drama Big in Japan. Their Japanese single album was released on March 13, followed by the digital single "Crazy" on the May 29. On May 31, Cross Gene held their first Japanese Concert, Cross U , at Shibuya O-East , during which the group spoke about J.G. leaving and the change in leadership. On August 1, Cross Gene released the digital single "Dirty Pop", followed by a special photobook CD, With U . The photobook was a limited release that was not made available outside of concert venues until late 2014. Cross Gene held two more concerts – With U on 22 August at Shibuya Public Hall and an encore performance on 31 August at Umeda Club Quattro. The Shibuya Public Hall concert would later be released on DVD in the same photobook format as the With U EP. Cross Gene Planet , the official Japanese fansite, was launched on September 2. During the latter part of the year Cross Gene released three more digital singles in Japan: "My Love Song" in October, "Page of Love" in November and "Aurora" in December. During November, Cross Gene also started activities in China, performing for ATV at the Mr. Asia contest. They also held a fanmeeting and performance at the Dragon Centre in Hong Kong. On November 28, Cross Gene received a Rookie Award at the 21st Korean Culture and Entertainment Awards. Cross Gene's third Japan live performance, Rock U , was held on December 6 at Umeda Club Quattro and on December 14 and 15 as part of Amuse Musical Theatre . Following the conclusion of Rock U , the group hinted at an upcoming project – Project Z. They also participated in the concert Super Handsome Live 2013 on December 26 and 27 as a supporting act. In early 2014, Cross Gene travelled to Los Angeles to film for the movie ZEDD . On April 6, a visual teaser for the single"Amazing (Bad Lady)" was uploaded onto the official YouTube followed by a music video teaser on the 14th. Their comeback was initially scheduled for April 21 but was delayed out of respect for the victims and families of the Sewol ferry disaster . On May 29, Cross Gene returned to Hong Kong to perform for ATV's 50th Anniversary special. They also held a second fan meeting and performance at the Dragon Centre in Hong Kong. The group released the Korean digital single "Amazing (Bad Lady)" on June 9, following a nearly 2-year absence. However, Casper was missing from all related promotions after suffering a hip/lower back injury. On June 26, Cross Gene released a music video for the Korean version of "Shooting Star". On June 28, they held their fourth live Japanese performance Amazing de Show at Differ Ariake Arena in Tokyo. Casper was able to return and perform with them. Another show, Cross Show: ZEDD , was announced for October. During July and August, Cross Gene participated in Japanese music festivals including Amuse BBQ 2014, Summer Sonic in Osaka, and as the opening act for Asia Departure on A-Nation Island. Takuya also joined the Korean television show Non-Summit as the representative for Japan. On 10 September, Cross Gene released the music video for "Billion Dolla", the theme track for their movie ZEDD , which was released on DVD on September 24. Cross Gene performed Cross Show: Zedd in Tokyo on October 12 and 13 with a total of four shows over two days. During Cross Show: Zedd , they also announced a Japanese comeback scheduled for January 14, 2015 with a new single titled "Future". They also posted a notice on their Korean fancafe the following day for an intended Korean comeback in November 2014. On November 10, Cross Gene released their second digital single "I'm Not a Boy, Not Yet a Man". Cross Gene's main vocalists, Seyoung and Yongseok, were both cast in separate theatre performances starting from November. Cross Gene also performed at Skechers Sundown Festival in Singapore on November 22 and as part of Super Handsome Live 2014 on December 26, 27 and 28 at Pacifico Yokohama . Shin was scheduled as a regular for FM Yokohama 's Aja Aja Friday and Seyoung continued performing for the Korean Stage Musical Bachelor's Vegetable Store for their Japanese performances. Cross Gene's second Japanese single "Future" was released on January 14. It ranked at #4 on the Oricon's Daily Singles chart, peaking at #3 five days later. Future also ranked #5 on the Oricon Weekly singles chart. Aja Aja Friday finished airing at the end of March and Shin moved to his own show Shin-Kun no Yoru no Chuusday to air at 11:30pm every Tuesday night on FM Yokohama. Cross Gene next returned to Korea with "Play With Me" on April 12, also releasing their third mini album of the same name. Play With Me entered GAON Albums Chart at #7 on the Weekly Chart. "Play With Me" was also nominated for Song of the Week on SBS MTV The Show three times during its promotional run. Following this, Cross Gene returned to Japan with their third single "Love & Peace", a track that featured on the OST for Dual Master Revolution . The single, released on July 25, was the first single that they had written the lyrics for. The physical release of Love & Peace was postponed briefly and it was announced that it would be released as a double-A side single with the track "Shi-Tai!" as well as a previously announced track, "Miracle", on October 7. "Miracle" was the second song released that was written by the Cross Gene members. Love & Peace/Shi-Tai! debuted on Oricon Daily Singles chart at 2nd, peaking at #1. It placed at #2 on the weekly chart and at #74 on Oricon Yearly Singles Chart. Cross Gene held their first concert in Korea, Be Happy Together Live (Xmas Eve Eve Night) on December 23. The tickets for the concert sold out within the first minute. This was the first of two concerts, the second to be held in Japan in the new year. On January 21, 2016, Cross Gene released their third mini album Game , along with a music video for the title track "Noona, You". In June 2016, Cross Gene released their first full-length Japanese album, Ying Yang . The album consisted of 14 tracks including the title track "Ying Yang", a song for the fans, "Tegami" ("letter" in Japanese), and five other previously unreleased songs: "Keep on Dancing", "Love Game", "Sobani Ite", "Dreamer" and "No No No". Shin was also scheduled to play Tae Oh in the Korean drama Legend of the Blue Sea , starring alongside Lee Min-ho and Jun Ji-hyun . The drama aired its first episode on November 16, 2016, and its last episode on January 25, 2017. Cross Gene's fourth mini album Mirror was released on February 8 with a title track called "Black or White". On August 31 it was revealed that Chinese member Casper had left the group. Their company announced that it had no plans of adding new members and that they'd stay as a 5-member group. Shortly after, on September 8, it was announced that members Seyoung, Sangmin and Yongseok would be members of a new sub-unit, X HEARTS (크로스하츠). They held 4 mini-lives, titled U&I=ONE, in 3 different cities: Jeonju (September 16), Busan (September 17), and two more on September 24 in Seoul. Member Shin also is scheduled to appear in upcoming drama 20th Century Boy and Girl as Han Ye-seul 's younger brother, Sa Min-ho. Its first episode was scheduled to air on October 2, but got postponed. The first 4 episodes aired on Monday, October 9. In February 2018, member Yongseok participated in the Japanese musical My Bucket List as Kanggu, together with Taewoong ( Snuper ), Injun ( DGNA ) and musical actors Minsu and Kim Namho. In the same month it was also announced that CROSS GENE would have a concert in Japan titled Utopia , on April 30. On April 23, the first teaser for CROSS GENE's long awaited Korean comeback dropped. Their 5th Korean mini-album titled Zero would be released on May 8. Zero has 4 tracks, 2 of which are the title tracks. Along with the songs are 2 official M/Vs ( Touch It , Fly ), 1 short video ( Dystopia ) and 1 self-directed M/V by the members ( Believe Me ). One of the songs on the album, Dystopia , was pre-released on April 30. At the showcase for Zero , Shin revealed that he was going to play a role in upcoming K-drama Risky Romance. In it, he plays Choi Jae-seung. Takuya was set to play Abraham again in the Japanese version of the musical Altar Boyz . He played the same role in the 2017 version of it, too. Yongseok would play in another Japanese musical as well, titled Voice . In August, Yongseok played in My Bucket List again, though this time the opposing side of his first role, Haegi. The other leads in this musical were Karam ( DGNA ), Sunwoo ( Boys Republic ) and again, musical actor Kim Namho. Seyoung is set to play Puck in the Japanese musical Shakespeare's A Midsummer Night's Dream , from September 14 until September 17. On December 10, it was revealed that Takuya left the group to pursue acting and modelling. Note: For individual members' filmographies, see their articles.
 """ ;
     dbo:bandMember fadm:CROSS_GENE_Casper,
-        <https://kpop.fandom.com/wiki/CROSS_GENE_J.G.>,
         fadm:CROSS_GENE_Sangmin_CROSS_GENE,
         fadm:CROSS_GENE_Seyoung,
-        fadm:CROSS_GENE_Shin_CROSS_GENE,
-        fadm:CROSS_GENE_Takuya,
         fadm:CROSS_GENE_Yongseok ;
     dbo:genre "J POP",
         "K POP" ;
@@ -1958,8 +1874,8 @@ fadm:CROSS_GENE a schema:Class ;
     kpop:labels "Amuse Korea",
         "Kakao M",
         "Universal Music" ;
-    kpop:male_num 5 ;
-    kpop:member_num 7 ;
+    kpop:male_num 4 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 123566 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/CROSS_GENE" ;
@@ -1974,19 +1890,16 @@ fadm:Cherry_Bullet a schema:Class ;
         fadm:Cherry_Bullet_Chae_Rin_Cherry_Bullet,
         fadm:Cherry_Bullet_Hae_Yoon,
         fadm:Cherry_Bullet_Ji_Won_Cherry_Bullet,
-        fadm:Cherry_Bullet_Kokoro,
-        fadm:Cherry_Bullet_Lin_Lin,
-        fadm:Cherry_Bullet_May_Cherry_Bullet,
         fadm:Cherry_Bullet_Mi_Rae_Cherry_Bullet,
         fadm:Cherry_Bullet_Re_Mi,
         fadm:Cherry_Bullet_Yu_Ju_Cherry_Bullet ;
     dbo:genre "POP" ;
     kpop:debut "January 21, 2019" ;
-    kpop:female_num 10 ;
+    kpop:female_num 7 ;
     kpop:gender "F" ;
     kpop:labels "FNC" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 10 ;
+    kpop:member_num 7 ;
     kpop:monthly_listener 81871 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/Cherry_Bullet" ;
@@ -1999,22 +1912,15 @@ fadm:Chic_Angel a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:Chic_Angel_Bomi,
         fadm:Chic_Angel_Dayeon_Chic_Angel,
-        fadm:Chic_Angel_Eunsu,
-        fadm:Chic_Angel_Ireum,
-        fadm:Chic_Angel_Laeun,
-        fadm:Chic_Angel_Sia_Chic_Angel,
-        fadm:Chic_Angel_Sora,
-        fadm:Chic_Angel_Suwon,
-        fadm:Chic_Angel_Sya_Sya,
         fadm:Chic_Angel_U_Hee,
         fadm:Chic_Angel_Yeojung ;
     dbo:genre "POP" ;
     kpop:debut "February 16, 2017" ;
     kpop:female_num 4 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "Liz Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 11 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 126191 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/Chic_Angel" ;
@@ -2077,8 +1983,6 @@ fadm:Crayon_Pop a schema:Class ;
         fadm:Crayon_Pop_Choa_Crayon_Pop,
         fadm:Crayon_Pop_Ellin,
         fadm:Crayon_Pop_Geummi,
-        fadm:Crayon_Pop_Mari,
-        fadm:Crayon_Pop_Soyul_Crayon_Pop,
         fadm:Crayon_Pop_Way_Crayon_Pop ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
@@ -2088,7 +1992,7 @@ fadm:Crayon_Pop a schema:Class ;
         "Pony Canyon",
         "Sony Music" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 92568 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/Crayon_Pop" ;
@@ -2134,9 +2038,9 @@ fadm:D.A.N a schema:Class ;
     dbo:genre "RAP" ;
     kpop:debut "March 7, 2019" ;
     kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "Co_ed" ;
     kpop:labels "KRAZY Entertainment" ;
-    kpop:male_num "None"^^xsd:integer ;
+    kpop:male_num 2 ;
     kpop:member_num 5 ;
     kpop:monthly_listener 873566 ;
     kpop:popularity 4 ;
@@ -2151,11 +2055,6 @@ fadm:D.Holic a schema:Class ;
     dbo:bandMember fadm:D.Holic_Chu_Hwa_Jeong,
         fadm:D.Holic_Dan_Bee,
         fadm:D.Holic_Duri,
-        fadm:D.Holic_EJ_D.Holic,
-        fadm:D.Holic_Hami,
-        fadm:D.Holic_Nayoung,
-        fadm:D.Holic_Nine,
-        fadm:D.Holic_Rena_D.Holic,
         fadm:D.Holic_Youjin ;
     dbo:genre "POP" ;
     kpop:debut "October 23, 2014" ;
@@ -2163,7 +2062,7 @@ fadm:D.Holic a schema:Class ;
     kpop:gender "F" ;
     kpop:labels "Star Road Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 9 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 15417 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/D.Holic" ;
@@ -2204,8 +2103,8 @@ fadm:DESTINY a schema:Class ;
         fadm:DESTINY_Yooyeong ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 2 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "FATE Entertainment",
         "Shine E&M" ;
     kpop:male_num "None"^^xsd:integer ;
@@ -2225,18 +2124,15 @@ fadm:DIA_group a schema:Class ;
         fadm:DIA_group_Eunchae,
         fadm:DIA_group_Eunice,
         fadm:DIA_group_Eunjin_DIA,
-        fadm:DIA_group_Huihyeon,
-        fadm:DIA_group_Jueun_DIA,
-        fadm:DIA_group_Lee_So_Yul,
         fadm:DIA_group_Somyi,
         fadm:DIA_group_Yebin_DIA ;
     dbo:genre "POP" ;
     kpop:debut "September 14, 2015" ;
-    kpop:female_num 10 ;
+    kpop:female_num 7 ;
     kpop:gender "F" ;
     kpop:labels "MBK Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 10 ;
+    kpop:member_num 7 ;
     kpop:url "https://kpop.fandom.com/wiki/DIA_(group)" ;
     kpop:year_active_from "2015" ;
     kpop:year_active_to "present" ;
@@ -2252,8 +2148,8 @@ fadm:DICE a schema:Class ;
     dbo:genre "DANCE POP",
         "HIP HOP" ;
     kpop:debut "November 9, 2016" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "Bros Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -2300,7 +2196,7 @@ Happy Face stated that "the group has not disbanded and future activities of the
         fadm:Dalshabet_Woohee ;
     dbo:genre "POP" ;
     kpop:debut "January 6, 2011" ;
-    kpop:female_num 6 ;
+    kpop:female_num 7 ;
     kpop:gender "F" ;
     kpop:labels "Happy Face" ;
     kpop:male_num "None"^^xsd:integer ;
@@ -2321,8 +2217,8 @@ fadm:Daydream_2019_group a schema:Class ;
         fadm:Daydream_2019_group_Sorin,
         fadm:Daydream_2019_group_Yiseul ;
     kpop:debut "February 23, 2020" ;
-    kpop:female_num 4 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 5 ;
+    kpop:gender "F" ;
     kpop:labels "Great Company" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 5 ;
@@ -2336,18 +2232,16 @@ fadm:Delight_group a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:Delight_group_Eunsae,
         fadm:Delight_group_Jaewon,
-        fadm:Delight_group_Kelly,
-        fadm:Delight_group_Suhyun_FLASHE,
         fadm:Delight_group_Sumin,
         fadm:Delight_group_Taehee,
         fadm:Delight_group_Yeondu ;
     dbo:genre "POP" ;
     kpop:debut "April 2, 2013" ;
     kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "Bros Media Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 5 ;
     kpop:url "https://kpop.fandom.com/wiki/Delight_(group)" ;
     kpop:year_active_from "2013" ;
     kpop:year_active_to "2015" ;
@@ -2361,17 +2255,14 @@ fadm:DreamNote a schema:Class ;
         fadm:DreamNote_Habin_DreamNote,
         fadm:DreamNote_Hanbyeol_DreamNote,
         fadm:DreamNote_Jinsol_진솔,
-        fadm:DreamNote_Lara,
-        fadm:DreamNote_Miso_DreamNote,
-        fadm:DreamNote_Sumin_DreamNote,
         fadm:DreamNote_Youi ;
     dbo:genre "POP" ;
     kpop:debut "November 7, 2018" ;
-    kpop:female_num 8 ;
+    kpop:female_num 6 ;
     kpop:gender "F" ;
     kpop:labels "iMe KOREA" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 9 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 19906 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/DreamNote" ;
@@ -2413,7 +2304,7 @@ fadm:ELRIS a schema:Class ;
         fadm:ELRIS_Yukyung ;
     dbo:genre "POP" ;
     kpop:debut "June 1, 2017" ;
-    kpop:female_num 5 ;
+    kpop:female_num 7 ;
     kpop:gender "F" ;
     kpop:labels "Hunus Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
@@ -2440,7 +2331,7 @@ fadm:ENOi a schema:Class ;
     kpop:female_num "None"^^xsd:integer ;
     kpop:gender "M" ;
     kpop:labels "KiTheWhale" ;
-    kpop:male_num 5 ;
+    kpop:male_num 7 ;
     kpop:member_num 7 ;
     kpop:monthly_listener 36218 ;
     kpop:popularity 2 ;
@@ -2504,26 +2395,22 @@ fadm:EXO a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:EXO_Chanyeol,
         fadm:EXO_Chen,
-        <https://kpop.fandom.com/wiki/EXO_D.O.>,
-        fadm:EXO_Kris_Wu,
-        fadm:EXO_Lay,
-        fadm:EXO_Luhan,
+        fadm:EXO_Baekhyun,
         fadm:EXO_Sehun,
         fadm:EXO_Suho,
-        fadm:EXO_Tao,
-        fadm:EXO_Xiumin ;
+        fadm:EXO_Kai ;
     dbo:genre "EDM",
         "HIP HOP",
         "POP",
         "R&B" ;
     kpop:debut "April 8, 2012" ;
     kpop:female_num 0 ;
-    kpop:gender "Male" ;
+    kpop:gender "M" ;
     kpop:labels "",
         "Avex Entertainment",
         "SM Entertainment" ;
-    kpop:male_num 9 ;
-    kpop:member_num 10 ;
+    kpop:male_num 6 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 1194101 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/EXO" ;
@@ -2536,13 +2423,6 @@ fadm:Episode a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:Episode_Areum_Episode,
         fadm:Episode_Byeolee,
-        fadm:Episode_Choy,
-        fadm:Episode_Jia,
-        fadm:Episode_Nara,
-        fadm:Episode_Solha,
-        fadm:Episode_SooA_Episode,
-        fadm:Episode_Vina,
-        fadm:Episode_Yeji_Episode,
         fadm:Episode_Yena_Episode,
         fadm:Episode_Yerin_Episode,
         fadm:Episode_Younseo ;
@@ -2550,10 +2430,10 @@ fadm:Episode a schema:Class ;
         "POP" ;
     kpop:debut "June 9, 2015" ;
     kpop:female_num 5 ;
-    kpop:gender "Unknown" ;
+    kpop:gender "F" ;
     kpop:labels "Pops Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 12 ;
+    kpop:member_num 5 ;
     kpop:monthly_listener 1112 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/Episode" ;
@@ -2569,16 +2449,15 @@ fadm:F-ve_Dolls a schema:Class ;
         fadm:F-ve_Dolls_Heo_Chanmi,
         fadm:F-ve_Dolls_Hyewon,
         fadm:F-ve_Dolls_Hyoyoung,
-        fadm:F-ve_Dolls_Nayeon,
         fadm:F-ve_Dolls_Soomi,
         fadm:F-ve_Dolls_Yeonkyung ;
     dbo:genre "POP" ;
     kpop:debut "February 17, 2011" ;
-    kpop:female_num 1 ;
+    kpop:female_num 6 ;
     kpop:gender "F" ;
     kpop:labels "Core Contents MediaGM Contents Media (2012)" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 4178 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/F-ve_Dolls" ;
@@ -2596,9 +2475,9 @@ fadm:FALLANC a schema:Class ;
     dbo:genre "POP ROCK" ;
     kpop:debut "None" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "RH Entertainment" ;
-    kpop:male_num 2 ;
+    kpop:male_num 4 ;
     kpop:member_num 4 ;
     kpop:monthly_listener 255832 ;
     kpop:popularity 3 ;
@@ -2613,12 +2492,9 @@ fadm:FANATICS a schema:Class ;
 and Doah, debuted on August 6, 2019, with the release of EP The Six . """ ;
     dbo:bandMember fadm:FANATICS_Chaelin_FANATICS,
         fadm:FANATICS_Chiayi,
-        fadm:FANATICS_Doah,
         fadm:FANATICS_Doi,
         fadm:FANATICS_Hyewon_혜원,
         fadm:FANATICS_Nayeon,
-        fadm:FANATICS_Sika,
-        fadm:FANATICS_Via,
         fadm:FANATICS_Yoonhye_FANATICS ;
     dbo:genre "POP" ;
     kpop:debut "August 6, 2019" ;
@@ -2626,7 +2502,7 @@ and Doah, debuted on August 6, 2019, with the release of EP The Six . """ ;
     kpop:gender "F" ;
     kpop:labels "FENT" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 9 ;
+    kpop:member_num 6 ;
     kpop:monthly_listener 47437 ;
     kpop:popularity 2 ;
     kpop:url "https://kpop.fandom.com/wiki/FANATICS" ;
@@ -2668,7 +2544,7 @@ fadm:FIESTAR a schema:Class ;
         fadm:FIESTAR_Yezi ;
     dbo:genre "K POP" ;
     kpop:debut "August 31, 2012" ;
-    kpop:female_num 4 ;
+    kpop:female_num 5 ;
     kpop:gender "F" ;
     kpop:labels "Fave Entertainment)",
         "Kakao M (" ;
@@ -2685,24 +2561,16 @@ fadm:FLASHE a schema:Class ;
     dbo:bandMember fadm:FLASHE_Choa_FLASHE,
         fadm:FLASHE_Gaeul_FLASHE,
         fadm:FLASHE_GoUn,
-        <https://kpop.fandom.com/wiki/FLASHE_Lily_A.B.O.>,
-        fadm:FLASHE_Minseo_FLASHE,
-        fadm:FLASHE_Narae_FLASHE,
-        fadm:FLASHE_Seolhee,
-        fadm:FLASHE_Songhee_FLASHE,
-        fadm:FLASHE_SuA_FLASHE,
-        fadm:FLASHE_Sujin_FLASHE,
-        fadm:FLASHE_Yeji_FLASHE,
         fadm:FLASHE_Yerin_FLASHE ;
     dbo:genre "POP" ;
     kpop:debut "July 4, 2012" ;
-    kpop:female_num 12 ;
+    kpop:female_num 4 ;
     kpop:gender "F" ;
     kpop:labels "CGM Entertainment",
         "FLASHE Entertainment",
         "Play Music Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 12 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 1285752 ;
     kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/FLASHE" ;
@@ -2715,18 +2583,16 @@ fadm:FTISLAND a schema:Class ;
     dbo:abstract "None" ;
     dbo:bandMember fadm:FTISLAND_Choi_Jong_Hoon,
         fadm:FTISLAND_Choi_Min_Hwan,
-        fadm:FTISLAND_Lee_Hong_Gi,
-        fadm:FTISLAND_Lee_Jae_Jin,
         fadm:FTISLAND_Oh_Won_Bin,
         fadm:FTISLAND_Song_Seung_Hyun ;
     dbo:genre "POP ROCK" ;
     kpop:debut "June 7, 2007" ;
-    kpop:female_num 1 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "FNC Entertainment",
         "Warner Music Japan" ;
-    kpop:male_num 3 ;
-    kpop:member_num 6 ;
+    kpop:male_num 4 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 298050 ;
     kpop:popularity 3 ;
     kpop:url "https://kpop.fandom.com/wiki/FTISLAND" ;
@@ -2740,18 +2606,15 @@ fadm:Fanxy_Red a schema:Class ;
     dbo:bandMember fadm:Fanxy_Red_Feng_Yuxuan_冯舆轩,
         fadm:Fanxy_Red_Joel_조엘,
         fadm:Fanxy_Red_K_Fanxy_Red,
-        fadm:Fanxy_Red_Marco,
-        fadm:Fanxy_Red_Min_Junqian_闵俊千,
-        fadm:Fanxy_Red_Roy,
         fadm:Fanxy_Red_Shawn ;
     dbo:genre "C POP",
         "K POP" ;
     kpop:debut "April 28, 2017" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "TOV Entertainment" ;
-    kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 7 ;
+    kpop:male_num 4 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 3980 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/Fanxy_Red" ;
@@ -2768,8 +2631,8 @@ fadm:Fin.K.L a schema:Class ;
         fadm:Fin.K.L_Sung_Yu_Ri ;
     dbo:genre "POP" ;
     kpop:debut "May 1998" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "DSP Media" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -2791,8 +2654,8 @@ fadm:Flor_us a schema:Class ;
         "ELECTRONIC",
         "POP" ;
     kpop:debut "December 18, 2018" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "YEOM Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -2910,8 +2773,8 @@ fadm:GIDONGDAE a schema:Class ;
         fadm:GIDONGDAE_Wonjin,
         fadm:GIDONGDAE_Yehyeon ;
     kpop:debut "None" ;
-    kpop:female_num 1 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "2Y Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 5 ;
@@ -2952,8 +2815,8 @@ fadm:GIRLS_GIRLS a schema:Class ;
         fadm:GIRLS_GIRLS_Rina_GIRLS_GIRLS ;
     dbo:genre "POP" ;
     kpop:debut "December 9, 2015" ;
-    kpop:female_num 3 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 4 ;
+    kpop:gender "F" ;
     kpop:labels "H Brothers Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
     kpop:member_num 4 ;
@@ -2993,17 +2856,16 @@ fadm:GLAM a schema:Class ;
     dbo:abstract "Glam ( Korean : 글램 ) was a South Korean girl group that debuted in 2012 under the management of Big Hit Entertainment and Source Music . The group originally consisted of five members: Zinni, Trinity, Jiyeon, Dahee, and Miso. They were the first girl group of Big Hit Entertainment. The group officially debuted in 2012, with the single “Party XXO”, Glam disbanded in 2015 after a court found Dahee guilty of blackmailing actor Lee Byung-hun . Before officially debuting, Glam was featured on 2AM 's song \"Just Me,\" from the boy band's 2010 album, Saint o'Clock . Glam and BTS were also featured artists on Lee Hyun 's song \"Bad Girl,\" from the singer's 2011 album, You Are Best of My Life . In 2012, Glam starred in the reality show, Real Music Drama: GLAM , which aired on SBS MTV from June 6 until the group's official debut. On July 16, 2012, Glam officially debuted with the release of their debut single, \"Party (XXO).\" Later that year, they released the song, \"The Person I Miss,\" for the soundtrack of the Korean drama , Five Fingers . On December 31, Big Hit Entertainment announced that Trinity was leaving the group due to personal reasons, and that Glam would continue as a four-member group. On January 2, 2013, Glam released their second single, \"I Like That,\" which sampled the song \"Why Do You\" by Chuli and Miae. On March 15, Glam made their second comeback of the year with the single, \"In Front of the Mirror,\" which combined genres including Europop , trot , and hip hop. On September 2, 2014, the actor Lee Byung-hun accused two women of blackmailing him by using a compromising video as leverage. Dahee and model Lee Ji-yeon were later identified as the women involved and were charged with blackmailing the actor for 5 billion won . On January 15, 2015, the Seoul District Court sentenced Dahee to one year in prison. The same day, Glam's agency confirmed that the members of the group had ended their contracts with the agency, and the group had officially disbanded. On March 26, the Seoul District Court , under Lee Byung-Hun's request, gave Dahee a two-year suspended sentence instead of 1-year prison sentence. " ;
     dbo:bandMember fadm:GLAM_Dahee_GLAM,
         fadm:GLAM_Haee,
-        fadm:GLAM_Miso,
         fadm:GLAM_Trinity,
         fadm:GLAM_Zinni ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 2 ;
+    kpop:female_num 4 ;
     kpop:gender "F" ;
     kpop:labels "Big Hit",
         "Source Music" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 5 ;
+    kpop:member_num 4 ;
     kpop:monthly_listener 3654327 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/GLAM" ;
@@ -3017,18 +2879,20 @@ fadm:GOOD_DAY_group a schema:Class ;
     dbo:bandMember fadm:GOOD_DAY_group_Bomin_GOOD_DAY,
         fadm:GOOD_DAY_group_Cherry_GOOD_DAY,
         fadm:GOOD_DAY_group_Genie_GOOD_DAY,
+        fadm:GOOD_DAY_group_Chaesol_GOOD_DAY,
         fadm:GOOD_DAY_group_Heejin_GOOD_DAY,
-        fadm:GOOD_DAY_group_Midnight,
-        fadm:GOOD_DAY_group_Morning,
+        fadm:GOOD_DAY_group_Haeun,
         fadm:GOOD_DAY_group_Nayoon_GOOD_DAY,
-        fadm:GOOD_DAY_group_Night ;
+        fadm:GOOD_DAY_group_Jiwon_GOOD_DAY,
+        fadm:GOOD_DAY_group_Lucky, 
+        fadm:GOOD_DAY_group_Viva ;
     dbo:genre "POP" ;
     kpop:debut "August 30, 2017" ;
-    kpop:female_num 5 ;
+    kpop:female_num 10 ;
     kpop:gender "F" ;
     kpop:labels "C9 Entertainment" ;
     kpop:male_num "None"^^xsd:integer ;
-    kpop:member_num 8 ;
+    kpop:member_num 10 ;
     kpop:url "https://kpop.fandom.com/wiki/GOOD_DAY_(group)" ;
     kpop:year_active_from "2017" ;
     kpop:year_active_to "2019" ;
