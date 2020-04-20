@@ -31,9 +31,9 @@
     <div class="col s12" id="banner">
       <div class="tabs_section">
         <ul class="tabs tabs_inner_section" style="text-align: center">
-          <li class="tab col s3" style="width: 50%;"><a class="active" href="#tabGroup"
-              action="/changeStatusMember">Group</a></li>
-          <li class="tab col s3" style="width: 50%;"><a href="#tabMember" action="/changeStatusGroup">Member</a></li>
+          <li class="tab col s3" style="width: 50%;"><a class="active" href="#tabGroup" action="/searchGroup">Group</a>
+          </li>
+          <li class="tab col s3" style="width: 50%;"><a href="#tabMember" action="/searchMember">Member</a></li>
         </ul>
       </div>
 
@@ -48,13 +48,27 @@
               </div>
               <div style="display:inline" style="width: 50%;float:left;">
                 <div class="advancedSelect" style="width:40%; margin:10px">
-                  <label>Group Select</label>
-                  <select class="browser-default">
+                  <form name="top_res" action="/refreshfiltertop" method="GET">
+                    <label>Group Select</label>
+                    
+                    <select name="chosen_class" onchange="this.form.submit()" class="browser-default">
+                      {% for drop_itm in chooseGenre %}
+                          {% if selectedclass == drop_itm %}
+                      <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                          {% else %}
+                      <option value="{{drop_itm}}">{{drop_itm}}</option>
+                          {% endif %}
+                      {% endfor %}
+                    </select>
+                  </form>
+                  
+                  <!-- <select >
                     <option value="" disabled selected>Genre</option>
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
-                  </select>
+                  </select> -->
+
                 </div>
               </div>
 
@@ -156,7 +170,6 @@
     </div>
 
 
-    {% if keyGroup != [] %}
     <div class="col s12" style="margin: 10px;" id="tableGroup">
       <table class="table" border="1">
         <thead>
@@ -184,10 +197,66 @@
           {% endfor %}
         </tbody>
       </table>
-
       </table>
     </div>
-    {% endif %}
+
+
+    <div id='tableMember' style="margin: 10px;">
+      {% if allMember %}
+      <table class="table" border="1">
+        <thead>
+          <tr>
+            <th scope="col"> Member </th>
+            <th scope="col"> Detail </th>
+          </tr>
+        </thead>
+      </table>
+      {% for key,value in allMember.items()%}
+      <div class="col s12">
+        
+        <div class="divider"></div>
+        <div class="section">
+          <div class="col s4" style="margin-left: 5%;">
+              <h6>
+                {{key}}
+              </h6>
+              <p>
+                {% if realURL in value %}
+                <a style="color: black;" href="{{value.realURL}}"><strong>NAME:</strong>>{{value['label'][0][0]}}</a>
+                {% else %}
+                <a style="color: black;" href="#"><strong>NAME:</strong>{{value['label'][0][0]}}</a>
+                {% endif %}
+              </p>
+           </div>
+          <div class="col s5" style="margin-bottom: 10px;">
+            {% for key,item in value.items() %}
+            {% if key != 'image_url' and key!='type' and key!='realURL' and key!='abstract' and key!="URL" and key!='female_num' and key!='male_num'%}
+            <div class="col s5 section" style="color: #424242; width: 80%;float: right;">
+              <strong style="color:#212121;">{{key.upper()}}: </strong>
+              {% for it in item %}
+              {% if key == 'bandMember' %}
+              <a style="color:rgb(19, 102, 129)" href="{{it[0]}}">{{it[0]}} </a>
+              {% else %}
+              {{it[0]}}
+              {% endif %}
+              {% if it != item[-1] %}
+              ,
+              {% else %}
+              .
+              {% endif %}
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+      {% endfor %}
+      {% endif %}
+    </div>
+
+
     <!--JavaScript at end of body for optimized loading-->
     <!-- <script type="text/javascript" src="../js/materialize.min.js"></script> -->
 </body>

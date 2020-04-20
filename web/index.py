@@ -141,7 +141,38 @@ def searchGroup():
 @app.route('/searchMember', methods=['POST'])
 def searchMember():
     # print(request.form)
-    groupName = str(request.form['membername'])
+    memberName = str(request.form['membername'])
+    queryLine = "SELECT ?member ?p ?o WHERE{ ?group a schema:Class. ?group dbo:bandMember ?member. ?member rdfs:label ?name. FILTER regex(?name,'"+memberName +"', 'i').?member ?p ?o}"
+    sparql.setQuery(prefix + queryLine)
+    results = sparql.query().convert()
+    allMember = {}
+    if len(results["results"]["bindings"]) > 0:
+        for i in range(len(results["results"]["bindings"])):
+            if results["results"]["bindings"][i]['member']['type'] == 'uri':
+                member = results["results"]["bindings"][i]['member']['value']
+                pred = results["results"]["bindings"][i]['p']['value']
+                obj = results["results"]["bindings"][i]['o']['value']
+                objType = results["results"]["bindings"][i]['o']['type']
+                #deal with pred
+                if '#' in pred:
+                    label = pred.split('#')[-1]
+                else:
+                    label = pred.split('/')[-1]
+                #deal with member realURL
+                if member not in allMember:
+                    allMember[member] = collections.defaultdict(list)
+                if member in dict_url:
+                    realURL = dict_url[member][0]
+                    allMember[member]['realURL'] = realURL
+                #deal with obj
+                if obj != 'None':
+                    if objType != 'uri':
+                        allMember[member][label].append((obj,False))
+                    else:
+                        allMember[member][label].append((obj,True)) 
+    print(allMember) 
+                                      
+    return render_template("main.html", allMember=allMember)
 
 
 @app.route('/description', methods=['GET', 'POST'])
