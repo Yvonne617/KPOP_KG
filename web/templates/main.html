@@ -48,13 +48,27 @@
               </div>
               <div style="display:inline" style="width: 50%;float:left;">
                 <div class="advancedSelect" style="width:40%; margin:10px">
-                  <label>Group Select</label>
-                  <select class="browser-default">
+                  <form name="top_res" action="/refreshfiltertop" method="GET">
+                    <label>Group Select</label>
+                    
+                    <select name="chosen_class" onchange="this.form.submit()" class="browser-default">
+                      {% for drop_itm in chooseGenre %}
+                          {% if selectedclass == drop_itm %}
+                      <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                          {% else %}
+                      <option value="{{drop_itm}}">{{drop_itm}}</option>
+                          {% endif %}
+                      {% endfor %}
+                    </select>
+                  </form>
+                  
+                  <!-- <select >
                     <option value="" disabled selected>Genre</option>
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
-                  </select>
+                  </select> -->
+
                 </div>
               </div>
 
