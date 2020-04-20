@@ -6342,15 +6342,15 @@ fadm:SuperM a schema:Class ;
         fadm:SuperM_Ten ;
     dbo:genre "POP" ;
     kpop:debut "October 4, 2019" ;
-    kpop:female_num 4 ;
+    kpop:female_num "None"^^xsd:integer ;
     kpop:gender "M" ;
     kpop:labels "Capitol",
         "Caroline",
         "EMI",
         "SM" ;
-    kpop:male_num 3 ;
+    kpop:male_num 7 ;
     kpop:member_num 7 ;
-    kpop:monthly_listener 61863316 ;
+    kpop:monthly_listener 81863316 ;
     kpop:popularity 5 ;
     kpop:url "https://kpop.fandom.com/wiki/SuperM" ;
     kpop:year_active_from "2019" ;
@@ -6377,8 +6377,8 @@ fadm:Switch_Berry a schema:Class ;
         fadm:Switch_Berry_Yora ;
     dbo:genre "POP" ;
     kpop:debut "July 19, 2013" ;
-    kpop:female_num 4 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num 15 ;
+    kpop:gender "F" ;
     kpop:labels "",
         "DAM Entertainment",
         "Starcubic Entertainment" ;
@@ -6406,7 +6406,7 @@ T-ara held their comeback performance on the same day on M Countdown , and won s
     dbo:genre "J POP",
         "K POP" ;
     kpop:debut "July 29, 2009" ;
-    kpop:female_num 7 ;
+    kpop:female_num 10 ;
     kpop:gender "F" ;
     kpop:labels "EMI Japan",
         "MBK" ;
@@ -6432,13 +6432,13 @@ fadm:TARGET a schema:Class ;
         fadm:TARGET_Zeth ;
     dbo:genre "J POP",
         "K POP" ;
-    kpop:debut "None" ;
+    kpop:debut "2014" ;
     kpop:female_num "None"^^xsd:integer ;
     kpop:gender "M" ;
     kpop:labels "JSL Company" ;
-    kpop:male_num 5 ;
+    kpop:male_num 8 ;
     kpop:member_num 8 ;
-    kpop:monthly_listener 41 ;
+    kpop:monthly_listener 421 ;
     kpop:popularity 1 ;
     kpop:url "https://kpop.fandom.com/wiki/TARGET" ;
     kpop:year_active_from "2014" ;
@@ -6463,9 +6463,9 @@ fadm:THE_BOYZ a schema:Class ;
     dbo:genre "POP" ;
     kpop:debut "December 6, 2017" ;
     kpop:female_num "None"^^xsd:integer ;
-    kpop:gender "Unknown" ;
+    kpop:gender "M" ;
     kpop:labels "Cre.ker Entertainment" ;
-    kpop:male_num 11 ;
+    kpop:male_num 12 ;
     kpop:member_num 12 ;
     kpop:monthly_listener 538968 ;
     kpop:popularity 4 ;
@@ -6519,13 +6519,13 @@ fadm:TREASURE a schema:Class ;
         fadm:TREASURE_Yoon_Jae_Hyuk,
         fadm:TREASURE_Yoshi ;
     kpop:debut "None" ;
-    kpop:female_num 12 ;
-    kpop:gender "Unknown" ;
+    kpop:female_num "None"^^xsd:integer ;
+    kpop:gender "M" ;
     kpop:labels "YG Entertainment" ;
-    kpop:male_num "None"^^xsd:integer ;
+    kpop:male_num 13 ;
     kpop:member_num 13 ;
-    kpop:monthly_listener 31708087 ;
-    kpop:popularity 5 ;
+    kpop:monthly_listener 3708087 ;
+    kpop:popularity 4 ;
     kpop:url "https://kpop.fandom.com/wiki/TREASURE" ;
     kpop:year_active_from "2019" ;
     kpop:year_active_to "present" ;
