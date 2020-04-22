@@ -34,7 +34,7 @@ prefix =  """
 GENREG = ["Ballad","Pop","R&B","Soul","Hip Hop","Electronic","RAP","Dance","EDM","Rock","Jazz","Retro","NU DISCO","Funk"]
 BANDNUMBERG = ["More than 10","9","8","7","6","5","4","3","Less than 3"]
 LABELG = ["SM","JYP","YG","Big Hit","Stone","FNC","Cube","Starship","Pledis","Fantagio","Others"]
-GENDERM = ["F","M","Co-ed"]
+GENDERM = ["F","M"]
 POSITIONM = ["Rapper","Vocalist","Dancer","Maknae","Visual","Leader","Center","Face of the group","Drum","Guitar","Bass","Producer","Composer"]
 
 
@@ -94,29 +94,52 @@ def filterGroup():
     else:
         keysGroup = ['No']
     return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup,genredropdown=GENREG, numberdropdown=BANDNUMBERG,
-                        labeldropdown=LABELG)
+                        labeldropdown=LABELG,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)
     # return results
 
-# @app.route('/groups')
-# def groups():
-#     keyword = request.args.get("keyword")
-#     g = rdflib.Graph()
-#     result = g.parse('data/KPOP_graph.ttl', format='n3')
-#     qres = g.query("""
-#     SELECT ?name WHERE { 
-#     ?group a schema:Class .
-# 	?group rdfs:label ?name .
-#     FILTER regex(?name,"EXO", "i") 
-#     }
-#      """)
-#     for row in qres:
-#         print(row)
-#     return jsonify({"data": keyword})
-
-# @app.route('/members')
-# def members():
-#     keyword = request.args.get("keyword")
-#     return jsonify({"data": keyword})
+@app.route('/filterMember',methods=['GET', 'POST'])
+def filterMember():
+    print(request)
+    keyword = request.form
+    print(keyword)
+    genre = keyword['chosen_genre_m']
+    label = keyword['chosen_label_m']
+    gender = keyword['chosen_gender_m']
+    position = keyword['chosen_position_m']
+    if label == "Others":
+        label = ""
+    queryline = "SELECT DISTINCT ?member ?p ?o WHERE{ ?group a schema:Class.?group kpop:labels ?company.filter regex(?company,'"+label+"','i').?group dbo:genre ?g.filter regex(?g, '"+genre+"','i').?group kpop:gender ?gender.filter regex(?gender, '"+gender+"','i').?group dbo:bandMember ?member.?member kpop:position ?position.?member ?p ?o.filter regex(?position,'"+position+"','i')}"
+    sparql.setQuery(prefix + queryline)
+    results = sparql.query().convert()
+    allMember = {}
+    if len(results["results"]["bindings"]) > 0:
+        for i in range(len(results["results"]["bindings"])):
+            if results["results"]["bindings"][i]['member']['type'] == 'uri':
+                member = results["results"]["bindings"][i]['member']['value']
+                pred = results["results"]["bindings"][i]['p']['value']
+                obj = results["results"]["bindings"][i]['o']['value']
+                objType = results["results"]["bindings"][i]['o']['type']
+                #deal with pred
+                if '#' in pred:
+                    label = pred.split('#')[-1]
+                else:
+                    label = pred.split('/')[-1]
+                #deal with member realURL
+                if member not in allMember:
+                    allMember[member] = collections.defaultdict(list)
+                if member in dict_url:
+                    realURL = dict_url[member][0]
+                    allMember[member]['realURL'] = realURL
+                #deal with obj
+                if obj != 'None':
+                    if objType != 'uri':
+                        allMember[member][label].append((obj,False))
+                    else:
+                        allMember[member][label].append((obj,True)) 
+    print(allMember) 
+                                      
+    return render_template("main.html", allMember=allMember,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)
+    # return keyword
 
 @app.route('/trend', methods=['GET', 'POST'])
 def trend():
@@ -232,7 +255,7 @@ def searchMember():
                         allMember[member][label].append((obj,True)) 
     print(allMember) 
                                       
-    return render_template("main.html", allMember=allMember)
+    return render_template("main.html", allMember=allMember,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)
 
 
 @app.route('/description', methods=['GET', 'POST'])
