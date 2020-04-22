@@ -1,6 +1,8 @@
 from flask import Flask,render_template,url_for,redirect,jsonify
 from flask import request
 from datetime import timedelta
+# from flask_wtf import Form
+# from wtforms import StringField, SubmitField
 import rltk
 import rdflib 
 from flask import jsonify 
@@ -39,6 +41,9 @@ LABELG = ["SM","JYP","YG","Big Hit","Stone","FNC","Cube","Starship","Pledis","Fa
 data = pd.read_csv("data/rdf_url.csv")
 dict_url = data.set_index('rdfURL').T.to_dict('list')
 
+# class MockCreate(Form):
+#     submit = SubmitField("Submit")
+
 @app.route('/')
 def return_main_page_with_filters():
     # cpredicate = '<' + cpredicate_clean + '>'
@@ -51,34 +56,64 @@ def return_main_page_with_filters():
 
 @app.route('/filterGroup',methods=['GET', 'POST'])
 def filterGroup():
+    print(request)
     keyword = request.form
     print(keyword)
     genre = keyword['chosen_genre']
     label = keyword['chosen_label']
-    number = keyword['chosen_number']
+    num = keyword['chosen_number']
+    if num == "More than 10":
+        number = ">10"
+    elif num == "Less than 3":
+        number = "<3"
+    else:
+        number = "=" + num
+    if label == "Others":
+        label = ""
+    if num == '':
+        queryline = "SELECT distinct ?group ?name WHERE{ ?group a schema:Class. ?group kpop:labels ?company.filter regex(?company,'"+label+"','i').?group dbo:genre ?g.filter regex(?g, '"+genre+"','i').?group rdfs:label ?name.}"
+    else:
+        queryline = "SELECT distinct ?group ?name WHERE{ ?group a schema:Class. ?group kpop:labels ?company.filter regex(?company,'"+label+"','i').?group dbo:genre ?g.filter regex(?g, '"+genre+"','i').?group kpop:member_num ?number.filter (?number"+number+").?group rdfs:label ?name.}"
+    sparql.setQuery(prefix + queryline)
+    temp = sparql.query().convert()
+    resultGroup = []
+    if len(temp["results"]["bindings"]) > 0:
+        keysGroup = temp["results"]["bindings"][0].keys()
+        for i in range(len(temp["results"]["bindings"])):
+            line = []
+            for key in keysGroup:
+                if temp["results"]["bindings"][i][key]["type"] == 'uri':
+                        #need to replace link
+                    line.append((temp["results"]["bindings"][i][key]["value"],True))
+                else:
+                    line.append((temp["results"]["bindings"][i][key]["value"],False))
+            resultGroup.append(line)
+    else:
+        keysGroup = ['No']
+    return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup,genredropdown=GENREG, numberdropdown=BANDNUMBERG,
+                        labeldropdown=LABELG)
+    # return results
 
-    return keyword
+# @app.route('/groups')
+# def groups():
+#     keyword = request.args.get("keyword")
+#     g = rdflib.Graph()
+#     result = g.parse('data/KPOP_graph.ttl', format='n3')
+#     qres = g.query("""
+#     SELECT ?name WHERE { 
+#     ?group a schema:Class .
+# 	?group rdfs:label ?name .
+#     FILTER regex(?name,"EXO", "i") 
+#     }
+#      """)
+#     for row in qres:
+#         print(row)
+#     return jsonify({"data": keyword})
 
-@app.route('/groups')
-def groups():
-    keyword = request.args.get("keyword")
-    g = rdflib.Graph()
-    result = g.parse('data/KPOP_graph.ttl', format='n3')
-    qres = g.query("""
-    SELECT ?name WHERE { 
-    ?group a schema:Class .
-	?group rdfs:label ?name .
-    FILTER regex(?name,"EXO", "i") 
-    }
-     """)
-    for row in qres:
-        print(row)
-    return jsonify({"data": keyword})
-
-@app.route('/members')
-def members():
-    keyword = request.args.get("keyword")
-    return jsonify({"data": keyword})
+# @app.route('/members')
+# def members():
+#     keyword = request.args.get("keyword")
+#     return jsonify({"data": keyword})
 
 @app.route('/trend', methods=['GET', 'POST'])
 def trend():
@@ -157,7 +192,8 @@ def searchGroup():
             resultGroup.append(line)
     else:
         keysGroup = ['No']
-    return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
+    return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup,genredropdown=GENREG, numberdropdown=BANDNUMBERG,
+                           labeldropdown=LABELG)
 
 @app.route('/searchMember', methods=['POST'])
 def searchMember():

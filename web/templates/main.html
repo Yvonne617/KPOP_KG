@@ -51,7 +51,6 @@
               <form name="top_res" action="/filterGroup" method="POST">
               <div style="display:inline" style="width: 50%;float:left;">
                 <div class="advancedSelect" style="width:40%; margin:10px">
-                  <!-- <form name="top_res" action="/refreshfiltertop" method="GET"> -->
                     <label>Please Select Genre</label>
                     <select name="chosen_genre" class="browser-default">
                       <option value="" selected>Choose your option</option>
@@ -63,7 +62,6 @@
                           {% endif %}
                       {% endfor %}
                     </select>
-                  <!-- </form> -->
                 </div>
               </div>
 
@@ -88,7 +86,7 @@
                 <div class="advancedSelect" style="width:40%; margin:10px">
                   <!-- <form name="top_res" action="/refreshfiltertop" method="GET"> -->
                     <label>Please Select the Number of Members in One Group</label>
-                    <select name="chosen_number" onchange="this.form.submit()" class="browser-default">
+                    <select name="chosen_number" class="browser-default">
                       <option value="" selected>Choose your option</option>
                       {% for drop_itm in numberdropdown %}
                           {% if selectedclass == drop_itm %}
@@ -102,10 +100,10 @@
                 </div>
               </div>
 
-              <div>
-                <a class="btn" id="advancedGroupTrigger" name="realGroupSearch"
-                  style="margin-left:10px; margin-bottom: 0px; margin-top: 205px; padding:4px;background-color:#e57373;">Search</a>
-              </div>
+              <!-- <div> -->
+                <input class="btn" id="advancedGroupTrigger" name="realGroupSearch" type="submit" value="Submit"
+                  style="margin-left:10px; margin-bottom: 0px; margin-top: 205px; padding:4px;background-color:#e57373;"></input>
+              <!-- </div> -->
             </form>
 
             </div>
