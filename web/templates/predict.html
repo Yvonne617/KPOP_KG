@@ -27,63 +27,78 @@
                 </div>
               </nav>
         </div>
-        <div class="row" style="margin-left: 2em;">
-                <div class="col s12 m6">
-                  <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                      <span class="card-title">Predict Next Super Star</span>
-                      <p> South Korean pop culture has grown in prominence to become a major driver of global culture. Have a look of the KPOP trend from 2000-2020! </p>
-                    </div>
-                    <div class="card-action">
-                      <a href="#">This is a link</a>
-                      <a href="#">This is a link</a>
-                    </div>
-                  </div>   
-                </div>
-              </div>
+        <div class="card blue-grey darken-1" style="margin: 30px auto;width:60%;height:200px;">
+          <div class="card-content white-text">
+              <span class="card-title">Predict Next Super Star</span>
+            dcddcsdfsncld dzlkcnsklcndls
+          </div>
+        </div>
 
 
-        <div class="row" style="border: 2px black solid;margin: auto auto; padding:5px 25px; width:1000px;height:500px">
-            <p>table</p>
-            <form action="#">
-                <div class="gender" style="float: left;">
-                    <p>gender</p>
-                    <p>
+        <div class="row" style="border: 1px rgba(186, 186, 186, 0.47) solid;border-radius: 13px;margin: auto auto; padding:5px 25px; width:1000px;height:600px">
+            <!-- <p>table</p> -->
+            <form action="#" style= "width:1000px;height:800px">
+               
+                <div class="gender" style="width:100%;height: 80px;">
+                  <p style="margin-block-end: 0px">Select Genres</p>
+                    <p style="float: left;">
                         <label>
                               <input name="group1" type="radio" checked />
                               <span>Girl Group</span>
                         </label>
                     </p>
-                    <p>
+                    <p style="float: left;">
                          <label>
                             <input name="group1" type="radio" />
                             <span>Boy Group</span>
                         </label>
                     </p>
-                    <p>
+                    <p style="float: left;">
                         <label>
                                <input name="group1" type="radio" />
                                <span>Co_ed Group</span>
                            </label>
                        </p>
                   <p>
-                    
+                   
                 </div>
 
-                <div class="input-field col s12" style="width: 400px;margin-left: 80px">
+                <div class="input-field col m12 s12" style="width: 70%">
+                    <p style="margin-block-end: 0px">Select Genres</p>
                         <select multiple>
                             <option value="" disabled selected>Choose group genres</option>
-                           
                             {% for data in genres%}
-                                <option value="1">{{data}}</option>
+                                <option value="{{data}}">{{data}}</option>
                             {% endfor %}
                            
-                        </select>
-                        <label>Select Genres</label>
+                        </select>  
                 </div>
 
+                <div class="input-field col m12 s12" style="width: 70%">
+                    <p style="margin-block-end: 0px">Select Company</p>
+                        <select>
+                            <option value="" disabled selected>Choose company</option>
+                            {% for data in company%}
+                                <option value="{{data}}">{{data}}</option>
+                            {% endfor %}
+                           
+                        </select>  
+                </div>
+                <div class="input-field col m12 s12" style="width: 70%">
+                    <p style="margin-block-end: 0px">Select number of members</p>
+                        <select>
+                            <option value="" disabled selected>Choose number of members</option>
+                            {% for data in num%}
+                                <option value="{{data}}">{{data}}</option>
+                            {% endfor %}
+                           
+                        </select>  
+                </div>
+                <div class="col m12 s12" style="width: 100%;margin-top: 20px;">
+                    <button class="btn" id="advancedGroup" type="submit" name="action"
+                    style="background-color:rgb(201, 99, 116) ;"> Predict</button>
+                </div>
                 
-             
             </form>        
         </div>
         

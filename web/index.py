@@ -306,5 +306,5 @@ def description():
 
 @app.route('/predict', methods=['GET'])
 def predict():
-    genres = ["hipop","pop"]
-    return render_template("predict.html",genres=genres)
+    genres = [ "HIP HOP","DANCE POP","K POP","R&B","J POP","POP","DANCE","ROCK","BALLAD","EDM","ELECTRONIC","BUBBLEGUM POP","SYNTH POP","POP ROCK","TEEN POP","NU DISCO","ELECTRO POP","SOUL","POPERA","METAL","RAP","C POP","JAZZ","FUNK","RETRO","ELECTROPOP" ]
+    return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG)
