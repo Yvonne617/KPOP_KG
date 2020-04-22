@@ -34,6 +34,9 @@ prefix =  """
 GENREG = ["Ballad","Pop","R&B","Soul","Hip Hop","Electronic","RAP","Dance","EDM","Rock","Jazz","Retro","NU DISCO","Funk"]
 BANDNUMBERG = ["More than 10","9","8","7","6","5","4","3","Less than 3"]
 LABELG = ["SM","JYP","YG","Big Hit","Stone","FNC","Cube","Starship","Pledis","Fantagio","Others"]
+GENDERM = ["F","M","Co-ed"]
+POSITIONM = ["Rapper","Vocalist","Dancer","Maknae","Visual","Leader","Center","Face of the group","Drum","Guitar","Bass","Producer","Composer"]
+
 
 
 
@@ -52,7 +55,7 @@ def return_main_page_with_filters():
     # max_val = cast_and_find_max(values)
     return render_template('main.html', 
                            genredropdown=GENREG, numberdropdown=BANDNUMBERG,
-                           labeldropdown=LABELG)
+                           labeldropdown=LABELG,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)
 
 @app.route('/filterGroup',methods=['GET', 'POST'])
 def filterGroup():
