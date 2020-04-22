@@ -1,6 +1,8 @@
 from flask import Flask,render_template,url_for,redirect,jsonify
 from flask import request
 from datetime import timedelta
+# from flask_wtf import Form
+# from wtforms import StringField, SubmitField
 import rltk
 import rdflib 
 from flask import jsonify 
@@ -29,35 +31,115 @@ prefix =  """
         PREFIX fadm: <https://kpop.fandom.com/wiki/> 
         PREFIX schema: <http://schema.org/> """
 
+GENREG = ["Ballad","Pop","R&B","Soul","Hip Hop","Electronic","RAP","Dance","EDM","Rock","Jazz","Retro","NU DISCO","Funk"]
+BANDNUMBERG = ["More than 10","9","8","7","6","5","4","3","Less than 3"]
+LABELG = ["SM","JYP","YG","Big Hit","Stone","FNC","Cube","Starship","Pledis","Fantagio","Others"]
+GENDERM = ["F","M"]
+POSITIONM = ["Rapper","Vocalist","Dancer","Maknae","Visual","Leader","Center","Face of the group","Drum","Guitar","Bass","Producer","Composer"]
+
+
+
 
 #get the dict to convert the rdf URI to origin URL
 data = pd.read_csv("data/rdf_url.csv")
 dict_url = data.set_index('rdfURL').T.to_dict('list')
 
+# class MockCreate(Form):
+#     submit = SubmitField("Submit")
+
 @app.route('/')
-def index():
-    return render_template('main.html')
+def return_main_page_with_filters():
+    # cpredicate = '<' + cpredicate_clean + '>'
+    # labels, values = get_top_labels_values_for_class_predicate(
+    #     cclass, cpredicate)
+    # max_val = cast_and_find_max(values)
+    return render_template('main.html', 
+                           genredropdown=GENREG, numberdropdown=BANDNUMBERG,
+                           labeldropdown=LABELG,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)
 
-@app.route('/groups')
-def groups():
-    keyword = request.args.get("keyword")
-    g = rdflib.Graph()
-    result = g.parse('data/KPOP_graph.ttl', format='n3')
-    qres = g.query("""
-    SELECT ?name WHERE { 
-    ?group a schema:Class .
-	?group rdfs:label ?name .
-    FILTER regex(?name,"EXO", "i") 
-    }
-     """)
-    for row in qres:
-        print(row)
-    return jsonify({"data": keyword})
+@app.route('/filterGroup',methods=['GET', 'POST'])
+def filterGroup():
+    print(request)
+    keyword = request.form
+    print(keyword)
+    genre = keyword['chosen_genre']
+    label = keyword['chosen_label']
+    num = keyword['chosen_number']
+    if num == "More than 10":
+        number = ">10"
+    elif num == "Less than 3":
+        number = "<3"
+    else:
+        number = "=" + num
+    if label == "Others":
+        label = ""
+    if num == '':
+        queryline = "SELECT distinct ?group ?name WHERE{ ?group a schema:Class. ?group kpop:labels ?company.filter regex(?company,'"+label+"','i').?group dbo:genre ?g.filter regex(?g, '"+genre+"','i').?group rdfs:label ?name.}"
+    else:
+        queryline = "SELECT distinct ?group ?name WHERE{ ?group a schema:Class. ?group kpop:labels ?company.filter regex(?company,'"+label+"','i').?group dbo:genre ?g.filter regex(?g, '"+genre+"','i').?group kpop:member_num ?number.filter (?number"+number+").?group rdfs:label ?name.}"
+    sparql.setQuery(prefix + queryline)
+    temp = sparql.query().convert()
+    resultGroup = []
+    if len(temp["results"]["bindings"]) > 0:
+        keysGroup = temp["results"]["bindings"][0].keys()
+        for i in range(len(temp["results"]["bindings"])):
+            line = []
+            for key in keysGroup:
+                if temp["results"]["bindings"][i][key]["type"] == 'uri':
+                        #need to replace link
+                    line.append((temp["results"]["bindings"][i][key]["value"],True))
+                else:
+                    line.append((temp["results"]["bindings"][i][key]["value"],False))
+            resultGroup.append(line)
+    else:
+        keysGroup = ['No']
+    return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup,genredropdown=GENREG, numberdropdown=BANDNUMBERG,
+                        labeldropdown=LABELG,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)
+    # return results
 
-@app.route('/members')
-def members():
-    keyword = request.args.get("keyword")
-    return jsonify({"data": keyword})
+@app.route('/filterMember',methods=['GET', 'POST'])
+def filterMember():
+    print(request)
+    keyword = request.form
+    print(keyword)
+    genre = keyword['chosen_genre_m']
+    label = keyword['chosen_label_m']
+    gender = keyword['chosen_gender_m']
+    position = keyword['chosen_position_m']
+    if label == "Others":
+        label = ""
+    queryline = "SELECT DISTINCT ?member ?p ?o WHERE{ ?group a schema:Class.?group kpop:labels ?company.filter regex(?company,'"+label+"','i').?group dbo:genre ?g.filter regex(?g, '"+genre+"','i').?group kpop:gender ?gender.filter regex(?gender, '"+gender+"','i').?group dbo:bandMember ?member.?member kpop:position ?position.?member ?p ?o.filter regex(?position,'"+position+"','i')}"
+    sparql.setQuery(prefix + queryline)
+    results = sparql.query().convert()
+    allMember = {}
+    if len(results["results"]["bindings"]) > 0:
+        for i in range(len(results["results"]["bindings"])):
+            if results["results"]["bindings"][i]['member']['type'] == 'uri':
+                member = results["results"]["bindings"][i]['member']['value']
+                pred = results["results"]["bindings"][i]['p']['value']
+                obj = results["results"]["bindings"][i]['o']['value']
+                objType = results["results"]["bindings"][i]['o']['type']
+                #deal with pred
+                if '#' in pred:
+                    label = pred.split('#')[-1]
+                else:
+                    label = pred.split('/')[-1]
+                #deal with member realURL
+                if member not in allMember:
+                    allMember[member] = collections.defaultdict(list)
+                if member in dict_url:
+                    realURL = dict_url[member][0]
+                    allMember[member]['realURL'] = realURL
+                #deal with obj
+                if obj != 'None':
+                    if objType != 'uri':
+                        allMember[member][label].append((obj,False))
+                    else:
+                        allMember[member][label].append((obj,True)) 
+    print(allMember) 
+                                      
+    return render_template("main.html", allMember=allMember,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)
+    # return keyword
 
 @app.route('/trend', methods=['GET', 'POST'])
 def trend():
@@ -136,7 +218,8 @@ def searchGroup():
             resultGroup.append(line)
     else:
         keysGroup = ['No']
-    return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
+    return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup,genredropdown=GENREG, numberdropdown=BANDNUMBERG,
+                           labeldropdown=LABELG)
 
 @app.route('/searchMember', methods=['POST'])
 def searchMember():
@@ -172,7 +255,7 @@ def searchMember():
                         allMember[member][label].append((obj,True)) 
     print(allMember) 
                                       
-    return render_template("main.html", allMember=allMember)
+    return render_template("main.html", allMember=allMember,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)
 
 
 @app.route('/description', methods=['GET', 'POST'])

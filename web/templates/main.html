@@ -31,9 +31,9 @@
     <div class="col s12" id="banner">
       <div class="tabs_section">
         <ul class="tabs tabs_inner_section" style="text-align: center">
-          <li class="tab col s3" style="width: 50%;"><a class="active" href="#tabGroup" action="/searchGroup">Group</a>
+          <li class="tab col s3" style="width: 50%;"><a class="active" href="#tabGroup" action="/">Group</a>
           </li>
-          <li class="tab col s3" style="width: 50%;"><a href="#tabMember" action="/searchMember">Member</a></li>
+          <li class="tab col s3" style="width: 50%;"><a href="#tabMember" action="/r">Member</a></li>
         </ul>
       </div>
 
@@ -42,51 +42,70 @@
 
           <div id="tabGroup">
             <div id="advancedTest1" class="col s12" style="visibility: hidden;height: 0px;">
-              <div style="height: 10%;">
+
+              <div style="height: 10%; margin-bottom: 10px;">
                 <a class="btn" id="backGroup"
                   style="margin-left:10px; margin-bottom: 15px; margin-top: 10px; background-color:#e57373;">Back</a>
               </div>
-              <div style="display:inline" style="width: 50%;float:left;">
-                <div class="advancedSelect" style="width:40%; margin:10px">
-                  <form name="top_res" action="/refreshfiltertop" method="GET">
-                    <label>Group Select</label>
-                    
-                    <select name="chosen_class" onchange="this.form.submit()" class="browser-default">
-                      {% for drop_itm in chooseGenre %}
-                          {% if selectedclass == drop_itm %}
+
+              <form name="top_res" action="/filterGroup" method="POST">
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <label>Please Select Genre</label>
+                    <select name="chosen_genre" class="browser-default">
+                      <option value="" selected>Choose your option</option>
+                      {% for drop_itm in genredropdown %}
+                      {% if selectedclass == drop_itm %}
                       <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
-                          {% else %}
+                      {% else %}
                       <option value="{{drop_itm}}">{{drop_itm}}</option>
-                          {% endif %}
+                      {% endif %}
                       {% endfor %}
                     </select>
-                  </form>
-                  
-                  <!-- <select >
-                    <option value="" disabled selected>Genre</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                  </select> -->
-
+                  </div>
                 </div>
-              </div>
 
-              <div style="display:inline" style="width: 50%;float:left;">
-                <div class="advancedSelect" style="width:40%; margin:10px">
-                  <label>Group Select</label>
-                  <select class="browser-default">
-                    <option value="" disabled selected>Genre</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                  </select>
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <label>Please Select the Entertainment Company</label>
+                    <!-- <select name="chosen_label" onchange="this.form.submit()" class="browser-default"> -->
+                    <select name="chosen_label" class="browser-default">
+                      <option value="" selected>Choose your option</option>
+                      {% for drop_itm in labeldropdown %}
+                      {% if selectedclass == drop_itm %}
+                      <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                      {% else %}
+                      <option value="{{drop_itm}}">{{drop_itm}}</option>
+                      {% endif %}
+                      {% endfor %}
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <a class="btn" id="advancedGroupTrigger"
-                  style="margin-left:10px; margin-bottom: 0px; margin-top: 220px; padding:4px;background-color:#e57373;">Search</a>
-              </div>
+
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <!-- <form name="top_res" action="/refreshfiltertop" method="GET"> -->
+                    <label>Please Select the Number of Members in One Group</label>
+                    <select name="chosen_number" class="browser-default">
+                      <option value="" selected>Choose your option</option>
+                      {% for drop_itm in numberdropdown %}
+                      {% if selectedclass == drop_itm %}
+                      <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                      {% else %}
+                      <option value="{{drop_itm}}">{{drop_itm}}</option>
+                      {% endif %}
+                      {% endfor %}
+                    </select>
+                    <!-- </form> -->
+                  </div>
+                </div>
+
+                <!-- <div> -->
+                <input class="btn" id="advancedGroupTrigger" name="realGroupSearch" type="submit" value="Submit"
+                  style="margin-left:10px; margin-bottom: 0px; margin-top: 205px; padding:4px;background-color:#e57373;"></input>
+                <!-- </div> -->
+              </form>
+
             </div>
 
             <div id="test1" class="col s12" style="visibility:visible;">
@@ -116,11 +135,89 @@
 
           <div id="tabMember">
             <div id="advancedTest2" class="col s12" style="visibility: hidden;height: 0px;">
-              <div style="height: 10%;">
+              <div style="height: 10%;margin-bottom: 10px;">
                 <a class="btn" id="backMember"
-                  style="margin-left:10px; margin-bottom: 15px; margin-top: 10px;  background-color:#e57373;">Back</a>
+                  style="margin-left:10px; margin-bottom: 25px; margin-top: 10px;  background-color:#e57373;">Back</a>
               </div>
-              <div style="display:inline" style="width: 50%;float:left;">
+
+
+              <form name="memberadvanced" action="/filterMember" method="POST">
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <label>Please Select Genre</label>
+                    <select name="chosen_genre_m" class="browser-default">
+                      <option value="" selected>Choose your option</option>
+                      {% for drop_itm in genrem %}
+                      {% if selectedclass == drop_itm %}
+                      <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                      {% else %}
+                      <option value="{{drop_itm}}">{{drop_itm}}</option>
+                      {% endif %}
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <label>Please Select the Entertainment Company</label>
+                    <!-- <select name="chosen_label" onchange="this.form.submit()" class="browser-default"> -->
+                    <select name="chosen_label_m" class="browser-default">
+                      <option value="" selected>Choose your option</option>
+                      {% for drop_itm in labelm %}
+                      {% if selectedclass == drop_itm %}
+                      <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                      {% else %}
+                      <option value="{{drop_itm}}">{{drop_itm}}</option>
+                      {% endif %}
+                      {% endfor %}
+                    </select>
+                  </div>
+                </div>
+
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <!-- <form name="top_res" action="/refreshfiltertop" method="GET"> -->
+                    <label>Please Select the Gender of the Member</label>
+                    <select name="chosen_gender_m" class="browser-default">
+                      <option value="" selected>Choose your option</option>
+                      {% for drop_itm in genderm %}
+                      {% if selectedclass == drop_itm %}
+                      <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                      {% else %}
+                      <option value="{{drop_itm}}">{{drop_itm}}</option>
+                      {% endif %}
+                      {% endfor %}
+                    </select>
+                    <!-- </form> -->
+                  </div>
+                </div>
+
+                <div style="display:inline" style="width: 50%;float:left;">
+                  <div class="advancedSelect" style="width:40%; margin:10px">
+                    <!-- <form name="top_res" action="/refreshfiltertop" method="GET"> -->
+                    <label>Please Select the Position</label>
+                    <select name="chosen_position_m" class="browser-default">
+                      <option value="" selected>Choose your option</option>
+                      {% for drop_itm in positionm %}
+                      {% if selectedclass == drop_itm %}
+                      <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                      {% else %}
+                      <option value="{{drop_itm}}">{{drop_itm}}</option>
+                      {% endif %}
+                      {% endfor %}
+                    </select>
+                    <!-- </form> -->
+                  </div>
+                </div>
+
+                <!-- <div> -->
+                <input class="btn" id="advancedGroupTrigger" name="realGroupSearch" type="submit" value="Submit"
+                  style="margin-left:10px; margin-bottom: 0px; margin-top: 205px; padding:4px;background-color:#e57373;"></input>
+                <!-- </div> -->
+              </form>
+
+              <!-- <div style="display:inline" style="width: 50%;float:left;">
                 <div class="advancedSelect" style="width:40%; margin:10px">
                   <label>Group Select</label>
                   <select class="browser-default">
@@ -142,7 +239,7 @@
                     <option value="3">Option 3</option>
                   </select>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <div id="test2" class="col s12" style="visibility: visible;">
@@ -217,21 +314,21 @@
       </table>
       {% for key,value in allMember.items()%}
       <div class="col s12">
-        
+
         <div class="divider"></div>
         <div class="section">
           <div class="col s4" style="margin-left: 5%;">
-              <h6>
-                {{key}}
-              </h6>
-              <p>
-                {% if realURL in value %}
-                <a style="color: black;" href="{{value.realURL}}"><strong>NAME:</strong>>{{value['label'][0][0]}}</a>
-                {% else %}
-                <a style="color: black;" href="#"><strong>NAME:</strong>{{value['label'][0][0]}}</a>
-                {% endif %}
-              </p>
-           </div>
+            <h6>
+              {{key}}
+            </h6>
+            <p>
+              {% if realURL in value %}
+              <a style="color: black;" href="{{value.realURL}}"><strong>NAME:</strong>>{{value['label'][0][0]}}</a>
+              {% else %}
+              <a style="color: black;" href="#"><strong>NAME:</strong>{{value['label'][0][0]}}</a>
+              {% endif %}
+            </p>
+          </div>
           <div class="col s5" style="margin-bottom: 10px;">
             {% for key,item in value.items() %}
             {% if key != 'image_url' and key!='type' and key!='realURL' and key!='abstract' and key!="URL" and key!='female_num' and key!='male_num'%}
