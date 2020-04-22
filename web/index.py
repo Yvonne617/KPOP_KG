@@ -220,3 +220,8 @@ def description():
 #     keysGroup = []
 #     resultGroup = []
 #     return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
+
+@app.route('/predict', methods=['GET'])
+def predict():
+    genres = ["hipop","pop"]
+    return render_template("predict.html",genres=genres)
