@@ -29,14 +29,35 @@ prefix =  """
         PREFIX fadm: <https://kpop.fandom.com/wiki/> 
         PREFIX schema: <http://schema.org/> """
 
+GENREG = ["Ballad","Pop","R&B","Soul","Hip Hop","Electronic","RAP","Dance","EDM","Rock","Jazz","Retro","NU DISCO","Funk"]
+BANDNUMBERG = ["More than 10","9","8","7","6","5","4","3","Less than 3"]
+LABELG = ["SM","JYP","YG","Big Hit","Stone","FNC","Cube","Starship","Pledis","Fantagio","Others"]
+
+
 
 #get the dict to convert the rdf URI to origin URL
 data = pd.read_csv("data/rdf_url.csv")
 dict_url = data.set_index('rdfURL').T.to_dict('list')
 
 @app.route('/')
-def index():
-    return render_template('main.html')
+def return_main_page_with_filters():
+    # cpredicate = '<' + cpredicate_clean + '>'
+    # labels, values = get_top_labels_values_for_class_predicate(
+    #     cclass, cpredicate)
+    # max_val = cast_and_find_max(values)
+    return render_template('main.html', 
+                           genredropdown=GENREG, numberdropdown=BANDNUMBERG,
+                           labeldropdown=LABELG)
+
+@app.route('/filterGroup',methods=['GET', 'POST'])
+def filterGroup():
+    keyword = request.form
+    print(keyword)
+    genre = keyword['chosen_genre']
+    label = keyword['chosen_label']
+    number = keyword['chosen_number']
+
+    return keyword
 
 @app.route('/groups')
 def groups():

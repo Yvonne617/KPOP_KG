@@ -42,17 +42,20 @@
 
           <div id="tabGroup">
             <div id="advancedTest1" class="col s12" style="visibility: hidden;height: 0px;">
-              <div style="height: 10%;">
+
+              <div style="height: 10%; margin-bottom: 10px;">
                 <a class="btn" id="backGroup"
                   style="margin-left:10px; margin-bottom: 15px; margin-top: 10px; background-color:#e57373;">Back</a>
               </div>
+
+              <form name="top_res" action="/filterGroup" method="POST">
               <div style="display:inline" style="width: 50%;float:left;">
                 <div class="advancedSelect" style="width:40%; margin:10px">
-                  <form name="top_res" action="/refreshfiltertop" method="GET">
-                    <label>Group Select</label>
-                    
-                    <select name="chosen_class" onchange="this.form.submit()" class="browser-default">
-                      {% for drop_itm in chooseGenre %}
+                  <!-- <form name="top_res" action="/refreshfiltertop" method="GET"> -->
+                    <label>Please Select Genre</label>
+                    <select name="chosen_genre" class="browser-default">
+                      <option value="" selected>Choose your option</option>
+                      {% for drop_itm in genredropdown %}
                           {% if selectedclass == drop_itm %}
                       <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
                           {% else %}
@@ -60,33 +63,51 @@
                           {% endif %}
                       {% endfor %}
                     </select>
-                  </form>
-                  
-                  <!-- <select >
-                    <option value="" disabled selected>Genre</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                  </select> -->
-
+                  <!-- </form> -->
                 </div>
               </div>
 
               <div style="display:inline" style="width: 50%;float:left;">
                 <div class="advancedSelect" style="width:40%; margin:10px">
-                  <label>Group Select</label>
-                  <select class="browser-default">
-                    <option value="" disabled selected>Genre</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+                  <label>Please Select the Entertainment Company</label>
+                  <!-- <select name="chosen_label" onchange="this.form.submit()" class="browser-default"> -->
+                  <select name="chosen_label"  class="browser-default">
+                    <option value="" selected>Choose your option</option>
+                    {% for drop_itm in labeldropdown %}
+                        {% if selectedclass == drop_itm %}
+                    <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                        {% else %}
+                    <option value="{{drop_itm}}">{{drop_itm}}</option>
+                        {% endif %}
+                    {% endfor %}
                   </select>
                 </div>
               </div>
-              <div>
-                <a class="btn" id="advancedGroupTrigger"
-                  style="margin-left:10px; margin-bottom: 0px; margin-top: 220px; padding:4px;background-color:#e57373;">Search</a>
+
+              <div style="display:inline" style="width: 50%;float:left;">
+                <div class="advancedSelect" style="width:40%; margin:10px">
+                  <!-- <form name="top_res" action="/refreshfiltertop" method="GET"> -->
+                    <label>Please Select the Number of Members in One Group</label>
+                    <select name="chosen_number" onchange="this.form.submit()" class="browser-default">
+                      <option value="" selected>Choose your option</option>
+                      {% for drop_itm in numberdropdown %}
+                          {% if selectedclass == drop_itm %}
+                      <option value="{{drop_itm}}" SELECTED>{{drop_itm}}</option>
+                          {% else %}
+                      <option value="{{drop_itm}}">{{drop_itm}}</option>
+                          {% endif %}
+                      {% endfor %}
+                    </select>
+                  <!-- </form> -->
+                </div>
               </div>
+
+              <div>
+                <a class="btn" id="advancedGroupTrigger" name="realGroupSearch"
+                  style="margin-left:10px; margin-bottom: 0px; margin-top: 205px; padding:4px;background-color:#e57373;">Search</a>
+              </div>
+            </form>
+
             </div>
 
             <div id="test1" class="col s12" style="visibility:visible;">
