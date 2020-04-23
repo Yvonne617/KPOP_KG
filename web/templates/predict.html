@@ -12,6 +12,22 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
+      <style>
+      .clip-star {
+        background: gold;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+      }
+      .clip-star-none{
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        background: white;
+      }
+      </style>
       <body>
         <div class="row col 6">
             <nav>
@@ -22,7 +38,7 @@
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li id="trend"><a href="/trend">Trend</a></li>
                     <li id="query"><a href="/query">Query</a></li>
-                    <li><a href=".">Predict</a></li>
+                    <li><a href="/predict">Predict</a></li>
                     </ul>
                 </div>
               </nav>
@@ -30,32 +46,32 @@
         <div class="card blue-grey darken-1" style="margin: 30px auto;width:60%;height:200px;">
           <div class="card-content white-text">
               <span class="card-title">Predict Next Super Star</span>
-            dcddcsdfsncld dzlkcnsklcndls
+              We present a model that can predict how likely a group will be a hit, defined by making it on more than 200 KPOP groups' monthly listeners on Spotify, with over 65% accuracy.
           </div>
         </div>
 
 
         <div class="row" style="border: 1px rgba(186, 186, 186, 0.47) solid;border-radius: 13px;margin: auto auto; padding:5px 25px; width:1000px;height:600px">
             <!-- <p>table</p> -->
-            <form action="#" style= "width:1000px;height:800px">
+            <form action="/predict" method="POST" style= "width:1000px;height:800px">
                
                 <div class="gender" style="width:100%;height: 80px;">
-                  <p style="margin-block-end: 0px">Select Genres</p>
+                  <p style="margin-block-end: 0px">Select Gender</p>
                     <p style="float: left;">
                         <label>
-                              <input name="group1" type="radio" checked />
+                              <input name="group1" value="F" type="radio" checked />
                               <span>Girl Group</span>
                         </label>
                     </p>
                     <p style="float: left;">
                          <label>
-                            <input name="group1" type="radio" />
+                            <input name="group1" value="M" type="radio" />
                             <span>Boy Group</span>
                         </label>
                     </p>
                     <p style="float: left;">
                         <label>
-                               <input name="group1" type="radio" />
+                               <input name="group1" value="Co_ed" type="radio" />
                                <span>Co_ed Group</span>
                            </label>
                        </p>
@@ -64,9 +80,9 @@
                 </div>
 
                 <div class="input-field col m12 s12" style="width: 70%">
-                    <p style="margin-block-end: 0px">Select Genres</p>
-                        <select multiple>
-                            <option value="" disabled selected>Choose group genres</option>
+                    <p style="margin-block-end: 0px">Select Genres(multiple)</p>
+                        <select multiple name="genre">
+                            <option value=""  disabled selected>Choose group genres</option>
                             {% for data in genres%}
                                 <option value="{{data}}">{{data}}</option>
                             {% endfor %}
@@ -76,7 +92,7 @@
 
                 <div class="input-field col m12 s12" style="width: 70%">
                     <p style="margin-block-end: 0px">Select Company</p>
-                        <select>
+                        <select name="company">
                             <option value="" disabled selected>Choose company</option>
                             {% for data in company%}
                                 <option value="{{data}}">{{data}}</option>
@@ -86,7 +102,7 @@
                 </div>
                 <div class="input-field col m12 s12" style="width: 70%">
                     <p style="margin-block-end: 0px">Select number of members</p>
-                        <select>
+                        <select name="num">
                             <option value="" disabled selected>Choose number of members</option>
                             {% for data in num%}
                                 <option value="{{data}}">{{data}}</option>
@@ -101,6 +117,21 @@
                 
             </form>        
         </div>
+        <div id="result_div" class="card-panel teal lighten-2 " style="width:60%;margin:40px auto">
+            <span class="white-text text-darken-2">The genre you chose: {{predict_genre}}<br></span>
+            <span class="white-text text-darken-2">The company you chose: {{predict_company}}<br></span>
+            <span class="white-text text-darken-2">The number of member you chose: {{predict_num}}<br></span>
+            <span class="white-text text-darken-2">The gender tou chose: {{gender}}<br></span>
+            <span class="white-text text-darken-2"><h4>Predicted Popularity:</h4><br></span>
+            {% for i in range(predicted_popularity)%}
+            <div class="clip-star"></div>
+            {% endfor %}
+            {% for i in range(0,5-predicted_popularity)%}
+            <div class="clip-star-none"></div>
+            {% endfor %}
+
+        </div>
+                    
         
     </body>
 </html>
@@ -110,6 +141,15 @@
 <script type=text/javascript>
  $(document).ready(function() {
     $('select').material_select();
+   
   });
+  console.log({{predicted_popularity}})
+if({{predicted_popularity}}==0){
+  $('#result_div').hide();
+}
+else{
+  window.location.hash = '#result_div';
+}
+  
 
 </script>

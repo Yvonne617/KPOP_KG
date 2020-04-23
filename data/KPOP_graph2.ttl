@@ -1178,7 +1178,7 @@ fadm:BIGBANG a schema:Class ;
         "R&B" ;
     kpop:debut "None" ;
     kpop:female_num 0 ;
-    kpop:gender "Co_ed" ;
+    kpop:gender "M" ;
     kpop:labels "YG Entertainment" ;
     kpop:male_num 5 ;
     kpop:member_num 5 ;
@@ -3551,9 +3551,9 @@ fadm:IM_group a schema:Class ;
     dbo:genre "K POP" ;
     kpop:debut "September 1, 2017" ;
     kpop:female_num 1 ;
-    kpop:gender "Co_ed" ;
+    kpop:gender "M" ;
     kpop:labels "MBK Entertainment" ;
-    kpop:male_num 3 ;
+    kpop:male_num 4 ;
     kpop:member_num 4 ;
     kpop:url "https://kpop.fandom.com/wiki/IM_(group)" ;
     kpop:year_active_from "2017" ;
@@ -3807,17 +3807,16 @@ fadm:KNK a schema:Class ;
     dbo:bandMember fadm:KNK_Jeong_In_Seong,
         fadm:KNK_Kim_Ji_Hun,
         fadm:KNK_Kim_You_Jin_KNK,
-        fadm:KNK_Lee_Dong_Won,
         fadm:KNK_Oh_Hee_Jun,
         fadm:KNK_Park_Seo_Ham ;
     dbo:genre "POP" ;
     kpop:debut "None" ;
-    kpop:female_num 2 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "220 Entertainment • Universal Music Japan",
         "YNB Entertainment" ;
-    kpop:male_num 4 ;
-    kpop:member_num 6 ;
+    kpop:male_num 5 ;
+    kpop:member_num 5 ;
     kpop:url "https://kpop.fandom.com/wiki/KNK" ;
     kpop:year_active_from "2016" ;
     kpop:year_active_to "present" ;
@@ -3833,11 +3832,11 @@ fadm:Kingdom_2018_group a schema:Class ;
     dbo:genre "DANCE POP",
         "ELECTRONIC" ;
     kpop:debut "April 20, 2018" ;
-    kpop:female_num 1 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "Independent" ;
-    kpop:male_num 2 ;
-    kpop:member_num 4 ;
+    kpop:male_num 3 ;
+    kpop:member_num 3 ;
     kpop:url "https://kpop.fandom.com/wiki/Kingdom_(2018_group)" ;
     kpop:year_active_from "None" ;
     kpop:year_active_to "None" ;
@@ -3989,10 +3988,10 @@ fadm:LIMITLESS_group a schema:Class ;
         fadm:LIMITLESS_group_VOK ;
     dbo:genre "POP" ;
     kpop:debut "July 9, 2019" ;
-    kpop:female_num 2 ;
-    kpop:gender "Co_ed" ;
+    kpop:female_num 0 ;
+    kpop:gender "M" ;
     kpop:labels "ONO Entertainment" ;
-    kpop:male_num 4 ;
+    kpop:male_num 6 ;
     kpop:member_num 6 ;
     kpop:monthly_listener 19 ;
     kpop:popularity 1 ;
