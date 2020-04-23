@@ -1,6 +1,7 @@
 from flask import Flask,render_template,url_for,redirect,jsonify
 from flask import request
 from datetime import timedelta
+import pickle
 # from flask_wtf import Form
 # from wtforms import StringField, SubmitField
 import rltk
@@ -33,7 +34,7 @@ prefix =  """
 
 GENREG = ["Ballad","Pop","R&B","Soul","Hip Hop","Electronic","RAP","Dance","EDM","Rock","Jazz","Retro","NU DISCO","Funk"]
 BANDNUMBERG = ["More than 10","9","8","7","6","5","4","3","Less than 3"]
-LABELG = ["SM","JYP","YG","Big Hit","Stone","FNC","Cube","Starship","Pledis","Fantagio","Others"]
+LABELG = ["SM","JYP","YG","Big Hit","Stone","FNC","Cube","Starship","Pledis","Fantagio","Other"]
 GENDERM = ["F","M"]
 POSITIONM = ["Rapper","Vocalist","Dancer","Maknae","Visual","Leader","Center","Face of the group","Drum","Guitar","Bass","Producer","Composer"]
 
@@ -304,7 +305,58 @@ def description():
 #     resultGroup = []
 #     return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup)
 
-@app.route('/predict', methods=['GET'])
+@app.route('/predict', methods=['GET','POST'])
 def predict():
     genres = [ "HIP HOP","DANCE POP","K POP","R&B","J POP","POP","DANCE","ROCK","BALLAD","EDM","ELECTRONIC","BUBBLEGUM POP","SYNTH POP","POP ROCK","TEEN POP","NU DISCO","ELECTRO POP","SOUL","POPERA","METAL","RAP","C POP","JAZZ","FUNK","RETRO","ELECTROPOP" ]
-    return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG)
+    
+    if request.method == 'POST':
+        with open('data/genre_encoder.pkl', 'rb') as f:
+            dic_genre = pickle.load(f)
+        with open('data/company_encoder.pkl', 'rb') as f:
+            dic_company = pickle.load(f)
+        genre,company,num,gender = None,None,None,None
+
+        form= request.form
+        if 'genre' in form:
+            genre= form.getlist('genre')
+            genre_t= form.getlist('genre')
+        if 'company' in form:
+            company= form['company']  
+            company_t= form['company']  
+        if 'num' in form:
+            num = form['num']
+            num_t = form['num']
+            if num == "More than 10":
+                num = 15
+            elif num == "Less than 3":
+                num = 2
+            else:
+                num = int(num)
+        if 'group1' in form:
+            gender = form['group1'] 
+            gender_t = form['group1'] 
+
+        genre.sort()
+        genre2 = "+".join(genre)
+        if genre2 in dic_genre:
+            genre = dic_genre[genre2]
+        else:
+            genre = dic_genre['Empty']
+        if company in dic_company:
+            company = dic_company[company]
+        else:
+            company = dic_company['Empty']
+        if gender == 'M':
+            gender = 1
+        elif gender == 'F':
+            gender = 2
+        else:
+            gender = 3
+        model = pickle.load(open('data/kpop_model.sav', 'rb'))
+        X = pd.DataFrame({'genre(s)': [genre], 'labels': [company], 'num_members':[num], 'gender':[gender]})
+        predicted_popularity = model.predict(X)
+        return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predict_genre=genre_t,predict_company=company_t,predict_num=num_t,gender=gender_t,predicted_popularity=int(predicted_popularity))
+
+    else:
+        print("get")
+        return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predicted_popularity=0)
