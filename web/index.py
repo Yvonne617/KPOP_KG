@@ -218,6 +218,7 @@ def searchGroup():
             resultGroup.append(line)
     else:
         keysGroup = ['No']
+    resultGroup.sort()
     return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup,genredropdown=GENREG, numberdropdown=BANDNUMBERG,
                            labeldropdown=LABELG)
 
@@ -225,7 +226,7 @@ def searchGroup():
 def searchMember():
     # print(request.form)
     memberName = str(request.form['membername'])
-    queryLine = "SELECT ?member ?p ?o WHERE{ ?group a schema:Class. ?group dbo:bandMember ?member. ?member rdfs:label ?name. FILTER regex(?name,'"+memberName +"', 'i').?member ?p ?o}"
+    queryLine = "SELECT ?member ?group ?groupname ?p ?o WHERE{ ?group a schema:Class. ?group dbo:bandMember ?member. ?group rdfs:label ?groupname. ?member rdfs:label ?name. FILTER regex(?name,'"+memberName +"', 'i').?member ?p ?o}"
     sparql.setQuery(prefix + queryLine)
     results = sparql.query().convert()
     allMember = {}
@@ -233,6 +234,8 @@ def searchMember():
         for i in range(len(results["results"]["bindings"])):
             if results["results"]["bindings"][i]['member']['type'] == 'uri':
                 member = results["results"]["bindings"][i]['member']['value']
+                group = results["results"]["bindings"][i]['group']['value']
+                groupname = results["results"]["bindings"][i]['groupname']['value']
                 pred = results["results"]["bindings"][i]['p']['value']
                 obj = results["results"]["bindings"][i]['o']['value']
                 objType = results["results"]["bindings"][i]['o']['type']
@@ -248,11 +251,15 @@ def searchMember():
                     realURL = dict_url[member][0]
                     allMember[member]['realURL'] = realURL
                 #deal with obj
-                if obj != 'None':
+                if obj != 'None' and label != 'gender':
                     if objType != 'uri':
                         allMember[member][label].append((obj,False))
                     else:
-                        allMember[member][label].append((obj,True)) 
+                        allMember[member][label].append((obj,True))
+                if 'groupname' not in allMember[member]:
+                    allMember[member]['groupname'].append((groupname,False))
+                    allMember[member]['group'].append((group,True))
+
     print(allMember) 
                                       
     return render_template("main.html", allMember=allMember,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)

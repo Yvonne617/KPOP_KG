@@ -322,11 +322,18 @@
               {{key}}
             </h6>
             <p>
-              {% if realURL in value %}
-              <a style="color: black;" href="{{value.realURL}}"><strong>NAME:</strong>>{{value['label'][0][0]}}</a>
+              {% if 'realURL' in value %}
+              <a style="color: black;" href="{{value.realURL[0]}}"><strong>NAME:</strong>{{value['label'][0][0]}} </a>
               {% else %}
-              <a style="color: black;" href="#"><strong>NAME:</strong>{{value['label'][0][0]}}</a>
+              <a style="color: black;" href="#"><strong>NAME:</strong>{{value['label'][0][0]}} </a>
               {% endif %}
+              <br>
+              {% if 'groupname' in value %}
+              <a style="color: black;" href="{{value.group}}"><strong>Group:</strong>{{value['groupname'][0][0]}} </a>
+              {% else %}
+              <a style="color: black;" href="#"><strong>NAME:</strong>{{value['groupname'][0][0]}} </a>
+              {% endif %}
+
             </p>
           </div>
           <div class="col s5" style="margin-bottom: 10px;">
@@ -335,7 +342,7 @@
             <div class="col s5 section" style="color: #424242; width: 80%;float: right;">
               <strong style="color:#212121;">{{key.upper()}}: </strong>
               {% for it in item %}
-              {% if key == 'bandMember' %}
+              {% if key == 'url' or key == 'group' %}
               <a style="color:rgb(19, 102, 129)" href="{{it[0]}}">{{it[0]}} </a>
               {% else %}
               {{it[0]}}

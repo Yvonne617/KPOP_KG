@@ -67,7 +67,7 @@
                 <div class="section" style="color: #424242;">
                     <strong style="color:#212121;">{{key.upper()}}: </strong>
                     {% for it in item %}
-                        {% if key == 'bandMember' %}
+                        {% if key == 'bandMember' or key == 'url' %}
                             <a style="color:rgb(19, 102, 129)"href="{{it[0]}}">{{it[0]}} </a> 
                         {% else %}
                             {{it[0]}}
