@@ -357,7 +357,10 @@ def predict():
                 gender = 2
             else:
                 gender = 3
-       
+        
+        print(genre, company, num)
+        # print(queryline)
+
         model = pickle.load(open('data/kpop_model.sav', 'rb'))
         print(genre,company,num,gender)
         X = pd.DataFrame({'genre(s)': [genre], 'labels': [company], 'num_members':[num], 'gender':[gender]})
