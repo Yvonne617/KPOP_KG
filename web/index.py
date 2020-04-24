@@ -321,14 +321,23 @@ def predict():
             dic_genre = pickle.load(f)
         with open('data/company_encoder.pkl', 'rb') as f:
             dic_company = pickle.load(f)
-        genre,company,num,gender = None,None,None,None
-
+        genre_t,company_t,num_t,gender_t = "Unknown","Unknown","Unknown","Unknown"
+        genre,company,num,gender = dic_genre['Empty'],dic_company['Empty'],3,2
         form= request.form
         if 'genre' in form:
             genre= form.getlist('genre')
             genre_t= form.getlist('genre')
+            print(genre)
+            genre.sort()
+            genre2 = "+".join(genre)
+            if genre2 in dic_genre:
+                genre = dic_genre[genre2]
+            else:
+                genre = dic_genre['Empty']
         if 'company' in form:
             company= form['company']  
+            if company in dic_company:
+                company = dic_company[company]
             company_t= form['company']  
         if 'num' in form:
             num = form['num']
@@ -342,24 +351,15 @@ def predict():
         if 'group1' in form:
             gender = form['group1'] 
             gender_t = form['group1'] 
-
-        genre.sort()
-        genre2 = "+".join(genre)
-        if genre2 in dic_genre:
-            genre = dic_genre[genre2]
-        else:
-            genre = dic_genre['Empty']
-        if company in dic_company:
-            company = dic_company[company]
-        else:
-            company = dic_company['Empty']
-        if gender == 'M':
-            gender = 1
-        elif gender == 'F':
-            gender = 2
-        else:
-            gender = 3
+            if gender == 'M':
+                gender = 1
+            elif gender == 'F':
+                gender = 2
+            else:
+                gender = 3
+       
         model = pickle.load(open('data/kpop_model.sav', 'rb'))
+        print(genre,company,num,gender)
         X = pd.DataFrame({'genre(s)': [genre], 'labels': [company], 'num_members':[num], 'gender':[gender]})
         predicted_popularity = model.predict(X)
         return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predict_genre=genre_t,predict_company=company_t,predict_num=num_t,gender=gender_t,predicted_popularity=int(predicted_popularity))
