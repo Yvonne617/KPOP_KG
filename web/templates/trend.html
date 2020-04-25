@@ -63,7 +63,8 @@
               </div>
             </div>
           <hr class="style-two">
-          <div>
+          <div style="text-align: center; height:600px">
+            <h2>Overview</h2>
               <div id="gender_pie" style="float: left;" ></div>
               <div id="genre_bar"></div>
           </div>     
@@ -99,7 +100,7 @@
     //pie chart
     // set the dimensions and margins of the graph
     var width = 450
-        height = 350
+        height = 370
         margin = 40
     
     // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
@@ -169,12 +170,16 @@
       .style("text-anchor", "middle")
       .style("font-size", 17)
       
+    svg.append('text')
+    .text("group gender pir chart")
+    .attr('transform', function(d, i) {return 'translate(' + -80 + ',' + 180 + ')';});
+    
     var bar_data = {{chart_data|tojson }};
   
     bar_data = JSON.parse(bar_data);
-    var margin = {top: 30, right: 30, bottom: 90, left: 150},
+    var margin = {top: 30, right: 30, bottom: 190, left: 150},
     width = 660 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    height = 500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
   var svg = d3.select("#genre_bar")
@@ -212,7 +217,6 @@
     .call(d3.axisLeft(y))
     .selectAll("text")
       .style("font-size","1.4em");
-console.log(bar_data)
   // Bars
   svg.selectAll("mybar")
     .data(bar_data)
@@ -237,7 +241,8 @@ console.log(bar_data)
                 .style("opacity", 0);	
         });
 
-
+    svg.append('text').text("group genre bar chart")
+    .attr('transform', function(d, i) {return 'translate(' + 200 + ',' + 400 + ')';});
 
     //top genre
     var data = {'POP': 29, 'HIPHOP': 3, 'BALLAD': 3, 'DANCE': 2, 'KPOP': 2, 'R&B': 2, 'ELECTROPOP': 1, 'SYNTHPOP': 1, 'POPROCK': 1, 'EDM': 1, 'FUNK': 1, 'JAZZ': 1, 'POPERA': 1}
@@ -296,7 +301,7 @@ svg
             div.transition()		
                 .duration(200)		
                 .style("opacity", .9);		
-            div	.html(d.data.value + "<br/>")	
+            div	.html(d.data.key+ "<br/>"+d.data.value + "<br/>")	
                 .style("left", (d3.event.pageX) + "px")		
                 .style("top", (d3.event.pageY - 28) + "px");	
             })					
@@ -394,7 +399,7 @@ svg
             div.transition()		
                 .duration(200)		
                 .style("opacity", .9);		
-            div	.html(d.data.value + "<br/>")	
+            div	.html(d.data.key+" members"+ "<br/>"+d.data.value + "<br/>")	
                 .style("left", (d3.event.pageX) + "px")		
                 .style("top", (d3.event.pageY - 28) + "px");	
             })					

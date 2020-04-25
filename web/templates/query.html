@@ -27,7 +27,7 @@
             </ul>
         </div>
     </nav>
-    <div>
+    <div class="row" style="text-align: center">
         <h2>SPARQL query</h2>
     </div>
 
@@ -36,7 +36,7 @@
             <form name="query" action="/query" method="POST" style="margin:10px" class="col s12">
                 <div class="row">
                     <div class="input-field col s8 offset-s2">
-                        <textarea class="materialize-textarea" type="name" name="sparql" id="text1"></textarea>
+                        <textarea class="materialize-textarea" type="name" name="sparql" id="text1" style="height: 500px;border:1px solid black"></textarea>
                         <label for="text1">Please input your sparql query here</label>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
         </div>
 
 
-        <table class="table" border="1">
+        <table class="table" style="border:1px solid black">
             <thead>
                 <tr>
                     {% for k in key%}
