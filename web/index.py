@@ -338,7 +338,11 @@ def predict():
             company= form['company']  
             if company in dic_company:
                 company = dic_company[company]
-            company_t= form['company']  
+            else:
+                company = dic_company['Empty']
+            company_t= form['company'] 
+            print(company)
+
         if 'num' in form:
             num = form['num']
             num_t = form['num']
