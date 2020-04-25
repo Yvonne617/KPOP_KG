@@ -93,7 +93,7 @@ def filterGroup():
                     line.append((temp["results"]["bindings"][i][key]["value"],False))
             resultGroup.append(line)
     else:
-        keysGroup = ['No']
+        keysGroup = ['No Result']
     return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup,genredropdown=GENREG, numberdropdown=BANDNUMBERG,
                         labeldropdown=LABELG,genrem=GENREG,labelm=LABELG,genderm=GENDERM,positionm=POSITIONM)
     # return results
@@ -192,7 +192,7 @@ def query():
                         line.append((temp["results"]["bindings"][i][key]["value"],False))
                 result.append(line)
         else:
-            keys = ['No']
+            keys = ['No Result']
         # print(result)
         return render_template("query.html", title="Query", key=keys, result=result)
     # return "hello world"
@@ -218,7 +218,7 @@ def searchGroup():
                     line.append((temp["results"]["bindings"][i][key]["value"],False))
             resultGroup.append(line)
     else:
-        keysGroup = ['No']
+        keysGroup = ['No Result']
     resultGroup.sort()
     return render_template("main.html", keyGroup=keysGroup, resultGroup=resultGroup,genredropdown=GENREG, numberdropdown=BANDNUMBERG,
                            labeldropdown=LABELG)

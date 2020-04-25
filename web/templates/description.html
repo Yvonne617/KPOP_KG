@@ -68,14 +68,14 @@
                     <strong style="color:#212121;">{{key.upper()}}: </strong>
                     {% for it in allinfo[key] %}
                         {% if key == 'bandMember' or key == 'url' %}
-                            <a style="color:rgb(19, 102, 129)"href="{{it[0]}}">{{it[0]}} </a> 
+                           <br> <a style="color:rgb(19, 102, 129)"href="{{it[0]}}">{{it[0]}} </a> 
                         {% else %}
                             {{it[0]}}
                         {% endif %}
                         {% if it != allinfo[key][-1] %}
                             , 
                         {% else %}
-                            .
+                            
                         {% endif %}        
                     {% endfor %}
                 </div>
