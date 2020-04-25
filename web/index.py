@@ -102,7 +102,7 @@ def filterGroup():
 def filterMember():
     print(request)
     keyword = request.form
-    print(keyword)
+    # print(keyword)
     genre = keyword['chosen_genre_m']
     label = keyword['chosen_label_m']
     gender = keyword['chosen_gender_m']
@@ -315,7 +315,11 @@ def description():
 @app.route('/predict', methods=['GET','POST'])
 def predict():
     genres = [ "HIP HOP","DANCE POP","K POP","R&B","J POP","POP","DANCE","ROCK","BALLAD","EDM","ELECTRONIC","BUBBLEGUM POP","SYNTH POP","POP ROCK","TEEN POP","NU DISCO","ELECTRO POP","SOUL","POPERA","METAL","RAP","C POP","JAZZ","FUNK","RETRO","ELECTROPOP" ]
-    
+    # genresm = form.getlist('genre')
+    # companysm= form['company'] 
+    # numsm = form['num']
+    # gendersm = form['group1']
+
     if request.method == 'POST':
         with open('data/genre_encoder.pkl', 'rb') as f:
             dic_genre = pickle.load(f)
@@ -324,6 +328,7 @@ def predict():
         genre_t,company_t,num_t,gender_t = "Unknown","Unknown","Unknown","Unknown"
         genre,company,num,gender = dic_genre['Empty'],dic_company['Empty'],3,2
         form= request.form
+        # print(form.getlist('genre'),form['company'],form['num'],form['group1'])
         if 'genre' in form:
             genre= form.getlist('genre')
             genre_t= form.getlist('genre')
@@ -358,15 +363,52 @@ def predict():
             else:
                 gender = 3
         
-        print(genre, company, num)
         # print(queryline)
-
+        companyRating = 2.5
+        numRating = 2.5
+        genderRating = 2.5
+        genreRating = 0
+        #find similar with the company
+        if 'company' in form and form['company'] != '':
+            queryline = "SELECT (AVG(?p) AS ?avg) WHERE{ ?group a schema:Class. ?group kpop:labels ?company.filter regex(?company,'"+form['company']+"','i').?group kpop:popularity ?p}"
+            sparql.setQuery(prefix + queryline)
+            temp = sparql.query().convert()
+            print(temp)
+            companyRating = float(temp['results']['bindings'][0]['avg']['value'])
+            print(companyRating)
+        if 'num' in form and form['num'] != '':
+            if form['num'] == 'More than 10':
+                querynum = '> 10'
+            elif form['num'] == 'Less than 3':
+                querynum = '< 3'
+            else:
+                querynum = '=' + form['num']
+            queryline = "SELECT (AVG(?p) AS ?avg) WHERE{ ?group a schema:Class. ?group kpop:member_num ?number. filter (?number "+querynum+"). ?group kpop:popularity ?p}"
+            sparql.setQuery(prefix + queryline)
+            temp = sparql.query().convert()
+            numRating = float(temp['results']['bindings'][0]['avg']['value'])
+            print(numRating)
+        if 'group1' in form and form['group1'] != '':
+            if form['group1'] == 'Co_ed':
+                genderRating = 2.0
+            elif form['group1'] == 'F':
+                genderRating = 2.95
+            elif form['group1'] == 'M':
+                genderRating = 3.07
+        if form.getlist('genre') != []:
+            querygenrelist = form.getlist('genre')
+            for querygenre in querygenrelist:
+                queryline = "SELECT (AVG(?p) AS ?avg) WHERE{ ?group a schema:Class. ?group dbo:genre ?g.filter regex(?g,'"+querygenre+"','i').?group kpop:popularity ?p}"
+                sparql.setQuery(prefix + queryline)
+                temp = sparql.query().convert()
+                genreRating = max(genreRating,float(temp['results']['bindings'][0]['avg']['value'])) 
         model = pickle.load(open('data/kpop_model.sav', 'rb'))
-        print(genre,company,num,gender)
+        # print(predict_genre,company_t,gender_t,num_t)
         X = pd.DataFrame({'genre(s)': [genre], 'labels': [company], 'num_members':[num], 'gender':[gender]})
-        predicted_popularity = model.predict(X)
+        modelRating = model.predict(X)
+        predicted_popularity = 0.6*modelRating + 0.4*companyRating + 0.1*numRating + 0.1*genderRating + 0.1*genreRating
         return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predict_genre=genre_t,predict_company=company_t,predict_num=num_t,gender=gender_t,predicted_popularity=int(predicted_popularity))
 
     else:
-        print("get")
+        # print("get")
         return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predicted_popularity=0)
