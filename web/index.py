@@ -376,12 +376,18 @@ def predict():
         numRating = 2.5
         genderRating = 2.5
         genreRating = 0
+        querynum = ""
+        querygender = form['group1']
+        querycompany = ""
         #find similar with the company
         if 'company' in form and form['company'] != '':
+            if form['company'] != "Other":
+                querycompany = form['company']
+            else:
+                querycompany = ""
             queryline = "SELECT (AVG(?p) AS ?avg) WHERE{ ?group a schema:Class. ?group kpop:labels ?company.filter regex(?company,'"+form['company']+"','i').?group kpop:popularity ?p}"
             sparql.setQuery(prefix + queryline)
             temp = sparql.query().convert()
-            print(temp)
             companyRating = float(temp['results']['bindings'][0]['avg']['value'])
             print(companyRating)
         if 'num' in form and form['num'] != '':
@@ -414,9 +420,22 @@ def predict():
         # print(predict_genre,company_t,gender_t,num_t)
         X = pd.DataFrame({'genre(s)': [genre], 'labels': [company], 'num_members':[num], 'gender':[gender]})
         modelRating = model.predict(X)
-        predicted_popularity = 0.6*modelRating + 0.4*companyRating + 0.1*numRating + 0.1*genderRating + 0.1*genreRating
+        predicted_popularity = 0.50*modelRating + 0.45*companyRating + 0.05*numRating + 0.05*genderRating + 0.05*genreRating
 
-        return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predict_genre=genre_t,predict_company=company_t,predict_num=num_t,gender=gender_t,predicted_popularity=int(predicted_popularity))
+        queryline = "SELECT distinct ?group ?groupname ?imageurl WHERE{ ?group a schema:Class. ?group schema:image_url ?imageurl.?group rdfs:label ?groupname.?group kpop:gender ?gender.filter regex(?gender,'"+querygender+"','i')?group kpop:labels ?company.filter regex(?company,'"+querycompany+"','i')?group kpop:member_num ?number.filter (?number"+querynum+")} LIMIT 3"
+        sparql.setQuery(prefix + queryline)
+        temp = sparql.query().convert()
+        # print(temp)
+        similarGroup = []
+        if len(temp["results"]["bindings"]) > 0:
+            for i in range(len(temp["results"]["bindings"])):
+                dic = collections.defaultdict()
+                dic['group'] = temp["results"]["bindings"][i]['group']['value']
+                dic['groupname'] = temp["results"]["bindings"][i]['groupname']['value']
+                dic['imageurl'] = temp["results"]["bindings"][i]['imageurl']['value']
+                similarGroup.append(dic)
+        print(similarGroup)
+        return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predict_genre=genre_t,predict_company=company_t,predict_num=num_t,gender=gender_t,predicted_popularity=int(predicted_popularity),similarGroup=similarGroup)
     else:
         # print("get")
         return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predicted_popularity=0)
