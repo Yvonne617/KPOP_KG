@@ -62,17 +62,17 @@
         <div class="col s8">
 
             <div style="margin-left: 10%;margin-top: 30px;">
-                {% for key,item in allinfo.items() %}
-                    {% if key != 'image_url' and key!='type' and key!='abstract' and key!="URL" and key!='female_num' and key!='male_num'%}
+                {% for key in infokey %}
+                    {% if key != 'image_url' and key!='type' and key!='abstract' and key!="URL" and key!='female_num' and key!='male_num' and key!='label' and key!='year_active_to' and key!='year_active_from'%}
                 <div class="section" style="color: #424242;">
                     <strong style="color:#212121;">{{key.upper()}}: </strong>
-                    {% for it in item %}
+                    {% for it in allinfo[key] %}
                         {% if key == 'bandMember' or key == 'url' %}
                             <a style="color:rgb(19, 102, 129)"href="{{it[0]}}">{{it[0]}} </a> 
                         {% else %}
                             {{it[0]}}
                         {% endif %}
-                        {% if it != item[-1] %}
+                        {% if it != allinfo[key][-1] %}
                             , 
                         {% else %}
                             .
@@ -81,6 +81,18 @@
                 </div>
                     {% endif %}
                 {% endfor %}
+                {% if 'year_active_from' in infokey%}
+                    <div class="section" style="color: #424242;">
+                        <strong style="color:#212121;">{{'year_active_from'.upper()}}: </strong>
+                        {{allinfo['year_active_from'][0][0]}}
+                    </div>
+                {% endif %}
+                {% if 'year_active_to' in infokey%}
+                    <div class="section" style="color: #424242;">
+                        <strong style="color:#212121;">{{'year_active_to'.upper()}}: </strong>
+                        {{allinfo['year_active_to'][0][0]}}
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>

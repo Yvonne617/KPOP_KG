@@ -300,6 +300,7 @@ def description():
                 allLabels[label].append((value,False))
     
     labelKey = list(allLabels.keys())
+    labelKey.sort(key=lambda x: x[:3])
     print(labelKey)
     realURL = dict_url[uri][0]
     print(realURL)
@@ -343,11 +344,7 @@ def predict():
             company= form['company']  
             if company in dic_company:
                 company = dic_company[company]
-            else:
-                company = dic_company['Empty']
-            company_t= form['company'] 
-            print(company)
-
+            company_t= form['company']  
         if 'num' in form:
             num = form['num']
             num_t = form['num']
@@ -411,8 +408,8 @@ def predict():
         X = pd.DataFrame({'genre(s)': [genre], 'labels': [company], 'num_members':[num], 'gender':[gender]})
         modelRating = model.predict(X)
         predicted_popularity = 0.6*modelRating + 0.4*companyRating + 0.1*numRating + 0.1*genderRating + 0.1*genreRating
-        return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predict_genre=genre_t,predict_company=company_t,predict_num=num_t,gender=gender_t,predicted_popularity=int(predicted_popularity))
 
+        return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predict_genre=genre_t,predict_company=company_t,predict_num=num_t,gender=gender_t,predicted_popularity=int(predicted_popularity))
     else:
         # print("get")
         return render_template("predict.html",genres=genres,company=LABELG,num=BANDNUMBERG,predicted_popularity=0)
