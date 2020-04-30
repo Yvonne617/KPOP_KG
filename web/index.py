@@ -171,7 +171,6 @@ def trend():
     for group in top50_num:
         d2.append(group["num"])
     top50_num = Counter(d2)
-    print(top50_num)
     return render_template("trend.html",top_data = jsonify(top_data),chart_data=chart_data,top50_genre=top50_genre,top50_num=top50_num)
 
 @app.route('/query')
